@@ -2160,6 +2160,8 @@ namespace VVVV.Nodes
                         else
                             arguments += " -accepteula -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
                         workingdir = System.IO.Path.GetDirectoryName(FProcesses[ProcessID].Process);
+                        if (!Directory.Exists(workingdir))
+                            workingdir = "";
                         break;
                     }
                 case TPsToolCommand.Kill:
@@ -2188,8 +2190,10 @@ namespace VVVV.Nodes
                     }
             }
 
+            FHost.Log(TLogType.Message, "Running: " + filename + " " + arguments);
+
             string result = "";
-            if (System.IO.File.Exists(filename))
+            if (File.Exists(filename))
                 result = Execute(filename, workingdir, arguments, true, false);
             else
                 result = "Error: File not found: " + filename;
