@@ -2298,13 +2298,9 @@ namespace VVVV.Nodes
         {
             string arguments, ignorepattern = "";
 
-            ignorepattern = IgnorePattern.Text.TrimEnd(";".ToCharArray());
-
-            string[] ignores = ignorepattern.Split(';');
-            ignorepattern = "";
+            string[] ignores = IgnorePattern.Text.Split(new char[1] { ';' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < ignores.Length; i++)
-                if (!string.IsNullOrEmpty(ignores[i]))
-                    ignorepattern += " -if=" + ignores[i].Trim();
+                ignorepattern += " -if=" + ignores[i].Trim();
 
             string testonly = "";
             if (MirrorTestCheckBox.Checked)
