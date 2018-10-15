@@ -996,7 +996,7 @@ namespace VVVV.Nodes
             this.IgnorePattern.Size = new System.Drawing.Size(259, 20);
             this.IgnorePattern.TabIndex = 23;
             this.IgnorePattern.Text = "*.v4p; *~.xml";
-            this.IgnorePattern.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.IgnorePattern.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // label7
             // 
@@ -1276,6 +1276,7 @@ namespace VVVV.Nodes
             this.SimulatorStringEdit.Size = new System.Drawing.Size(245, 20);
             this.SimulatorStringEdit.TabIndex = 0;
             this.SimulatorStringEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SimulatorStringEditKeyPress);
+            this.SimulatorStringEdit.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SimulatorStringEdit_KeyUp);
             // 
             // AddSimulatorStringButton
             // 
