@@ -1,0 +1,239 @@
+************
+*          *
+*  Mirror  *
+*          *
+************
+
+
+
+Qu'est-ce que Mirror ?
+----------------------
+
+Mirror permet d'effectuer une copie exacte d'un répertoire à un autre endroit.
+Si le répertoire de destination existe déjà, Mirror ne copie que les fichiers
+ayant été ajoutés, modifiés, ou supprimés par rapport au répertoire original.
+
+Mirror est donc particulièrement adapté aux sauvegardes régulières.
+On gagne du temps par rapport à une copie de fichiers classique,
+car seuls les fichiers modifiés ou ajoutés sont transférés. De plus,
+les fichiers supprimés dans le répertoire original sont également supprimés
+dans la copie, ce qui évite de gâcher de l'espace disque si vous renommez
+ou déplacez des fichiers.
+
+Mirror est un outil en ligne de commande, sans interface graphique.
+Il peut donc être facilement utilisé dans des scripts et des fichiers BATCH.
+
+
+Où trouver Mirror ?
+-------------------
+
+Site Web        http://utilfr42.free.fr/util/Mirror.php
+L'auteur        Guillaume Ryder
+E-mail          guillaume@ryder.fr
+
+
+Comment installer Mirror ?
+--------------------------
+
+Choisissez le fichier EXE correspondant à votre version de Windows :
+- si vous avez Windows 95/98/ME, prenez Mirror9x.exe,
+- si vous avez Windows NT/2000/XP/Vista/7/8, prenez MirrorNT.exe.
+- si vous avez un système 64 bits, prenez Mirror64.exe.
+
+Copiez le fichier dans C:\Windows pour qu'il soit exécutable de n'importe où
+sans avoir à spécifier son chemin d'accès. Ensuite, lancez le programme
+à partir d'une console (command.com ou cmd.exe).
+
+Vous pouvez renommer le fichier MirrorXX.exe choisi en Mirror.exe ou tout
+autre nom, à votre convenance.
+
+
+Comment utiliser Mirror ?
+-------------------------
+
+Utilisation classique :
+C:\MesFichiers est le répertoire à copier
+C:\Sauvegarde\MesFichiers est le répertoire de destination
+
+Commencez par créer le répertoire C:\Sauvegarde\MesFichiers,
+Mirror ne le créera jamais automatiquement.
+
+Ouvrez ensuite une console (command.com ou cmd.exe), puis tapez :
+mirror.exe C:\MesFichiers C:\Sauvegarde\MesFichiers
+
+Vous pouvez automatiser la procédure en créant un fichier BATCH
+(extension .bat) contenant ces deux lignes :
+
+@echo off
+mirror.exe C:\MesFichiers C:\Sauvegarde\MesFichiers
+
+
+Pourquoi Mirror a-t-il des problèmes avec les dates de modification ?
+---------------------------------------------------------------------
+
+Si vous utilisez Mirror avec un répertoire source dans une partition NTFS
+et un répertoire de destination dans une partition FAT16 ou FAT32,
+vous constaterez une imprécision dans la copie de la date de modification.
+Les dates de modification des partitions FAT sont arrondies aux 2 secondes
+les plus proches, tandis que les dates de modification des partitions NTFS
+sont très précises (100 nanosecondes). Cela explique pourquoi des fichiers
+miroirs l'un de l'autre peuvent ne pas avoir exactement la même date
+de modification.
+
+Par défaut, Mirror tente d'éviter les problèmes de précision en considérant
+comme égales deux dates différant de 5 secondes ou moins. Vous pouvez
+modifier cette précision avec l'option --time-precision.
+
+De plus, les dates de modification des partitions FAT sont locales :
+elles tiennent compte du fuseau horaire et de l'heure d'été. C'est pourquoi
+Mirror convertit les dates de modification en temps universel (UTC)
+avant de les comparer. C'est suffisant dans la plupart des cas, mais pas
+si vous changez votre fuseau horaire dans les paramètres de Windows, ou si
+vous utilisez des disques externes provenant d'un autre pays en même temps
+que vos disques locaux.
+
+Dans ces cas particuliers, vous pouvez:
+- Activer l'option --log-time-diff pour afficher les différence de dates perçues
+  par Mirror, puis définir les options --time-shift et --time-precision en
+  conséquence.
+- Utiliser l'option --time-compare-contents pour forcer la comparaison
+  octet par octet des fichiers. Cela sera plus sûr que l'option précédente
+  tout en restant plus rapide que de recopier tous les fichiers.
+Les deux méthodes mettront à jour la date de modification de tous les fichiers
+de destination, y compris ceux qui n'auront pas été mis à jour.
+
+
+Quelles sont les options de Mirror ?
+------------------------------------
+
+Lancez le programme sans argument pour afficher l'aide complète des options.
+
+L'aide de Mirror ainsi que tous les messages affichés à l'écran
+sont en anglais uniquement.
+
+
+Usage: mirror <source directory> <destination directory> [options]
+
+Mirrors copies/deletes files in the destination directory make sure it is
+identical to the source directory. Not existing files will be copied, modified
+files will be updated (overwritten), files not found in the source directory
+will be deleted from the destination directory.
+
+By default, files are compared against their size and modification time, but
+these settings can be changed (see below).
+
+If no --exclude nor --include option is specified, all files are examined.
+
+Returns 0 on success, 1 on error.
+
+Options:
+--help, -h, -?, /?
+Display this help.
+
+-x=<specification>, --exclude=<specification>
+Ignore the files matching the specification. The specification can use
+jokers such as`?' and `*'. Enclose the whole option in quotes if it
+contains spaces. This option may be specified multiple times. Cannot be
+used with --include options.
+
+-i=<specification>, --include=<specification>
+Include only the files matching the specification. The specification can
+use jokers such as `?' and `*'. Enclose the whole option in quotes if it
+contains spaces. This option may be specified multiple times. Cannot be
+used with --exclude options.
+
+-v, --virtual
+Virtual mode: do not alter any file, only display logging information.
+
+-ua, --unset-archive
+Unset the archive attribute of mirrored files in source directory.
+
+-nr, --no-recurse
+Do not recurse in subdirectories.
+
+-nj, --no-junctions
+Do not recurse in junction directories.
+
+-nd, --no-delete
+Never delete files from the destination directory, even if they are not
+found in the source directory.
+
+-na, --no-add
+Never add files to the destination directory, even if they are found in
+the source directory and missing in the destination directory.
+
+-nu, --no-update
+Never update files to the destination directory, even if they are found
+in the source directory and different.
+
+-nm, --no-meta
+Do not update file metadata in the destination directory when it is the
+only difference: attributes, last modification time, filename case.
+
+-ct[=y/n], --compare-time[=y/n], enabled by default
+Take modification time into account to compare files.
+
+-cs[=y/n], --compare-size[=y/n], enabled by default
+Take file size into account to compare files.
+
+-ca[=y/n], --compare-archive[=y/n]
+Take archive attribute into account to compare files. Files in source
+directory having the archive attribute set are considered as different
+than the matching file in destination directory.
+
+-cc[=y/n], --compare-contents[=y/n]
+Compare the files contents byte per byte. Slow but safe.
+
+-tcc[=y/n], --time-compare-contents[=y/n]
+If the files don't have the same modification time, compare them in the
+same way as --compare-contents above and do not take the modification
+times into account.
+
+-fsf[=y/n], --time-shift-fat[=y/n], enabled by default
+Convert FAT files times from local to system time before comparing them,
+to avoid daylight saving time problems.
+
+-tp[=number], --time-precision[=number], 5 by default
+Precision for time comparison, in seconds. Useful to solve FAT time
+precision issues.
+
+-ts[=number], --time-shift[=number], 0 by default
+The time shift to apply to destination files, in seconds. Can be
+negative. Useful to solve FAT time issues.
+
+-tm[=y/n], --time-meta[=y/n]
+Mirror last modification times as part of file metadata updates.
+
+-lh[=y/n], --log-header[=y/n], enabled by default
+Display the mirroring header, indicating the mirrored directories.
+
+-lc[=y/n], --log-changes[=y/n], enabled by default
+Log copied/updated/deleted files.
+
+-le[=y/n], --log-equal[=y/n]
+Log identical files (thus not altered).
+
+-li[=y/n], --log-ignored[=y/n]
+Log files ignored due to --no-delete, --no-add, or --no-update.
+
+-lcc[=y/n], --log-compare-contents[=y/n], enabled by default
+Display file names when they are compared byte per byte.
+
+-ltd[=y/n], --log-time-diff[=y/n]
+Display modification time difference of compared files, taking into
+account all time shifting options.
+
+-lm[=y/n], --log-meta[=y/n], enabled by default
+Log files having their meta information updated: attributes,
+modification time, file name case.
+
+-ld[=y/n], --log-directories[=y/n]
+Display directories name when they are analyzed.
+
+-ll[=y/n], --log-list[=y/n]
+Display only the list of affected files, without operation name nor
+headers for each examined directory.
+
+-lo[=y/n], --log-oem[=y/n], enabled by default
+Output filenames using OEM (DOS) charset. Disable this option if you
+plan to use the log results in a Win32 script or program.

@@ -103,6 +103,11 @@ namespace VVVV.Nodes
             InitializeComponent();
             FSettings = new XmlDocument();
 
+            var mirrorname = "MirrorNT.exe";
+            if (Environment.Is64BitOperatingSystem)
+                mirrorname = "Mirror64.exe";
+            FMirrorPath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "mirror", mirrorname);
+
             GroupFilterDropDown.SelectedIndex = 0;
 
             OnlineWorker.RunWorkerAsync();
@@ -274,9 +279,6 @@ namespace VVVV.Nodes
             this.label6 = new System.Windows.Forms.Label();
             this.SourcePath = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.MirrorPathPanel = new System.Windows.Forms.Panel();
-            this.MirrorPathLabel = new System.Windows.Forms.Label();
-            this.MirrorPathButton = new System.Windows.Forms.Button();
             this.VNCBox = new System.Windows.Forms.GroupBox();
             this.VNCPathPanel = new System.Windows.Forms.Panel();
             this.VNCPathLabel = new System.Windows.Forms.Label();
@@ -332,7 +334,6 @@ namespace VVVV.Nodes
             this.tableLayoutPanel3.SuspendLayout();
             this.SettingsPage.SuspendLayout();
             this.MirrorBox.SuspendLayout();
-            this.MirrorPathPanel.SuspendLayout();
             this.VNCBox.SuspendLayout();
             this.VNCPathPanel.SuspendLayout();
             this.PsToolsBox.SuspendLayout();
@@ -984,11 +985,10 @@ namespace VVVV.Nodes
             this.MirrorBox.Controls.Add(this.label6);
             this.MirrorBox.Controls.Add(this.SourcePath);
             this.MirrorBox.Controls.Add(this.label4);
-            this.MirrorBox.Controls.Add(this.MirrorPathPanel);
             this.MirrorBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.MirrorBox.Location = new System.Drawing.Point(3, 161);
             this.MirrorBox.Name = "MirrorBox";
-            this.MirrorBox.Size = new System.Drawing.Size(265, 145);
+            this.MirrorBox.Size = new System.Drawing.Size(265, 129);
             this.MirrorBox.TabIndex = 2;
             this.MirrorBox.TabStop = false;
             this.MirrorBox.Text = "Mirror";
@@ -996,7 +996,7 @@ namespace VVVV.Nodes
             // IgnorePattern
             // 
             this.IgnorePattern.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IgnorePattern.Location = new System.Drawing.Point(3, 123);
+            this.IgnorePattern.Location = new System.Drawing.Point(3, 101);
             this.IgnorePattern.Name = "IgnorePattern";
             this.IgnorePattern.Size = new System.Drawing.Size(259, 20);
             this.IgnorePattern.TabIndex = 23;
@@ -1008,7 +1008,7 @@ namespace VVVV.Nodes
             // label7
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label7.Location = new System.Drawing.Point(3, 108);
+            this.label7.Location = new System.Drawing.Point(3, 86);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(259, 15);
             this.label7.TabIndex = 54;
@@ -1017,7 +1017,7 @@ namespace VVVV.Nodes
             // TargetPath
             // 
             this.TargetPath.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TargetPath.Location = new System.Drawing.Point(3, 88);
+            this.TargetPath.Location = new System.Drawing.Point(3, 66);
             this.TargetPath.Name = "TargetPath";
             this.TargetPath.Size = new System.Drawing.Size(259, 20);
             this.TargetPath.TabIndex = 22;
@@ -1026,7 +1026,7 @@ namespace VVVV.Nodes
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label6.Location = new System.Drawing.Point(3, 73);
+            this.label6.Location = new System.Drawing.Point(3, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(259, 15);
             this.label6.TabIndex = 52;
@@ -1035,7 +1035,7 @@ namespace VVVV.Nodes
             // SourcePath
             // 
             this.SourcePath.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SourcePath.Location = new System.Drawing.Point(3, 53);
+            this.SourcePath.Location = new System.Drawing.Point(3, 31);
             this.SourcePath.Name = "SourcePath";
             this.SourcePath.Size = new System.Drawing.Size(259, 20);
             this.SourcePath.TabIndex = 21;
@@ -1044,42 +1044,11 @@ namespace VVVV.Nodes
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Location = new System.Drawing.Point(3, 38);
+            this.label4.Location = new System.Drawing.Point(3, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(259, 15);
             this.label4.TabIndex = 50;
             this.label4.Text = "Source Path";
-            // 
-            // MirrorPathPanel
-            // 
-            this.MirrorPathPanel.Controls.Add(this.MirrorPathLabel);
-            this.MirrorPathPanel.Controls.Add(this.MirrorPathButton);
-            this.MirrorPathPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MirrorPathPanel.Location = new System.Drawing.Point(3, 16);
-            this.MirrorPathPanel.Name = "MirrorPathPanel";
-            this.MirrorPathPanel.Size = new System.Drawing.Size(259, 22);
-            this.MirrorPathPanel.TabIndex = 20;
-            // 
-            // MirrorPathLabel
-            // 
-            this.MirrorPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MirrorPathLabel.Location = new System.Drawing.Point(43, 0);
-            this.MirrorPathLabel.Name = "MirrorPathLabel";
-            this.MirrorPathLabel.Size = new System.Drawing.Size(216, 22);
-            this.MirrorPathLabel.TabIndex = 48;
-            this.MirrorPathLabel.Text = "\\Mirror";
-            this.MirrorPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // MirrorPathButton
-            // 
-            this.MirrorPathButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MirrorPathButton.Location = new System.Drawing.Point(0, 0);
-            this.MirrorPathButton.Name = "MirrorPathButton";
-            this.MirrorPathButton.Size = new System.Drawing.Size(43, 22);
-            this.MirrorPathButton.TabIndex = 20;
-            this.MirrorPathButton.Text = "Path";
-            this.MirrorPathButton.UseVisualStyleBackColor = true;
-            this.MirrorPathButton.Click += new System.EventHandler(this.MirrorPathButtonClick);
             // 
             // VNCBox
             // 
@@ -1499,7 +1468,6 @@ namespace VVVV.Nodes
             this.SettingsPage.ResumeLayout(false);
             this.MirrorBox.ResumeLayout(false);
             this.MirrorBox.PerformLayout();
-            this.MirrorPathPanel.ResumeLayout(false);
             this.VNCBox.ResumeLayout(false);
             this.VNCBox.PerformLayout();
             this.VNCPathPanel.ResumeLayout(false);
@@ -1514,6 +1482,7 @@ namespace VVVV.Nodes
             ((System.ComponentModel.ISupportInitialize)(this.SimulatorPortUpDown)).EndInit();
             this.panel14.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button ClearGroupSelectionButton;
@@ -1583,13 +1552,10 @@ namespace VVVV.Nodes
         private System.Windows.Forms.Button MACAddressButton;
         private System.Windows.Forms.Button WakeOnLanButton;
         private System.Windows.Forms.Button InvertSelectionButton;
-        private System.Windows.Forms.Panel MirrorPathPanel;
         private System.Windows.Forms.Panel VNCPathPanel;
         private System.Windows.Forms.Panel PsToolsPathPanel;
         private System.Windows.Forms.TextBox PsToolsPassword;
         private System.Windows.Forms.TextBox PsToolsUsername;
-        private System.Windows.Forms.Label MirrorPathLabel;
-        private System.Windows.Forms.Button MirrorPathButton;
         private System.Windows.Forms.Button MirrorButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox SourcePath;
@@ -2320,17 +2286,21 @@ namespace VVVV.Nodes
 
             string[] ignores = IgnorePattern.Text.Split(new char[1] { ';' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < ignores.Length; i++)
-                ignorepattern += " -if=" + ignores[i].Trim();
+                ignorepattern += " -x=" + ignores[i].Trim();
 
             string testonly = "";
             if (MirrorTestCheckBox.Checked)
-                testonly = " -d";
+                testonly = " -v";
 
             foreach (IPControl ipc in IPListPanel.Controls)
                 if ((ipc.IsSelected) && (ipc.IsOnline))
                 {
-                    arguments = "\"" + SourcePath.Text + "\" \"\\\\" + ipc.IP + TargetPath.Text + "\"" + ignorepattern + testonly + " -sa";
-                    Execute(FMirrorPath + "\\mirror.exe", FMirrorPath, arguments, true, true);
+                    arguments = "\"" + SourcePath.Text + "\" \"\\\\" + ipc.IP + TargetPath.Text + "\"" + ignorepattern + testonly + " -lc=y";
+
+                    FHost.Log(TLogType.Message, "Running: " + FMirrorPath + " " + arguments);
+                    var result = Execute(FMirrorPath, Path.GetDirectoryName(FMirrorPath), arguments, true, true);
+                    if (result != "")
+                        FHost.Log(TLogType.Error, result);
                 }
         }
 
@@ -2495,15 +2465,6 @@ namespace VVVV.Nodes
             SaveSettings();
         }
 
-        void MirrorPathButtonClick(object sender, EventArgs e)
-        {
-            FFolderBrowserDialog.ShowDialog();
-            FMirrorPath = FFolderBrowserDialog.SelectedPath;
-            MirrorPathLabel.Text = FMirrorPath;
-
-            SaveSettings();
-        }
-
         void SettingsChanged(object sender, EventArgs e)
         {
             if (!FLoading)
@@ -2518,6 +2479,12 @@ namespace VVVV.Nodes
         private void EditBox_KeyUp(object sender, KeyEventArgs e)
         {
             SaveSettings();
+        }
+
+        private void IgnorePattern_MouseEnter(object sender, EventArgs e)
+        {
+            toolTip1.Active = false;
+            toolTip1.Active = true;
         }
 
         private void LoadSettings(string Settings)
@@ -2569,10 +2536,6 @@ namespace VVVV.Nodes
                 FSettings.LoadXml(Settings); //not sure why need to load here again
                                              //mirror
                 tool = FSettings.SelectSingleNode(@"REMOTER/MIRROR");
-                attr = tool.Attributes.GetNamedItem("Path") as XmlAttribute;
-                MirrorPathLabel.Text = attr.Value;
-                FMirrorPath = attr.Value;
-
                 attr = tool.Attributes.GetNamedItem("SourcePath") as XmlAttribute;
                 SourcePath.Text = attr.Value;
 
@@ -2704,9 +2667,6 @@ namespace VVVV.Nodes
             //mirror
             tool = FSettings.CreateElement("MIRROR");
             main.AppendChild(tool);
-            attr = FSettings.CreateAttribute("Path");
-            attr.Value = MirrorPathLabel.Text;
-            tool.Attributes.Append(attr);
 
             attr = FSettings.CreateAttribute("SourcePath");
             attr.Value = SourcePath.Text;
