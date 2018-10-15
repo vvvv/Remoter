@@ -90,6 +90,8 @@ namespace VVVV.Nodes
         private System.Net.Sockets.NetworkStream FTCPStream;
 
         private XmlDocument FSettings;
+        private ToolTip toolTip1;
+        private IContainer components;
         private int FSplitterDistance = 300;
 
         #endregion field declaration
@@ -216,6 +218,7 @@ namespace VVVV.Nodes
         #region GUI
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.FFolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.OnlineWorker = new System.ComponentModel.BackgroundWorker();
             this.WatchWorker = new System.ComponentModel.BackgroundWorker();
@@ -311,6 +314,8 @@ namespace VVVV.Nodes
             this.button5 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer)).BeginInit();
             this.SplitContainer.Panel1.SuspendLayout();
             this.SplitContainer.Panel2.SuspendLayout();
             this.SplitContainer.SuspendLayout();
@@ -512,9 +517,9 @@ namespace VVVV.Nodes
             this.GroupFilterDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.GroupFilterDropDown.FormattingEnabled = true;
             this.GroupFilterDropDown.Items.AddRange(new object[] {
-                                    ".All",
-                                    ".Offline",
-                                    ".Online"});
+            ".All",
+            ".Offline",
+            ".Online"});
             this.GroupFilterDropDown.Location = new System.Drawing.Point(3, 23);
             this.GroupFilterDropDown.Name = "GroupFilterDropDown";
             this.GroupFilterDropDown.Size = new System.Drawing.Size(393, 21);
@@ -996,6 +1001,8 @@ namespace VVVV.Nodes
             this.IgnorePattern.Size = new System.Drawing.Size(259, 20);
             this.IgnorePattern.TabIndex = 23;
             this.IgnorePattern.Text = "*.v4p; *~.xml";
+            this.toolTip1.SetToolTip(this.IgnorePattern, "Specify files or directories to ignore as follows:\r\n*.~.xml;*.dll;src;obj;.git;.v" +
+        "s");
             this.IgnorePattern.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // label7
@@ -1254,7 +1261,7 @@ namespace VVVV.Nodes
             this.SimulatorListBox.FormattingEnabled = true;
             this.SimulatorListBox.Location = new System.Drawing.Point(3, 45);
             this.SimulatorListBox.Name = "SimulatorListBox";
-            this.SimulatorListBox.Size = new System.Drawing.Size(265, 407);
+            this.SimulatorListBox.Size = new System.Drawing.Size(265, 412);
             this.SimulatorListBox.TabIndex = 3;
             this.SimulatorListBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SimulatorListBoxMouseUp);
             // 
@@ -1316,18 +1323,18 @@ namespace VVVV.Nodes
             this.SimulatorPortUpDown.Dock = System.Windows.Forms.DockStyle.Right;
             this.SimulatorPortUpDown.Location = new System.Drawing.Point(152, 0);
             this.SimulatorPortUpDown.Maximum = new decimal(new int[] {
-                                    65535,
-                                    0,
-                                    0,
-                                    0});
+            65535,
+            0,
+            0,
+            0});
             this.SimulatorPortUpDown.Name = "SimulatorPortUpDown";
             this.SimulatorPortUpDown.Size = new System.Drawing.Size(56, 20);
             this.SimulatorPortUpDown.TabIndex = 3;
             this.SimulatorPortUpDown.Value = new decimal(new int[] {
-                                    44444,
-                                    0,
-                                    0,
-                                    0});
+            44444,
+            0,
+            0,
+            0});
             this.SimulatorPortUpDown.Click += new System.EventHandler(this.SimulatorPortUpDownValueChanged);
             // 
             // SimulatorConnectButton
@@ -1457,6 +1464,13 @@ namespace VVVV.Nodes
             this.comboBox1.Size = new System.Drawing.Size(271, 21);
             this.comboBox1.TabIndex = 13;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutomaticDelay = 0;
+            this.toolTip1.ShowAlways = true;
+            this.toolTip1.UseAnimation = false;
+            this.toolTip1.UseFading = false;
+            // 
             // Remoter
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -1466,6 +1480,7 @@ namespace VVVV.Nodes
             this.Size = new System.Drawing.Size(694, 491);
             this.SplitContainer.Panel1.ResumeLayout(false);
             this.SplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer)).EndInit();
             this.SplitContainer.ResumeLayout(false);
             this.LeftTabControl.ResumeLayout(false);
             this.IPPage.ResumeLayout(false);
@@ -2776,7 +2791,6 @@ namespace VVVV.Nodes
                 attr.Value = tc.WatchMode.ToString();
                 task.Attributes.Append(attr);
             }
-
 
             //write to settingspin
             FSettingsInput.SetString(0, main.OuterXml);
