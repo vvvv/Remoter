@@ -1014,7 +1014,7 @@ namespace VVVV.Nodes
             this.TargetPath.Name = "TargetPath";
             this.TargetPath.Size = new System.Drawing.Size(259, 20);
             this.TargetPath.TabIndex = 22;
-            this.TargetPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.TargetPath.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // label6
             // 
@@ -1032,7 +1032,7 @@ namespace VVVV.Nodes
             this.SourcePath.Name = "SourcePath";
             this.SourcePath.Size = new System.Drawing.Size(259, 20);
             this.SourcePath.TabIndex = 21;
-            this.SourcePath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.SourcePath.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // label4
             // 
@@ -1133,7 +1133,7 @@ namespace VVVV.Nodes
             this.VNCPassword.PasswordChar = '*';
             this.VNCPassword.Size = new System.Drawing.Size(79, 20);
             this.VNCPassword.TabIndex = 11;
-            this.VNCPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.VNCPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // PsToolsBox
             // 
@@ -1223,7 +1223,7 @@ namespace VVVV.Nodes
             this.PsToolsUsername.Name = "PsToolsUsername";
             this.PsToolsUsername.Size = new System.Drawing.Size(79, 20);
             this.PsToolsUsername.TabIndex = 2;
-            this.PsToolsUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.PsToolsUsername.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // PsToolsPassword
             // 
@@ -1232,7 +1232,7 @@ namespace VVVV.Nodes
             this.PsToolsPassword.PasswordChar = '*';
             this.PsToolsPassword.Size = new System.Drawing.Size(79, 20);
             this.PsToolsPassword.TabIndex = 3;
-            this.PsToolsPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SettingsKeyPress);
+            this.PsToolsPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
             // 
             // SimulatorPage
             // 
@@ -1613,11 +1613,6 @@ namespace VVVV.Nodes
         {
             //not calling savesettings directly here, as this is also called while loading
             SettingsChanged(sender, e);
-        }
-
-        void SettingsKeyPress(object sender, KeyPressEventArgs e)
-        {
-            SaveSettings();
         }
         #endregion GUI
 
@@ -2504,6 +2499,11 @@ namespace VVVV.Nodes
             SaveSettings();
         }
 
+        private void EditBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            SaveSettings();
+        }
+
         private void LoadSettings(string Settings)
         {
             XmlNode tool;
@@ -2864,6 +2864,11 @@ namespace VVVV.Nodes
         {
             if (e.KeyChar == (char)13)
                 AddSimulatorString();
+        }
+
+        private void SimulatorStringEdit_KeyUp(object sender, KeyEventArgs e)
+        {
+            SaveSettings();
         }
         #endregion simulator
 
