@@ -26,19 +26,14 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
-using System.Net.NetworkInformation;
-using System.Text;
 using System.Xml;
 using System.ComponentModel;
 
-
 using VVVV.PluginInterfaces.V1;
-using VVVV.Utils.VColor;
-using VVVV.Utils.VMath;
+using System.IO;
 
 /*todos
  * replace IPControls with ordinary ListView
