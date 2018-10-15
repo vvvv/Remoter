@@ -38,10 +38,12 @@ namespace VVVV.Nodes
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.RemoveButton = new System.Windows.Forms.Button();
-            this.ProcessEdit = new System.Windows.Forms.TextBox();
             this.ArgumentsEdit = new System.Windows.Forms.TextBox();
+            this.ProcessEdit = new System.Windows.Forms.TextBox();
+            this.RemoveButton = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,28 @@ namespace VVVV.Nodes
             this.tableLayoutPanel1.Size = new System.Drawing.Size(409, 25);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // ArgumentsEdit
+            // 
+            this.ArgumentsEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ArgumentsEdit.Location = new System.Drawing.Point(220, 3);
+            this.ArgumentsEdit.Name = "ArgumentsEdit";
+            this.ArgumentsEdit.Size = new System.Drawing.Size(186, 20);
+            this.ArgumentsEdit.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.ArgumentsEdit, "When using arguments starting with -- they need to be escaped using double quotes" +
+        ", like:\r\n --package-repositories c:\\vl-libs\r\nneeds to be specified as:\r\n \"--pack" +
+        "age-repositories\" c:\\vl-libs");
+            this.ArgumentsEdit.TextChanged += new System.EventHandler(this.ArgumentsEditTextChanged);
+            this.ArgumentsEdit.MouseEnter += new System.EventHandler(this.ArgumentsEdit_MouseEnter);
+            // 
+            // ProcessEdit
+            // 
+            this.ProcessEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ProcessEdit.Location = new System.Drawing.Point(28, 3);
+            this.ProcessEdit.Name = "ProcessEdit";
+            this.ProcessEdit.Size = new System.Drawing.Size(186, 20);
+            this.ProcessEdit.TabIndex = 4;
+            this.ProcessEdit.TextChanged += new System.EventHandler(this.ProcessEditTextChanged);
+            // 
             // RemoveButton
             // 
             this.RemoveButton.Dock = System.Windows.Forms.DockStyle.Left;
@@ -73,23 +97,15 @@ namespace VVVV.Nodes
             this.RemoveButton.UseVisualStyleBackColor = true;
             this.RemoveButton.Click += new System.EventHandler(this.RemoveButtonClick);
             // 
-            // ProcessEdit
+            // toolTip1
             // 
-            this.ProcessEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ProcessEdit.Location = new System.Drawing.Point(28, 3);
-            this.ProcessEdit.Name = "ProcessEdit";
-            this.ProcessEdit.Size = new System.Drawing.Size(186, 20);
-            this.ProcessEdit.TabIndex = 4;
-            this.ProcessEdit.TextChanged += new System.EventHandler(this.ProcessEditTextChanged);
-            // 
-            // ArgumentsEdit
-            // 
-            this.ArgumentsEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ArgumentsEdit.Location = new System.Drawing.Point(220, 3);
-            this.ArgumentsEdit.Name = "ArgumentsEdit";
-            this.ArgumentsEdit.Size = new System.Drawing.Size(186, 20);
-            this.ArgumentsEdit.TabIndex = 5;
-            this.ArgumentsEdit.TextChanged += new System.EventHandler(this.ArgumentsEditTextChanged);
+            this.toolTip1.AutomaticDelay = 0;
+            this.toolTip1.AutoPopDelay = 0;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.ReshowDelay = 96;
+            this.toolTip1.ShowAlways = true;
+            this.toolTip1.UseAnimation = false;
+            this.toolTip1.UseFading = false;
             // 
             // ProcessControl
             // 
@@ -101,10 +117,12 @@ namespace VVVV.Nodes
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+
         }
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox ArgumentsEdit;
         private System.Windows.Forms.TextBox ProcessEdit;
         private System.Windows.Forms.Button RemoveButton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -68,6 +68,12 @@ namespace VVVV.Nodes
         {
             OnXButton(this);
         }
+
+        private void ArgumentsEdit_MouseEnter(object sender, EventArgs e)
+        {
+            toolTip1.Active = false;
+            toolTip1.Active = true;
+        }
     }
 
     public delegate void ProcessChangedHandler();

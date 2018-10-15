@@ -1001,9 +1001,10 @@ namespace VVVV.Nodes
             this.IgnorePattern.Size = new System.Drawing.Size(259, 20);
             this.IgnorePattern.TabIndex = 23;
             this.IgnorePattern.Text = "*.v4p; *~.xml";
-            this.toolTip1.SetToolTip(this.IgnorePattern, "Specify files or directories to ignore as follows:\r\n*.~.xml;*.dll;src;obj;.git;.v" +
-        "s");
+            this.toolTip1.SetToolTip(this.IgnorePattern, "Specify files or directories to ignore as follows:\r\n*~.xml; *.dll; src; obj; .git" +
+        "; .vs");
             this.IgnorePattern.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EditBox_KeyUp);
+            this.IgnorePattern.MouseEnter += new System.EventHandler(this.IgnorePattern_MouseEnter);
             // 
             // label7
             // 
