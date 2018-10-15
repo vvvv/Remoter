@@ -2150,34 +2150,34 @@ namespace VVVV.Nodes
                     {
                         filename += "psexec.exe";
                         if (Timeout > 0)
-                            arguments += " -n " + Timeout + " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
+                            arguments += " -accepteula -n " + Timeout + " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
                         else
-                            arguments += " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
+                            arguments += " -accepteula -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
                         workingdir = System.IO.Path.GetDirectoryName(FProcesses[ProcessID].Process);
                         break;
                     }
                 case TPsToolCommand.Kill:
                     {
                         filename += "pskill.exe";
-                        arguments += " -t " + System.IO.Path.GetFileNameWithoutExtension(FProcesses[ProcessID].Process);
+                        arguments += " -accepteula -t " + System.IO.Path.GetFileNameWithoutExtension(FProcesses[ProcessID].Process);
                         break;
                     }
                 case TPsToolCommand.Watch:
                     {
                         filename += "pslist.exe";
-                        arguments += " -m " + System.IO.Path.GetFileNameWithoutExtension(FProcesses[ProcessID].Process);
+                        arguments += " -accepteula -m " + System.IO.Path.GetFileNameWithoutExtension(FProcesses[ProcessID].Process);
                         break;
                     }
                 case TPsToolCommand.Reboot:
                     {
                         filename += "psshutdown.exe";
-                        arguments += " -f -r -t 0";
+                        arguments += " -accepteula -f -r -t 0";
                         break;
                     }
                 case TPsToolCommand.Shutdown:
                     {
                         filename += "psshutdown.exe";
-                        arguments += " -f -s -t 0";
+                        arguments += " -accepteula -f -s -t 0";
                         break;
                     }
             }
