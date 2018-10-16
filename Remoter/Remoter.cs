@@ -2890,6 +2890,7 @@ namespace VVVV.Nodes
 
         private void ProcessChangedHandlerCB()
         {
+            FProcesses.ResetBindings();
             SaveSettings();
         }
 
