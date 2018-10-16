@@ -5,3 +5,5 @@ them or the whole client in case the process cannot be found.
 Basically a UI for [PsTools](https://docs.microsoft.com/en-us/sysinternals/downloads/pstools) and some more..
 
 For full info see: https://vvvv.org/documentation/remotersa
+
+NOTE: If you find the sourcecode overly complex, that is indeed the case. Don't ask...
