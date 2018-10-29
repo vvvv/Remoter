@@ -2122,10 +2122,11 @@ namespace VVVV.Nodes
                 case TPsToolCommand.Execute:
                     {
                         filename += "psexec.exe";
+                        var runasadmin = FProcesses[ProcessID].RunAsAdmin ? " -h" : "";
                         if (Timeout > 0)
-                            arguments += " -accepteula -n " + Timeout + " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
+                            arguments += " -accepteula" + runasadmin + " -n " + Timeout + " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
                         else
-                            arguments += " -accepteula -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
+                            arguments += " -accepteula" + runasadmin + " -i -d \"" + FProcesses[ProcessID].Process + "\" " + FProcesses[ProcessID].Arguments;
                         workingdir = System.IO.Path.GetDirectoryName(FProcesses[ProcessID].Process);
                         if (!Directory.Exists(workingdir))
                             workingdir = "";
@@ -2512,16 +2513,18 @@ namespace VVVV.Nodes
                 FSettings.LoadXml(Settings); //not sure why need to load here again
                                              //processes
                 processes = FSettings.SelectNodes(@"REMOTER/PSTOOLS/PROCESS");
-                string path, arguments;
                 foreach (XmlNode process in processes)
                 {
                     attr = process.Attributes.GetNamedItem("Path") as XmlAttribute;
-                    path = attr.Value;
+                    var path = attr.Value;
 
                     attr = process.Attributes.GetNamedItem("Arguments") as XmlAttribute;
-                    arguments = attr.Value;
+                    var arguments = attr.Value;
 
-                    AddProcess(path, arguments);
+                    attr = process.Attributes.GetNamedItem("RunAsAdmin") as XmlAttribute;
+                    bool.TryParse(attr?.Value, out var runAsAdmin);
+
+                    AddProcess(path, arguments, runAsAdmin);
                 }
 
                 FSettings.LoadXml(Settings); //not sure why need to load here again
@@ -2651,6 +2654,10 @@ namespace VVVV.Nodes
 
                 attr = FSettings.CreateAttribute("Arguments");
                 attr.Value = pc.Arguments;
+                process.Attributes.Append(attr);
+
+                attr = FSettings.CreateAttribute("RunAsAdmin");
+                attr.Value = pc.RunAsAdmin.ToString();
                 process.Attributes.Append(attr);
             }
 
@@ -2851,14 +2858,15 @@ namespace VVVV.Nodes
         #region process
         void AddProcessButtonClick(object sender, EventArgs e)
         {
-            AddProcess("", "");
+            AddProcess("", "", false);
         }
 
-        private void AddProcess(string Path, string Arguments)
+        private void AddProcess(string Path, string Arguments, bool runAsAdmin)
         {
             ProcessControl pc = new ProcessControl();
             pc.Process = Path;
             pc.Arguments = Arguments;
+            pc.RunAsAdmin = runAsAdmin;
 
             pc.Dock = DockStyle.Top;
             pc.OnXButton += new ButtonUpHandler(ProcessXButtonHandlerCB);

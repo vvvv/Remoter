@@ -25,6 +25,12 @@ namespace VVVV.Nodes
             get => ProcessEdit.Text + " " + ArgumentsEdit.Text;
         }
 
+        public bool RunAsAdmin
+        {
+            get => RunAsAdminCheckBox.Checked;
+            set => RunAsAdminCheckBox.Checked = value;
+        }
+
         public ProcessControl()
         {
             //
@@ -52,6 +58,11 @@ namespace VVVV.Nodes
         {
             toolTip1.Active = false;
             toolTip1.Active = true;
+        }
+
+        private void RunAsAdminCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            OnProcessChanged?.Invoke();
         }
     }
 

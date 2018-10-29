@@ -43,33 +43,36 @@ namespace VVVV.Nodes
             this.ArgumentsEdit = new System.Windows.Forms.TextBox();
             this.ProcessEdit = new System.Windows.Forms.TextBox();
             this.RemoveButton = new System.Windows.Forms.Button();
+            this.RunAsAdminCheckBox = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.ArgumentsEdit, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.ProcessEdit, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.RemoveButton, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RunAsAdminCheckBox, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(409, 25);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(487, 25);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // ArgumentsEdit
             // 
             this.ArgumentsEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ArgumentsEdit.Location = new System.Drawing.Point(220, 3);
+            this.ArgumentsEdit.Location = new System.Drawing.Point(249, 3);
             this.ArgumentsEdit.Name = "ArgumentsEdit";
-            this.ArgumentsEdit.Size = new System.Drawing.Size(186, 20);
+            this.ArgumentsEdit.Size = new System.Drawing.Size(215, 20);
             this.ArgumentsEdit.TabIndex = 5;
             this.toolTip1.SetToolTip(this.ArgumentsEdit, "When using arguments starting with -- they need to be escaped using double quotes" +
         ", like:\r\n --package-repositories c:\\vl-libs\r\nneeds to be specified as:\r\n \"--pack" +
@@ -82,7 +85,7 @@ namespace VVVV.Nodes
             this.ProcessEdit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ProcessEdit.Location = new System.Drawing.Point(28, 3);
             this.ProcessEdit.Name = "ProcessEdit";
-            this.ProcessEdit.Size = new System.Drawing.Size(186, 20);
+            this.ProcessEdit.Size = new System.Drawing.Size(215, 20);
             this.ProcessEdit.TabIndex = 4;
             this.ProcessEdit.TextChanged += new System.EventHandler(this.ProcessEditTextChanged);
             // 
@@ -96,6 +99,18 @@ namespace VVVV.Nodes
             this.RemoveButton.Text = "X";
             this.RemoveButton.UseVisualStyleBackColor = true;
             this.RemoveButton.Click += new System.EventHandler(this.RemoveButtonClick);
+            // 
+            // RunAsAdminCheckBox
+            // 
+            this.RunAsAdminCheckBox.AutoSize = true;
+            this.RunAsAdminCheckBox.Location = new System.Drawing.Point(470, 5);
+            this.RunAsAdminCheckBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.RunAsAdminCheckBox.Name = "RunAsAdminCheckBox";
+            this.RunAsAdminCheckBox.Size = new System.Drawing.Size(14, 14);
+            this.RunAsAdminCheckBox.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.RunAsAdminCheckBox, "Run as Administrator");
+            this.RunAsAdminCheckBox.UseVisualStyleBackColor = true;
+            this.RunAsAdminCheckBox.CheckedChanged += new System.EventHandler(this.RunAsAdminCheckBox_CheckedChanged);
             // 
             // toolTip1
             // 
@@ -113,7 +128,7 @@ namespace VVVV.Nodes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ProcessControl";
-            this.Size = new System.Drawing.Size(409, 25);
+            this.Size = new System.Drawing.Size(487, 25);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -124,5 +139,6 @@ namespace VVVV.Nodes
         private System.Windows.Forms.TextBox ProcessEdit;
         private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.CheckBox RunAsAdminCheckBox;
     }
 }
