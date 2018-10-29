@@ -10,34 +10,19 @@ namespace VVVV.Nodes
 
         public string Process
         {
-            get
-            {
-                return ProcessEdit.Text;
-            }
-            set
-            {
-                ProcessEdit.Text = value;
-            }
+            get => ProcessEdit.Text;
+            set => ProcessEdit.Text = value;
         }
 
         public string Arguments
         {
-            get
-            {
-                return ArgumentsEdit.Text;
-            }
-            set
-            {
-                ArgumentsEdit.Text = value;
-            }
+            get => ArgumentsEdit.Text;
+            set => ArgumentsEdit.Text = value;
         }
 
         public string ProcessAndArguments
         {
-            get
-            {
-                return ProcessEdit.Text + " " + ArgumentsEdit.Text;
-            }
+            get => ProcessEdit.Text + " " + ArgumentsEdit.Text;
         }
 
         public ProcessControl()
@@ -46,22 +31,16 @@ namespace VVVV.Nodes
             // The InitializeComponent() call is required for Windows Forms designer support.
             //
             InitializeComponent();
-
-            //
-            // TODO: Add constructor code after the InitializeComponent() call.
-            //
         }
 
         void ProcessEditTextChanged(object sender, EventArgs e)
         {
-            if (OnProcessChanged != null)
-                OnProcessChanged();
+            OnProcessChanged?.Invoke();
         }
 
         void ArgumentsEditTextChanged(object sender, EventArgs e)
         {
-            if (OnProcessChanged != null)
-                OnProcessChanged();
+            OnProcessChanged?.Invoke();
         }
 
         void RemoveButtonClick(object sender, EventArgs e)
