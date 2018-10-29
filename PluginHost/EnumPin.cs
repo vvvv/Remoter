@@ -71,5 +71,15 @@ namespace Hoster
 		{
 
 		}
-	}	
+
+        public void SetDefaultEntry(string entryName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetEnumChangedListener(IEnumChangedListener listener)
+        {
+            throw new NotImplementedException();
+        }
+    }	
 }

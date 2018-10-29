@@ -433,5 +433,10 @@ namespace Hoster
 			
 			OnAfterEvaluate();
 		}
-	}
+
+        public void RegisterType(Guid guid, string friendlyName)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
