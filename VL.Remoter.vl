@@ -829,8 +829,8 @@
                 <Pin Id="JDlMAfTf3Y9LKdHDqjRaNd" Name="Input 2" Kind="InputPin" />
                 <Pin Id="TU0CcHsomQsM6SZhk8tqGQ" Name="Result" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="REvdMERsMm2MPHOuLOS5l8" Bounds="299,70" />
-              <Node Bounds="296,144,125,26" Id="OyRWw17oe96PsyjYiA2Osj">
+              <ControlPoint Id="REvdMERsMm2MPHOuLOS5l8" Bounds="349,-48" />
+              <Node Bounds="346,26,125,26" Id="OyRWw17oe96PsyjYiA2Osj">
                 <p:NodeReference LastCategoryFullName="Remoter.Machine" LastDependency="VL.Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Machine" />
@@ -839,8 +839,7 @@
                 <Pin Id="OejplDQOFFOQHr5ftPvGjA" Name="Input" Kind="StateInputPin" />
                 <Pin Id="PKOtIeXnuS2ORWx6r9nfbP" Name="Output" Kind="OutputPin" />
                 <Pin Id="RMO3dQjb9mPN017IfrVQ0o" Name="IP" Kind="OutputPin" />
-                <Pin Id="HVl3VUBj6diP2fKrU3b2Oj" Name="Username" Kind="OutputPin" />
-                <Pin Id="NyTbfaU3lZhMoUb5uJj5MD" Name="Password" Kind="OutputPin" />
+                <Pin Id="HVl3VUBj6diP2fKrU3b2Oj" Name="Credentials" Kind="OutputPin" />
                 <Pin Id="Fzwxa8sOwsWNEnqB7jO3ia" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="PrHreoRbWTXOMmMhj4QRAm" Name="Mac" Kind="OutputPin" />
               </Node>
@@ -946,7 +945,7 @@
                 <Pin Id="IYDFqEPD8MYLuhTzenetYU" Name="Process Id" Kind="InputPin" />
                 <Pin Id="KX2IsQu0dz2MWHTV405HTa" Name="Execute" Kind="InputPin" DefaultValue="True" />
               </Node>
-              <Node Bounds="296,94,45,26" Id="FezbCsrcPwZOrrYOdkoYvS">
+              <Node Bounds="346,-24,45,26" Id="FezbCsrcPwZOrrYOdkoYvS">
                 <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
@@ -955,6 +954,16 @@
                 <Pin Id="EnFiYw7boLePQF04cTvdq3" Name="Input" Kind="StateInputPin" />
                 <Pin Id="NhOWdfzYFzNOLZXTw5hCaO" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="PwO6JXCYpQLMT86u4FV0ri" Name="Value" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="364,147,57,26" Id="AJxMKOsg1QaNXDXPIOqRba">
+                <p:NodeReference LastCategoryFullName="Remoter.Credentials" LastDependency="VL.Remoter.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Credentials" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="TRL7ONe6aSVQOF2ZeRPCuL" Name="Input" Kind="StateInputPin" />
+                <Pin Id="M8hTxZOVapYNBmsOInNEzn" Name="Username" Kind="OutputPin" />
+                <Pin Id="KElEnfu2qXEPKHAN4H289Y" Name="Pass" Kind="OutputPin" />
               </Node>
             </Canvas>
             <ProcessDefinition Id="TxFEKPPtyWGMn7ftceospd" HasStateOut="true">
@@ -997,12 +1006,9 @@
             <Link Id="HAHI9ahyYipP6fi2DkVHUA" Ids="Uso9xm3IgrvL7t1W0rxuBO,REvdMERsMm2MPHOuLOS5l8" IsHidden="true" />
             <Link Id="G8FweSKwEDbNFBiB3s2Ed7" Ids="REvdMERsMm2MPHOuLOS5l8,EnFiYw7boLePQF04cTvdq3" />
             <Link Id="C84aqq6UpBgNFv2NbnMBeA" Ids="TZ4ureSEcP5QR7EQmAixy0,UAtT5NwDZLyQQogsBKaBwW" />
-            <Link Id="TCV3hDMxTadOsUUoCLWzkc" Ids="HVl3VUBj6diP2fKrU3b2Oj,DYDu7GjQMFtLSaHO9HtEl6" />
             <Link Id="A6e3lGLXEVwN9m3wpdbfGN" Ids="VHKvK9CrzBVQAk1vPVLbUQ,EumAtYuVN8bMNE0vg9FlmA" />
             <Link Id="Fegw3zdBtBvOPnwkeAJwNq" Ids="Bof68nSqFFJOqvmoWhXk5w,HpMQEpULFaeNIncSCqjPi4" />
             <Link Id="S8SskTrSeQqLG5jf7wc5cq" Ids="EMe5Zwx1DlZNJW4AfQ26Yt,BVJNtH5m42ZNwDumx2x5zO" />
-            <Link Id="AcCFUBmeAzfLcCNscudIKX" Ids="HVl3VUBj6diP2fKrU3b2Oj,G2xS0tmUvrANoGCAVWildn" />
-            <Link Id="OgpQIeTShDtPna2DkKjgLo" Ids="NyTbfaU3lZhMoUb5uJj5MD,U9ZmcR6m9xoQdTFkERaGDS" />
             <Link Id="BLPhEAxMYoJLNReBMYnqHL" Ids="ReonF1qqY7xODkezq3Bclz,KA744igrdahLVLCh9UMuXO" IsFeedback="true" />
             <Link Id="TiY7RGgXOHTMaBZqIzZB1c" Ids="EClyw81ZGAuLuzE0HICtUn,KA744igrdahLVLCh9UMuXO" />
             <Link Id="QZ78kGpNILTQIrLKGiYnLd" Ids="RMO3dQjb9mPN017IfrVQ0o,GQYs60ubnfpO04li2our4v" />
@@ -1083,6 +1089,10 @@
             <Link Id="AMPv6i6TZ6PPqszbREafXu" Ids="FvyTuraxhMjMSpERIsF5io,IYDFqEPD8MYLuhTzenetYU" />
             <Link Id="HfSy7rCOjC1LCmp6zaNpTq" Ids="UXBNNKjyszfOcrBGkAC5Mr,KX2IsQu0dz2MWHTV405HTa" />
             <Link Id="FDLkAq5v4ngPXWR6TxvnMg" Ids="PwO6JXCYpQLMT86u4FV0ri,OejplDQOFFOQHr5ftPvGjA" />
+            <Link Id="IAwQPLl8HSBPTPdhA8dO23" Ids="HVl3VUBj6diP2fKrU3b2Oj,TRL7ONe6aSVQOF2ZeRPCuL" />
+            <Link Id="FdnHhyvlP9BNToGURpMan2" Ids="M8hTxZOVapYNBmsOInNEzn,DYDu7GjQMFtLSaHO9HtEl6" />
+            <Link Id="Cpyo6Jnp1H1ODtTQb3RTcE" Ids="M8hTxZOVapYNBmsOInNEzn,G2xS0tmUvrANoGCAVWildn" />
+            <Link Id="T00aWH0jN26LiqDkl72TqF" Ids="KElEnfu2qXEPKHAN4H289Y,U9ZmcR6m9xoQdTFkERaGDS" />
           </Patch>
         </Node>
         <!--
@@ -1482,8 +1492,7 @@
                 <Pin Id="I2XQviuKF2IOWquCH8ueDC" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Ok1lKJTTdaKQUNoZukjtz3" Name="Output" Kind="OutputPin" />
                 <Pin Id="SnkCk9cuGOhPtBDEA6nv3e" Name="IP" Kind="OutputPin" />
-                <Pin Id="HzNFQb1HKDmN3l4pLDQbSB" Name="Username" Kind="OutputPin" />
-                <Pin Id="COFwanXOayeLIK2LTIcRkf" Name="Password" Kind="OutputPin" />
+                <Pin Id="HzNFQb1HKDmN3l4pLDQbSB" Name="Credentials" Kind="OutputPin" />
                 <Pin Id="JP42D2i6tFULgArHWya1nr" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="LCEhHKl64QBPI1KRF3IAJ9" Name="Mac" Kind="OutputPin" />
               </Node>
@@ -2142,8 +2151,7 @@
                 <Pin Id="AKvETRd8FCpQY4nDUGdIFh" Name="Input" Kind="StateInputPin" />
                 <Pin Id="JGWcKmeamw6NSfjALTyUce" Name="Output" Kind="OutputPin" />
                 <Pin Id="Ab2qhRm8ygnO8lvnK9ktBA" Name="IP" Kind="OutputPin" />
-                <Pin Id="CmjvIhKBAeTNjBw78VNHAm" Name="Username" Kind="OutputPin" />
-                <Pin Id="QEX0BSnqjS4PEXiNqYvKbj" Name="Password" Kind="OutputPin" />
+                <Pin Id="CmjvIhKBAeTNjBw78VNHAm" Name="Credentials" Kind="OutputPin" />
                 <Pin Id="S8EYVNnfrWoQPKvF5iIIin" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="PiUSypSH0qJLl4VObBHyGW" Name="Mac" Kind="OutputPin" />
               </Node>
@@ -2514,20 +2522,17 @@
         </p:Interfaces>
         <Patch Id="KKdBnZKRS0oPjLYROSUgfT">
           <Canvas Id="UUgq9lDqtAMQXD4IXC3Gx9" CanvasType="Group">
-            <Pad Id="TTYKyDNZ3JcMYgZPUo2t9m" SlotId="PdL8DZNqqKQL3vsmKW8ShA" Bounds="707,335" />
-            <ControlPoint Id="L9SIg6XpY52PMdybCxD713" Bounds="707,306" />
-            <ControlPoint Id="R9X5NhFOQvmNDvLM1DPPki" Bounds="707,366" />
-            <Pad Id="SiPBeuxD8RDOqY0dGldIkx" SlotId="H5jXQa9pmYSPpxetXogKH2" Bounds="788,335" />
-            <ControlPoint Id="IssfyLAB0ovLcFyQpqxbT0" Bounds="788,306" />
-            <ControlPoint Id="VGvhlkEwGuEPiQT4VI1FZv" Bounds="788,366" />
-            <Pad Id="Afy7YJhb8ThMNxxbnIaU6r" SlotId="FwokXAqtKNAQZehyeQ1jPp" Bounds="893,334" />
-            <ControlPoint Id="BaCY6vF2E1iO5fpBWlz7p8" Bounds="893,305" />
-            <ControlPoint Id="H9J6TIkuY3AN8qQU9G1cGq" Bounds="893,365" />
+            <Pad Id="TTYKyDNZ3JcMYgZPUo2t9m" SlotId="PdL8DZNqqKQL3vsmKW8ShA" Bounds="812,335" />
+            <ControlPoint Id="L9SIg6XpY52PMdybCxD713" Bounds="812,306" />
+            <ControlPoint Id="R9X5NhFOQvmNDvLM1DPPki" Bounds="812,366" />
+            <Pad Id="SiPBeuxD8RDOqY0dGldIkx" SlotId="H5jXQa9pmYSPpxetXogKH2" Bounds="893,335" />
+            <ControlPoint Id="IssfyLAB0ovLcFyQpqxbT0" Bounds="893,306" />
+            <ControlPoint Id="VGvhlkEwGuEPiQT4VI1FZv" Bounds="893,366" />
             <ControlPoint Id="IoXtjemuyZJQRZnO47eiGO" Bounds="1014,365" />
             <Pad Id="VKdTU99LFgeMXGQ0SduqWO" SlotId="I9kQBXYNcJuMNoZGMUC5ZP" Bounds="1014,329" />
             <ControlPoint Id="AXyvL5BCbLUQOKTH9QaYJo" Bounds="1122,359" />
             <Pad Id="UGuiOiqKj6ZPvWYXQx0Tzv" SlotId="LzpHDchQRbsPrVHDy2Qsyj" Bounds="1122,323" />
-            <ControlPoint Id="CXF3CQ9JROeOQsb0EcuZ2F" Bounds="639,367" />
+            <ControlPoint Id="CXF3CQ9JROeOQsb0EcuZ2F" Bounds="744,367" />
             <ControlPoint Id="KeNlZdyJh01L0tXB0XI0xF" Bounds="1049,272" />
             <ControlPoint Id="QNZ2NcuiCXZNKITVcgTJ1G" Bounds="1176,273" />
             <ControlPoint Id="VqPYNI0XAGINNgcBj1zqwa" Bounds="1122,293" />
@@ -2538,14 +2543,9 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Slot>
-          <Slot Id="H5jXQa9pmYSPpxetXogKH2" Name="Username">
+          <Slot Id="H5jXQa9pmYSPpxetXogKH2" Name="Credentials">
             <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="FwokXAqtKNAQZehyeQ1jPp" Name="Password">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="String" />
+              <Choice Kind="TypeFlag" Name="Credentials" />
             </p:TypeAnnotation>
           </Slot>
           <Link Id="Cky9rRbRSbsNxrSGXTDJZn" Ids="OH9hTAGO36oMTlomAa6bWC,L9SIg6XpY52PMdybCxD713" IsHidden="true" />
@@ -2556,10 +2556,6 @@
           <Link Id="M6PisLQNrinOU75IDvh3XC" Ids="SiPBeuxD8RDOqY0dGldIkx,VGvhlkEwGuEPiQT4VI1FZv" />
           <Link Id="QhAsicJDOvuMXcQ2GRO2R3" Ids="VGvhlkEwGuEPiQT4VI1FZv,IF0C9jhNcaGPdE9KX51Ias" IsHidden="true" />
           <Link Id="GstKpQSqQQUOiJgmPtMYBI" Ids="LQ67WIyZbKYMpde6ACgKag,IssfyLAB0ovLcFyQpqxbT0" IsHidden="true" />
-          <Link Id="NeqhBXPtyEgNaf3p6OUcUC" Ids="BaCY6vF2E1iO5fpBWlz7p8,Afy7YJhb8ThMNxxbnIaU6r" />
-          <Link Id="RLcOyIiAFncLh3W7AUJqz0" Ids="Afy7YJhb8ThMNxxbnIaU6r,H9J6TIkuY3AN8qQU9G1cGq" />
-          <Link Id="NABcgeePRNvOOOeFtD46XO" Ids="OpwhmSfPQcPPRuBHgwioFS,BaCY6vF2E1iO5fpBWlz7p8" IsHidden="true" />
-          <Link Id="AeVBbPUUioINYJO3z440sQ" Ids="H9J6TIkuY3AN8qQU9G1cGq,EVYQyDRigClN03og1AwpBG" IsHidden="true" />
           <Slot Id="I9kQBXYNcJuMNoZGMUC5ZP" Name="Hostname">
             <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="String" />
@@ -2596,8 +2592,7 @@
           <Patch Id="HI5fHpMNtpxMlKqC3cpNmc" Name="Create" />
           <Patch Id="Q8KvUAa81l5MoOVDMYFO7c" Name="Split">
             <Pin Id="ICzpgfULGCmMi3jSVb5qcw" MergeId="2921" Name="IP" Kind="OutputPin" />
-            <Pin Id="IF0C9jhNcaGPdE9KX51Ias" MergeId="2948" Name="Username" Kind="OutputPin" />
-            <Pin Id="EVYQyDRigClN03og1AwpBG" MergeId="2956" Name="Password" Kind="OutputPin" />
+            <Pin Id="IF0C9jhNcaGPdE9KX51Ias" MergeId="2948" Name="Credentials" Kind="OutputPin" />
             <Pin Id="FCOXEq5kvLqPepcp3TaLTK" Name="Hostname" Kind="OutputPin" />
             <Pin Id="AURTJPnOqkCPeaggEyI1DB" Name="Mac" Kind="OutputPin" />
           </Patch>
@@ -2609,8 +2604,7 @@
           </Patch>
           <Patch Id="MXr6ShkSRo8PwXIPCPEkJu" Name="Update">
             <Pin Id="OH9hTAGO36oMTlomAa6bWC" Name="IP" Kind="InputPin" />
-            <Pin Id="LQ67WIyZbKYMpde6ACgKag" Name="Username" Kind="InputPin" />
-            <Pin Id="OpwhmSfPQcPPRuBHgwioFS" Name="Password" Kind="InputPin" />
+            <Pin Id="LQ67WIyZbKYMpde6ACgKag" Name="Credentials" Kind="InputPin" />
             <Pin Id="RMiri2pbgkQLrNGFNsJvsV" Name="Hostname" Kind="InputPin" />
             <Pin Id="Pac5wGDj638Ol12wwQETfR" Name="Mac" Kind="InputPin" />
           </Patch>
@@ -2741,8 +2735,7 @@
                   <Pin Id="T0rK5xfSsQyO5N7Z7MGFBr" Name="Input" Kind="StateInputPin" />
                   <Pin Id="MM60pGfkfe6L1H9c7MUAHL" Name="Output" Kind="OutputPin" />
                   <Pin Id="NDf1GjQkS70PCE4gfh0RId" Name="IP" Kind="OutputPin" />
-                  <Pin Id="S79WSm5ZVODQY9oOcD4Wrc" Name="Username" Kind="OutputPin" />
-                  <Pin Id="AHAzKYDCAAgLNDBDZKP6Rq" Name="Password" Kind="OutputPin" />
+                  <Pin Id="S79WSm5ZVODQY9oOcD4Wrc" Name="Credentials" Kind="OutputPin" />
                   <Pin Id="EaodvL4j8dDLClKOzKuZfI" Name="Hostname" Kind="OutputPin" />
                   <Pin Id="SU3uVN4AhXPLy82BiumuIB" Name="Mac" Kind="OutputPin" />
                 </Node>
@@ -2928,8 +2921,7 @@
                   <Pin Id="N9IgUrqb1teNh1AyTkd1nO" Name="Input" Kind="StateInputPin" />
                   <Pin Id="H1sKkgftoVJMwhs65fTTn5" Name="Output" Kind="OutputPin" />
                   <Pin Id="DU0PwuArHcCO1k3Ti39zpd" Name="IP" Kind="OutputPin" />
-                  <Pin Id="JSfgVE2pg5dQA6bLqLmvHU" Name="Username" Kind="OutputPin" />
-                  <Pin Id="MYD0J8suq38Nv07BW06tSw" Name="Password" Kind="OutputPin" />
+                  <Pin Id="JSfgVE2pg5dQA6bLqLmvHU" Name="Credentials" Kind="OutputPin" />
                   <Pin Id="PnAN2RFTHTBQGpyO3uFa0s" Name="Hostname" Kind="OutputPin" />
                   <Pin Id="U561uE33XHIPNyClB3yNRL" Name="Mac" Kind="OutputPin" />
                 </Node>
@@ -3202,8 +3194,7 @@
               <Pin Id="Gz1npMnidl4Muhh8mVaUfd" Name="Input" Kind="StateInputPin" />
               <Pin Id="Fbfk43fQQKKLmjClLJGT4N" Name="Output" Kind="OutputPin" />
               <Pin Id="VtmprF4gSUEPlhzxL1ysu1" Name="IP" Kind="OutputPin" />
-              <Pin Id="FYjv4yKM3IAPjTEZZ3carM" Name="Username" Kind="OutputPin" />
-              <Pin Id="QPhapGQMzWAMhApN5JESK5" Name="Password" Kind="OutputPin" />
+              <Pin Id="FYjv4yKM3IAPjTEZZ3carM" Name="Credentials" Kind="OutputPin" />
               <Pin Id="JYUCPGNLI4jL5RykdXPQ66" Name="Hostname" Kind="OutputPin" />
               <Pin Id="QzXhCsTidE9Po5s5pYpBov" Name="Mac" Kind="OutputPin" />
             </Node>
@@ -3548,8 +3539,7 @@
               <Pin Id="H88gvI56VepPNTCAeVaMl9" Name="Input" Kind="StateInputPin" />
               <Pin Id="RCgvssxisGjNpG5bhsQEjU" Name="Output" Kind="OutputPin" />
               <Pin Id="IgEV8Pj74ByNgsaPmYH8oG" Name="IP" Kind="OutputPin" />
-              <Pin Id="JzB0dnaHnxAQD7bljGKPnI" Name="Username" Kind="OutputPin" />
-              <Pin Id="GrOs5mgOANKOa9UCE3mJeI" Name="Password" Kind="OutputPin" />
+              <Pin Id="JzB0dnaHnxAQD7bljGKPnI" Name="Credentials" Kind="OutputPin" />
               <Pin Id="VpLROpNxtzQLHVNY1GimSE" Name="Hostname" Kind="OutputPin" />
               <Pin Id="DMLqsHITLIpLBQAqPVpMcD" Name="Mac" Kind="OutputPin" />
             </Node>
@@ -3760,7 +3750,7 @@
               </p:NodeReference>
               <Pin Id="U5PUGdRIUypLNVeyYdehSA" Name="Input" Kind="InputPin" />
               <Pin Id="ErQ4ih95jR6M1wqcJAS6K8" Name="Output" Kind="OutputPin" />
-              <Pin Id="VQ8G2m3NMJkOrKzlcw2ID2" Name="Keys" Kind="OutputPin" />
+              <Pin Id="KdcOiSuNJeoPeV7lLhP16V" Name="Keys" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="MN0GcQfiQI5OCpsvxlxqRi" Bounds="763,916" />
             <Node Bounds="112,291,45,26" Id="PZrkYAdxrBaMX3Nybz3BJ1">
@@ -4669,6 +4659,61 @@
           <Link Id="CRWqisk4Zu8MG7Bq2OKZUW" Ids="DgTHAb03QFrLTsgCos1gup,MSc8TEUpt3FNaEtMhjRYuM" />
           <Link Id="BKj9Eri88ECNwUIvMsHnod" Ids="NzkW6BBBSS4LnBAESicTsm,H5MQG6O0KTGOXZdo2fGG7V" />
           <Link Id="JuLbH7obPCGLLp7hxQhJn3" Ids="IeKo8KjQbelPQbVjfyOwQp,C1asOwD20SXQEztqWeOuHF" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Credentials ************************
+
+-->
+      <Node Name="Credentials" Bounds="751,448" Id="AAmpFO4Eq2uPPtcHHorFt8">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="RecordDefinition" Name="Record" />
+        </p:NodeReference>
+        <Patch Id="VIRZ9G7Dvk7LuPMVwewUMA">
+          <Canvas Id="QvJ9p6afHteNbHqWv81Klx" CanvasType="Group">
+            <Pad Id="NRknzTGvpouMvkYk6gL8ug" SlotId="Laf5nJ3k4QTLQ6Ogo2xnem" Bounds="544,323" />
+            <Pad Id="LqzGDGRS3k6PkXtVgafBpL" SlotId="PN7aQwAdVL1PKFniCBLNo0" Bounds="651,323" />
+            <ControlPoint Id="Sjdl7PNLPVkMHij7oBr0hF" Bounds="544,293" />
+            <ControlPoint Id="GlpkQPPeBEnPwi4ghBcAr2" Bounds="544,353" />
+            <ControlPoint Id="Q6lPtksNTzKL3xoWkvUOxy" Bounds="651,293" />
+            <ControlPoint Id="INvU9wy4aZ3QNNrbgY9cyQ" Bounds="651,353" />
+          </Canvas>
+          <Patch Id="Em9pata36EfOF1scowHBW4" Name="Create">
+            <Pin Id="RYsIZO2UmvSLgeqirgV0cD" Name="Username" Kind="InputPin" />
+            <Pin Id="ER5z5rRktd3QT8gLY9pmK9" Name="Pass" Kind="InputPin" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="QJmBJmwGNmILwMcemAN7SL" IsHidden="true">
+            <Fragment Id="IWP9MSypn8HLLDcxOlzxor" Patch="Em9pata36EfOF1scowHBW4" Enabled="true" />
+            <Fragment Id="LKiLf6VClOLOzBN1rV0ASl" Patch="Nk7V8sfuypSMNgwVEl5VH7" />
+          </ProcessDefinition>
+          <Slot Id="Laf5nJ3k4QTLQ6Ogo2xnem" Name="Username">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="PN7aQwAdVL1PKFniCBLNo0" Name="Pass">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="TgzWMLAVaD1LEonqpTD3xH" Ids="RYsIZO2UmvSLgeqirgV0cD,Sjdl7PNLPVkMHij7oBr0hF" IsHidden="true" />
+          <Link Id="PDLNhvmmebyQFNxoWzAoX7" Ids="Sjdl7PNLPVkMHij7oBr0hF,NRknzTGvpouMvkYk6gL8ug" />
+          <Patch Id="Nk7V8sfuypSMNgwVEl5VH7" Name="Split">
+            <Pin Id="Ggo51Au6tTlQCkUpsURbEM" Name="Username" Kind="OutputPin" />
+            <Pin Id="A7l3MeNqS4vNfx4CaZHdkS" Name="Pass" Kind="OutputPin" />
+          </Patch>
+          <Link Id="NsfmmXOVmgeQIajV3C71Tm" Ids="GlpkQPPeBEnPwi4ghBcAr2,Ggo51Au6tTlQCkUpsURbEM" IsHidden="true" />
+          <Link Id="JIDr1axVyKqNp8rQwe333W" Ids="NRknzTGvpouMvkYk6gL8ug,GlpkQPPeBEnPwi4ghBcAr2" />
+          <Link Id="QW9Er0xI4WANnSftQ1dOTs" Ids="ER5z5rRktd3QT8gLY9pmK9,Q6lPtksNTzKL3xoWkvUOxy" IsHidden="true" />
+          <Link Id="UIHh6Xmosy7OAX85sgyzf9" Ids="Q6lPtksNTzKL3xoWkvUOxy,LqzGDGRS3k6PkXtVgafBpL" />
+          <Link Id="GU0nkSBGF6PPCae8ZnKN9f" Ids="INvU9wy4aZ3QNNrbgY9cyQ,A7l3MeNqS4vNfx4CaZHdkS" IsHidden="true" />
+          <Link Id="CN3vDrJqg8iLA3eJ2BDZ7J" Ids="LqzGDGRS3k6PkXtVgafBpL,INvU9wy4aZ3QNNrbgY9cyQ" />
         </Patch>
       </Node>
     </Canvas>
