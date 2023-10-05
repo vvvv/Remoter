@@ -1,6 +1,7 @@
 #define MyAppName "Remoter"
 #define MyAppVersion "2.0"
 #define MyAppPublisher "vvvv"
+#define MyExportPath "Export\Remoter"
 #define MyAppURL "https://github.com/vvvv/Remoter"
 
 
@@ -23,6 +24,7 @@ OutputDir=.
 ArchitecturesAllowed=x64
 WizardStyle=classic
 PrivilegesRequired=admin
+SetupIconFile={#MyExportPath}\Assets\remoter.ico
 
 [Run]
 Filename: {app}\{cm:AppName}.exe; Description: {cm:LaunchProgram,{cm:AppName}}; Flags: nowait postinstall skipifsilent
@@ -33,4 +35,4 @@ LaunchProgram=Start Remoter after finishing installation
 
 
 [Files]
-Source: "Export\Remoter\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: {#MyExportPath}\*; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs

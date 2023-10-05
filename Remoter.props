@@ -6,9 +6,10 @@
     <VLExportPath>$(MsBuildThisFileDirectory)Export</VLExportPath>
     <VLTargetOS>Windows</VLTargetOS>
     <OutputType>WinExe</OutputType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <TargetFramework>net6.0-windows</TargetFramework>
     <DestinationFolder>$(VLExportPath)\Remoter\</DestinationFolder>
+    <ApplicationIcon>$(MsBuildThisFileDirectory)Assets\remoter.ico</ApplicationIcon>
   </PropertyGroup>
   <Target Name="RemoveDirectories" BeforeTargets="Build">
     <RemoveDir Directories="$(DestinationFolder)" />
@@ -16,7 +17,7 @@
   <Target Name="CopyFiles" AfterTargets="Publish">
     <ItemGroup>
       <Assets Include="$(MsBuildThisFileDirectory)Assets\**\*.*" />
-      <PAExec Include="$(MsBuildThisFileDirectory)PAexec\paexec_1_30.exe" />
+      <PAExec Include="$(MsBuildThisFileDirectory)PAexec\paexec.exe" />
     </ItemGroup>
     <Copy SourceFiles="@(Assets)" DestinationFolder="$(DestinationFolder)Assets\%(RecursiveDir)" />
     <Copy SourceFiles="@(PAExec)" DestinationFolder="$(DestinationFolder)" />
