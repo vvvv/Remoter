@@ -5,6 +5,7 @@
 
 
 [Setup]
+;signtool.exe sign /f CERTFILE /tr http://timestamp.sectigo.com /td SHA256 /p PASS $p
 SignTool=mssign $f
 AppId={{5FD1B82F-5BF0-4C1B-B9D3-F6F48C50D515}
 AppName={#MyAppName} {#MyAppVersion}
