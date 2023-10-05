@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VLAssetBehavior>PointToOutput</VLAssetBehavior>
+    <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
+    <VLExportPath>$(MsBuildThisFileDirectory)Export</VLExportPath>
+    <VLTargetOS>Windows</VLTargetOS>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <DestinationFolder>$(VLExportPath)\Remoter\</DestinationFolder>
+  </PropertyGroup>
+  <Target Name="RemoveDirectories" BeforeTargets="Build">
+    <RemoveDir Directories="$(DestinationFolder)" />
+  </Target>
+  <Target Name="CopyFiles" AfterTargets="Publish">
+    <ItemGroup>
+      <Assets Include="$(MsBuildThisFileDirectory)Assets\**\*.*" />
+      <PAExec Include="$(MsBuildThisFileDirectory)PAexec\paexec_1_30.exe" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Assets)" DestinationFolder="$(DestinationFolder)Assets\%(RecursiveDir)" />
+    <Copy SourceFiles="@(PAExec)" DestinationFolder="$(DestinationFolder)" />
+  </Target>
+</Project>

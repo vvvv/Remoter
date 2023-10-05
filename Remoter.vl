@@ -30,7 +30,7 @@
                 <Patch Id="EbVKLL2sNHFNVFDMNdnb6j" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="FfWuzUejfgCM0FKs6qARoH" Name="Update" ManuallySortedPins="true" />
                 <Node Bounds="705,582,74,19" Id="UWClMNOSiSwOJZRO3LZFU1">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="UIContent" />
                   </p:NodeReference>
@@ -764,7 +764,7 @@
               <Pin Id="Hz9v38J8JsSPPQTuebkzMT" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="656,-505,47,19" Id="ODO8vFMf5nLNpTOkGzFqZH">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -772,7 +772,7 @@
               <Pin Id="HKHA5UuTYswPMdSHAewPFB" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="656,-477,145,26" Id="IC9YEA1wbASNqNs4wdchzc">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -1444,7 +1444,7 @@
           <Canvas Id="STlXxUEpd0BL5izXkbegch" CanvasType="Group">
             <ControlPoint Id="Heu74cbzZ9KPppAcWJOmpS" Bounds="176,456" />
             <Node Bounds="436,515,92,19" Id="P7nKRe9beiUOD6jJr6q1g2">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="EditTask" />
               </p:NodeReference>
@@ -1500,7 +1500,7 @@
               <Pin Id="Tjh9DcXd6ElNNInelEDI0R" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="356,-28,105,26" Id="EnoBgFmxUVlOA9iqXK6zN0">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
@@ -1559,7 +1559,7 @@
                   <ControlPoint Id="RxYeQ7E0tJjLYfnyzpYAbd" Bounds="419,346" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="454,48,75,19" Id="BgQQjEEywOsMzLCPSyfMY5">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DefaultTasks" />
                   </p:NodeReference>
@@ -1640,7 +1640,7 @@
             </Node>
             <ControlPoint Id="R5Wefswi0iJOyMDSaiRcmv" Bounds="549,482" />
             <Node Bounds="245,513,65,19" Id="O4XUEyGxbVsMNcwNrsqGw2">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="AddTask" />
               </p:NodeReference>
@@ -1877,7 +1877,7 @@
     ************************ DefaultMachines ************************
 
 -->
-      <Node Name="DefaultMachines" Bounds="358,1040,354,263" Id="FeHLcX32kNuMhoycw4VCKP">
+      <Node Name="DefaultMachines" Bounds="358,1040,368,263" Id="FeHLcX32kNuMhoycw4VCKP">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
@@ -1905,7 +1905,7 @@
             <Pin Id="O9JeyOU0S0FLd7V2wqkzRT" Name="Mac" Kind="InputPin" />
             <Pin Id="Uw0suYVG1cRMjxuwZUMmWM" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="SvyJVG0yNvFMVgc5uTMe4z" Comment="IP" Bounds="397,1166,79,15" ShowValueBox="true" isIOBox="true" Value="192.168.2.152">
+          <Pad Id="SvyJVG0yNvFMVgc5uTMe4z" Comment="IP" Bounds="392,1171,79,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1943,7 +1943,7 @@
             <Pin Id="B7B9bGH35yMMFuctsWJCeS" Name="Mac" Kind="InputPin" />
             <Pin Id="EzMO6FfNAxFLXBCILqkNPV" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="VtRGZaq9cQ6OSHLER6SD16" Comment="IP" Bounds="607,1168,63,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+          <Pad Id="VtRGZaq9cQ6OSHLER6SD16" Comment="IP" Bounds="607,1168,77,15" ShowValueBox="true" isIOBox="true" Value="192.168.100.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2187,7 +2187,7 @@
                                   </p:TypeAnnotation>
                                 </Pad>
                                 <Node Bounds="698,1546,93,19" Id="KOyuUhtza9DMHvVzniI1fL">
-                                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                     <Choice Kind="ProcessAppFlag" Name="QuestionWithAcc" />
                                   </p:NodeReference>
@@ -2227,7 +2227,7 @@
                           </p:TypeAnnotation>
                         </Pad>
                         <Node Bounds="607,1878,115,19" Id="U3Q0obpHIdvP5HDAqXwbLZ">
-                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="CommandLivePreview" />
                           </p:NodeReference>
@@ -2340,7 +2340,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="652,661,71,19" Id="QxK0vF9M4YJMb6SH5fcN7f">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="ListboxStyle" />
                       </p:NodeReference>
@@ -2651,6 +2651,16 @@
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Table" />
                       </p:NodeReference>
+                      <Pin Id="B46BUepFR5IM8xcHHd7dq3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="I4ajpNkP8iuLHnxpezLRkv" Name="Context" Kind="InputPin" />
+                      <Pin Id="JZ2iVvSwiXuP0RupDMY326" Name="Label" Kind="InputPin" />
+                      <Pin Id="I6QgdK7XHh1LTSzcgo8Cft" Name="Column Count" Kind="InputPin" />
+                      <Pin Id="JtBbSgDTeyhLQDfO2xdjYR" Name="Size" Kind="InputPin" />
+                      <Pin Id="VPNMQGmNt3KOIj1NP36GTg" Name="Inner Width" Kind="InputPin" />
+                      <Pin Id="RtKu0HVGLLsON4dX1l9Zlj" Name="Style" Kind="InputPin" />
+                      <Pin Id="GebtUW72ucELU7k4fTSQQg" Name="Flags" Kind="InputPin" />
+                      <Pin Id="VAAgkcvISDWQGQDQ7girIX" Name="Context" Kind="OutputPin" />
+                      <ControlPoint Id="J2ImMPU8ythL4Ff9IyFng8" Bounds="731,1968" Alignment="Bottom" />
                       <Patch Id="RKiqyj2zGV3MB78ePJoM8z" ManuallySortedPins="true">
                         <Patch Id="Gsr2obXNgEnMY4MWliM9Jc" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="UFbOYDs6vc2PE25rJGtKoF" Name="Update" ParticipatingElements="PdfPsPsrTMGLarkKEGOXEh,MyyUnTHacHqLLqzFV0iEUx,Q5GBrDViUDXPx0WCHrsFqx,FFgfpKYzJkKNfY9PdETMt4,PvNqpbU8JYVNsW28cWhrGK,EHenJJ4WEDRLnEe5Kh7G5f,JmechAdWsRgQSrWN7sVrUE,SbL7d88ZCUoL2Ib9h0GnXQ,JlIB6Wl958xOp6vic6DZWa,OCrgiQLvN7RNFwL6rCbzAF,GwMZBPVnx8GPMdDa7ZSupg,FSc9uMiFc7WOTG3c9QRQqc,As9ErJPy1alLm118Fd9xMw,LkeXk9IoxzDPYR3BP7jU2J,UKmK5E03bXJPZq5r7YmCsj,Sc1tfiRsTFZMhE0Nafw3Gh,RCdD1ylCtP3L2pGTKyDqiJ,EbDva4uaWHzNEGgRj8OOkm,SlJeIGfSsUbQUrwgl5mf70" ManuallySortedPins="true" />
@@ -2662,12 +2672,14 @@
                           </p:NodeReference>
                           <Pin Id="LoPruPc6HRCNU3hZTVeW8K" Name="Break" Kind="OutputPin" />
                           <ControlPoint Id="EBN4ljxiNNJPt9JayTePSE" Bounds="483,1853" Alignment="Top" />
+                          <ControlPoint Id="Hkpsbl4nmJVQRrCOweXZVT" Bounds="450,1853" Alignment="Top" />
+                          <ControlPoint Id="AG39zDb9e2XOpQ05UDxING" Bounds="453,1948" Alignment="Bottom" />
                           <Patch Id="CxuSM5BLXBUL5HT5hOcp8s" ManuallySortedPins="true">
                             <Patch Id="RFWEYO4dKNgM3fUdSBaIih" Name="Create" ManuallySortedPins="true" />
                             <Patch Id="I9yNm6mQHnbO1LyXHM2K5m" Name="Update" ManuallySortedPins="true" />
                             <Patch Id="ShV6XM85vWHPZKMjBVfE0a" Name="Dispose" ManuallySortedPins="true" />
                             <Node Bounds="451,1903,35,19" Id="Ks7ffYNcJ1iPSoWCZQoK5f">
-                              <p:NodeReference LastCategoryFullName="Remoter.Log" LastDependency="RemoterUI.vl">
+                              <p:NodeReference LastCategoryFullName="Remoter.Log" LastDependency="Remoter.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <CategoryReference Kind="Category" Name="Log" NeedsToBeDirectParent="true" />
                                 <Choice Kind="ProcessAppFlag" Name="Row" />
@@ -2678,8 +2690,6 @@
                               <Pin Id="JUfoNeLt6ntLGiQskRS77T" Name="Context" Kind="OutputPin" />
                             </Node>
                           </Patch>
-                          <ControlPoint Id="Hkpsbl4nmJVQRrCOweXZVT" Bounds="450,1853" Alignment="Top" />
-                          <ControlPoint Id="AG39zDb9e2XOpQ05UDxING" Bounds="453,1948" Alignment="Bottom" />
                         </Node>
                         <Node Bounds="450,1200,102,19" Id="IDJOXXKGfCEP5gSQ8EyDVE">
                           <p:NodeReference LastCategoryFullName="ImGui.Commands" LastDependency="VL.ImGui.vl">
@@ -2849,16 +2859,6 @@
                           </p:TypeAnnotation>
                         </Pad>
                       </Patch>
-                      <Pin Id="B46BUepFR5IM8xcHHd7dq3" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                      <Pin Id="I4ajpNkP8iuLHnxpezLRkv" Name="Context" Kind="InputPin" />
-                      <Pin Id="JZ2iVvSwiXuP0RupDMY326" Name="Label" Kind="InputPin" />
-                      <Pin Id="I6QgdK7XHh1LTSzcgo8Cft" Name="Column Count" Kind="InputPin" />
-                      <Pin Id="JtBbSgDTeyhLQDfO2xdjYR" Name="Size" Kind="InputPin" />
-                      <Pin Id="VPNMQGmNt3KOIj1NP36GTg" Name="Inner Width" Kind="InputPin" />
-                      <Pin Id="RtKu0HVGLLsON4dX1l9Zlj" Name="Style" Kind="InputPin" />
-                      <Pin Id="GebtUW72ucELU7k4fTSQQg" Name="Flags" Kind="InputPin" />
-                      <Pin Id="VAAgkcvISDWQGQDQ7girIX" Name="Context" Kind="OutputPin" />
-                      <ControlPoint Id="J2ImMPU8ythL4Ff9IyFng8" Bounds="731,1968" Alignment="Bottom" />
                     </Node>
                     <Pad Id="NR7fyAnE0yGNorXpFMIQaI" Comment="Column Count" Bounds="505,1089,35,15" ShowValueBox="true" isIOBox="true" Value="6">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -2927,7 +2927,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="486,1018,35,19" Id="LuwldfD4PoQLBuyqiOUVCj">
-                      <p:NodeReference LastCategoryFullName="Remoter.Log" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.Log" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Log" NeedsToBeDirectParent="true" />
                         <Choice Kind="ProcessAppFlag" Name="Sort" />
@@ -3445,7 +3445,7 @@
                         <Pin Id="JnhCJ5pYtr5QMHiouC4h2o" Name="Context" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="1630,741,69,19" Id="OvuC4itexgcMGDKLgSACFA">
-                        <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                        <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="ProcessAppFlag" Name="CopyButton" />
                         </p:NodeReference>
@@ -4310,7 +4310,7 @@
             <ControlPoint Id="IPsf8vvtzFYOkVaXRq4kfB" Bounds="429,160" />
             <Link Id="NiarWHn98CvNYQSjEThsV4" Ids="T3psQSj5qB9PeawHfbTTvN,IPsf8vvtzFYOkVaXRq4kfB" IsHidden="true" />
             <Node Bounds="427,179,61,26" Id="PkYoAfb2uaqMsUYPK0Tw63">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.RunEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.RunEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="RunEditor" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -4462,7 +4462,7 @@
                 <Pin Id="Eypg916NMmTNVGsMMVhI73" Name="Value" Kind="OutputPin" />
               </Node>
               <Node Bounds="86,845,99,19" Id="SuOCUcrEXP4MefhqTHAHjY">
-                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="PAExecArguments" />
                 </p:NodeReference>
@@ -4520,7 +4520,7 @@
                 </Patch>
               </Node>
               <Node Bounds="607,407,86,19" Id="Ji8I8ulI6Y8MSLSr6Fsb76">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="ModelSingleton" />
                 </p:NodeReference>
@@ -4553,7 +4553,7 @@
                   <Patch Id="BOsyrfJ1SA0Pc9CfD0QXkd" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="QNNt1049EN2LY9GNSnlApc" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="653,556,125,26" Id="Ko8qai7Jgx7O14JQjzHJlA">
-                    <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+                    <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Model" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
@@ -4775,7 +4775,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="274,772,99,19" Id="UcGY2pn9ME2QKE4tpukH4f">
-                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="PAExecArguments" />
                 </p:NodeReference>
@@ -4799,7 +4799,7 @@
                 <Pin Id="U4cnmfD2LKRPfYMMmnPMIE" Name="Bang" Kind="OutputPin" />
               </Node>
               <Node Bounds="335,727,69,19" Id="TlnAOTpPx3ANmOARoX480K">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
                 </p:NodeReference>
@@ -4896,7 +4896,7 @@
             <ControlPoint Id="SYSoGNNEjNFO0pyvLQI7ow" Bounds="436,306" />
             <Link Id="SZ6yNAoBl1rP3pfCh8wecj" Ids="ADqYviLoBqrNFIrRVZKS9U,SYSoGNNEjNFO0pyvLQI7ow" IsHidden="true" />
             <Node Bounds="434,325,63,26" Id="GwNmedrwpfSNbsTGksihBy">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.RebootEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.RebootEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="RebootEditor" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -5040,7 +5040,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="331,810,99,19" Id="GqJjQY0s6IRMBM5L2gcwd5">
-                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="PAExecArguments" />
                 </p:NodeReference>
@@ -5064,7 +5064,7 @@
                 <Pin Id="OHKaUNxQoj6QY2tJ8dSRNc" Name="Bang" Kind="OutputPin" />
               </Node>
               <Node Bounds="387,739,69,19" Id="RerBj9nCljyOiODGQ8EyPy">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
                 </p:NodeReference>
@@ -5161,7 +5161,7 @@
             <ControlPoint Id="PCFx7xxu1XjLO5jF73vhLm" Bounds="438,448" />
             <Link Id="TbadHRgaqNiOgTFVZLksIK" Ids="EVBYh2l39uYPvsJkutLrRb,PCFx7xxu1XjLO5jF73vhLm" IsHidden="true" />
             <Node Bounds="436,467,73,26" Id="PsMkd5txFPwOC1wIP1qQlz">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.ShutdownEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.ShutdownEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="ShutdownEditor" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -5305,7 +5305,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="612,766,99,19" Id="VYMiX7tk3eeNSYBLPJ0tDf">
-                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter.Editors" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="PAExecArguments" />
                 </p:NodeReference>
@@ -5339,7 +5339,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="632,725,69,19" Id="Hp8CFLDupxoOIOScsmwpfO">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
                 </p:NodeReference>
@@ -5447,7 +5447,7 @@
             <ControlPoint Id="QLIGpemEmIDPydSX2asG2j" Bounds="438,590" />
             <Link Id="ERunZIXIUdBPI4txh1TrS4" Ids="Jjm8iH9pl8HPipyHpT8gbm,QLIGpemEmIDPydSX2asG2j" IsHidden="true" />
             <Node Bounds="436,609,73,26" Id="Os6Th4hFu9lO4vGap5XVxn">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.KillEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.KillEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="KillEditor" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -5790,7 +5790,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="1975,536,69,19" Id="AD9EFVlRLwTPrJu1G6pvFu">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
                 </p:NodeReference>
@@ -5961,7 +5961,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="2130,471,60,19" Id="BEQNRR3XniROv8gq0ROS5D">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
                   <Choice Kind="ProcessAppFlag" Name="Separator" />
@@ -6077,7 +6077,7 @@
             <ControlPoint Id="DY9dt5w8ISMOLBlgD5Rmjv" Bounds="437,732" />
             <Link Id="IrX9pLMrt06QFQPP299u2m" Ids="SXDHD5cLk2XOKqUBPFDg1v,DY9dt5w8ISMOLBlgD5Rmjv" IsHidden="true" />
             <Node Bounds="435,751,73,26" Id="IHxnUfXNoUnNimxBDY4BAE">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.MirrorEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.MirrorEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="MirrorEditor" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -6175,7 +6175,7 @@
             <ControlPoint Id="ARYKtYsJ4XeNugu7olGLZk" Bounds="438,882" />
             <Link Id="TInad0wvV8pNTFfXlV1Q0l" Ids="VNm1kudFBcQM9GiRyfgQLw,ARYKtYsJ4XeNugu7olGLZk" IsHidden="true" />
             <Node Bounds="436,901,81,26" Id="BiOiiq4RhW8Lchd6Y2gDfV">
-              <p:NodeReference LastCategoryFullName="Remoter.Editors.WakeOnLANEditor" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Editors.WakeOnLANEditor" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="WakeOnLANEditor" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -6257,7 +6257,7 @@
                 <Pin Id="EvReHfOGPKKPgt5Fyi5CGY" Name="Bang" Kind="OutputPin" />
               </Node>
               <Node Bounds="523,597,69,19" Id="T7kfQWfcxsHL2cxthksz54">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
                 </p:NodeReference>
@@ -6284,7 +6284,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="433,287,60,19" Id="TlFI08MjdbaPvpKOePTZJi">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
                   <Choice Kind="ProcessAppFlag" Name="Separator" />
@@ -6294,7 +6294,7 @@
                 <Pin Id="QbXt8C0bAr6NagCtJ8gK5j" Name="Context" Kind="OutputPin" />
               </Node>
               <Node Bounds="404,595,60,19" Id="N04KErcSk5UO8LchSsmBGt">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
                   <Choice Kind="ProcessAppFlag" Name="Separator" />
@@ -6355,7 +6355,7 @@
                 <Pin Id="Ky66xsVon1FO8KC3FKFKCJ" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="JLIcv0lqG9oNSQfy2b1lD5" Bounds="621,419" />
                 <Node Bounds="619,333,105,26" Id="P0Vzo72fpt5MOEUfcyTWxN">
-                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Model" />
                     <CategoryReference Kind="RecordType" Name="Model" NeedsToBeDirectParent="true">
@@ -6779,7 +6779,7 @@
               <Pin Id="A71VNIvnZvDLoOzWwI6sZd" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="922,744,63,19" Id="GjpRF8e551zLeoItxJMQhG">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="EditButton" />
               </p:NodeReference>
@@ -7646,7 +7646,7 @@
               <Pin Id="O4bcCd6LPHrNpItcnVtiix" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="-100,920,60,19" Id="Qdbqimh0Kg3Pupw4OxLBtJ">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -7726,7 +7726,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="321,1328,71,19" Id="U7ldmBPRI5SLEhlSKJJ3J1">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="ListboxStyle" />
                       </p:NodeReference>
@@ -7873,7 +7873,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="820,2068,93,19" Id="VjcZUcl7V3nN4EyFY629UR">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="QuestionWithAcc" />
                       </p:NodeReference>
@@ -7889,6 +7889,15 @@
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="ChildWindow" />
                       </p:NodeReference>
+                      <Pin Id="FLrqmeISEzsLc8rlbc9HbL" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="EWfbyeSqprxOmhIfK2yUiM" Name="Context" Kind="InputPin" />
+                      <Pin Id="LSawlpO3JcVMcRuzRGBK3Q" Name="Label" Kind="InputPin" />
+                      <Pin Id="MSfo3kqwaOVO6iQsivGV5S" Name="Has Border" Kind="InputPin" DefaultValue="True" />
+                      <Pin Id="R6cWLCh1WAELxUf6acQ53r" Name="Size" Kind="InputPin" />
+                      <Pin Id="VNQmwwt4TDuMR0Tg5Q8Uvx" Name="Style" Kind="InputPin" />
+                      <Pin Id="AeZPpSs98MYQClKbiL1msx" Name="Flags" Kind="InputPin" />
+                      <Pin Id="GdiWt8uwwOJMLXk1GTB4Me" Name="Context" Kind="OutputPin" />
+                      <Pin Id="G1jhPaQXRHEPNy9yUgEBrI" Name="Content Is Visible" Kind="OutputPin" />
                       <Patch Id="JB9hkeZnC2WLvfBEwcZ6M0" ManuallySortedPins="true">
                         <Patch Id="Nyoeni1g0TQPnJZvFHtHWY" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="S7FoN9Gfmr8LECzyn3yLUI" Name="Update" ManuallySortedPins="true" />
@@ -8041,7 +8050,7 @@
                               <Pin Id="TXkex7CfjoEOxrkgTknuU3" Name="Context" Kind="OutputPin" />
                             </Node>
                             <Node Bounds="1275,1517,40,19" Id="TyPgFT94kkRLexA8XpyWWB">
-                              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -8064,7 +8073,7 @@
                               <Pin Id="GOSjAQ0P8ZGM9R4N6hjcTr" Name="Context" Kind="OutputPin" />
                             </Node>
                             <Node Bounds="1422,1515,40,19" Id="Md477fY7WxIO3QA9lhk2dm">
-                              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -8103,15 +8112,6 @@
                           </Patch>
                         </Node>
                       </Patch>
-                      <Pin Id="FLrqmeISEzsLc8rlbc9HbL" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                      <Pin Id="EWfbyeSqprxOmhIfK2yUiM" Name="Context" Kind="InputPin" />
-                      <Pin Id="LSawlpO3JcVMcRuzRGBK3Q" Name="Label" Kind="InputPin" />
-                      <Pin Id="MSfo3kqwaOVO6iQsivGV5S" Name="Has Border" Kind="InputPin" DefaultValue="True" />
-                      <Pin Id="R6cWLCh1WAELxUf6acQ53r" Name="Size" Kind="InputPin" />
-                      <Pin Id="VNQmwwt4TDuMR0Tg5Q8Uvx" Name="Style" Kind="InputPin" />
-                      <Pin Id="AeZPpSs98MYQClKbiL1msx" Name="Flags" Kind="InputPin" />
-                      <Pin Id="GdiWt8uwwOJMLXk1GTB4Me" Name="Context" Kind="OutputPin" />
-                      <Pin Id="G1jhPaQXRHEPNy9yUgEBrI" Name="Content Is Visible" Kind="OutputPin" />
                     </Node>
                     <Pad Id="DeNvlZZkKZHMR8aOebpjGg" Comment="Size" Bounds="1218,1280,35,28" ShowValueBox="true" isIOBox="true" Value="0, -0.36">
                       <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
@@ -8646,7 +8646,7 @@
             <Pad Id="G0Vr6IqMU4jNvqqsw0d3pL" SlotId="VDAMnUFTIRNLb5j1p7F7ST" Bounds="762,414" />
             <ControlPoint Id="IyNU5oKQcnMPnBx3apw57m" Bounds="763,451" />
             <Node Bounds="334,291,145,26" Id="QeY5U8uL7cILz2cdwv0zCb">
-              <p:NodeReference LastCategoryFullName="Remoter.Themes.DarkTheme" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Themes.DarkTheme" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="DarkTheme" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -8663,7 +8663,7 @@
               <Pin Id="R7rmOfv1c5lMmX0QJTVL6I" Name="Warning" Kind="OutputPin" />
             </Node>
             <Node Bounds="334,180,58,26" Id="BUDGppx5IDGM7ZYDaxPiy5">
-              <p:NodeReference LastCategoryFullName="Remoter.Themes.DarkTheme" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Themes.DarkTheme" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="DarkTheme" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -8775,7 +8775,7 @@
                 <Pin Id="A3JHLWoqaNGNkXVxc6YpdY" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="FmViyc5vP1gN45z0lvW9zw" Bounds="578,365" />
                 <Node Bounds="576,309,57,26" Id="V2zRCHIU8utQNgVfW4dvKZ">
-                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="PaletteCore" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -8891,7 +8891,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="339,94,145,26" Id="BsXokxmwQ61QSdY5TGhqia">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -8922,7 +8922,7 @@
               <Pin Id="GdxAm2eXeYQLozeec8q0tF" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="339,44,47,19" Id="KSkxKvy6YCALeiBTaqdWUo">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -9179,7 +9179,7 @@
         <Patch Id="LsexnkbXvkiMCIkqT5EmnS">
           <Canvas Id="UVSqLD4GiU4LRAch5EjtJx" CanvasType="Group">
             <Node Bounds="214,596,85,19" Id="MiD9z3UgS3VOxoHX6tj3Qf">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Actions" />
               </p:NodeReference>
@@ -9335,7 +9335,7 @@
             </Node>
             <ControlPoint Id="CZ2zwwx7UqOOxIndnw2kLt" Bounds="845,104" />
             <Node Bounds="643,167,105,26" Id="Ljn5WJrmMG9NPnz49sPTOp">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -9429,7 +9429,7 @@
                         <Patch Id="LQtQoEK2Ue9LnA7opwc4ot" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="P34t7hgOhlbPRQ5xOptt1M" Name="Dispose" ManuallySortedPins="true" />
                         <Node Bounds="510,923,69,19" Id="F8Z5wZJm0LKPdkyAwxyKB2">
-                          <p:NodeReference LastCategoryFullName="Remoter.PerformOnPC" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter.PerformOnPC" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="KillRunTask" />
                           </p:NodeReference>
@@ -9522,7 +9522,7 @@
                         <Patch Id="CX94wLCRQPvPRxZ9NkxAue" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="FIetUmXRbdyNNG5fEAIgeO" Name="Dispose" ManuallySortedPins="true" />
                         <Node Bounds="979,1028,69,19" Id="A42qrawmQ4hNQ3WV3M9CWW">
-                          <p:NodeReference LastCategoryFullName="Remoter.PerformOnPC" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter.PerformOnPC" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="KillRunTask" />
                           </p:NodeReference>
@@ -10137,7 +10137,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="319,586,93,19" Id="PqWlipU2BcQM8u9ymosThZ">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="QuestionWithAcc" />
                   </p:NodeReference>
@@ -10187,7 +10187,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="379,334,47,19" Id="RAeLUf9AV75OFmi5Q3Zr8F">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -10195,7 +10195,7 @@
               <Pin Id="VtH30b2WepWOpaJKk6zQkB" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="379,364,145,26" Id="PuzqSF3Ka1FPpqpX6avXkj">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -11403,7 +11403,7 @@
               <Patch Id="IdlaoMqxZyvM62U9BOZ7Dv">
                 <Canvas Id="R7mcOOaDt22MZpWxp3A0xp" CanvasType="Group">
                   <Node Bounds="183,438,45,19" Id="Bb855Bz0pScLSyORtnNFC5">
-                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Label" />
                     </p:NodeReference>
@@ -11722,7 +11722,7 @@
               <Patch Id="QTwDNydR38iOdgIJj1b0FR">
                 <Canvas Id="NFIFepTC2vQOEbazI4IynI" CanvasType="Group">
                   <Node Bounds="315,447,45,19" Id="UzixPtMH6JKOGfyx6IlgVV">
-                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Label" />
                     </p:NodeReference>
@@ -12069,7 +12069,7 @@
                     </p:TypeAnnotation>
                   </Pad>
                   <Node Bounds="486,399,45,19" Id="IqLt2MFPMsVNZ6VO11md6e">
-                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                    <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Label" />
                     </p:NodeReference>
@@ -12425,7 +12425,7 @@
                       <Pin Id="OIMsVZyZm6sOrSGYgsPUs5" Name="Is Visible" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="-820,1649,45,19" Id="OaoUG5xpPgfM5kUWtrZog0">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Label" />
                       </p:NodeReference>
@@ -12584,7 +12584,7 @@
                       <Pin Id="C3PxukSi6DOL9QkDbJXlvi" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="-811,2231,45,19" Id="PGoFh1fe7yhOOTynnuYqal">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Label" />
                       </p:NodeReference>
@@ -12678,7 +12678,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="-838,1453,81,19" Id="PbavQHhbctgN4lKYS4zxQp">
-                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="HostnameRow" />
                       </p:NodeReference>
@@ -12688,7 +12688,7 @@
                       <Pin Id="TO1Bww0mt93PV3CAYWF3qR" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="-836,1506,56,19" Id="JFnxB04R3dsNr0WT9Kepaq">
-                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="MACRow" />
                       </p:NodeReference>
@@ -12698,7 +12698,7 @@
                       <Pin Id="IZM8dZTehBmOQDHpbl3oU4" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="-812,2313,86,19" Id="Q1bGit5ImvWLiDWIFmf3m9">
-                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.EditPC" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="CredentialsRow" />
                       </p:NodeReference>
@@ -12724,7 +12724,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="-372,1931,47,19" Id="K92km2V2aCANzGXiCbaVRS">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Palette" />
                       </p:NodeReference>
@@ -12732,7 +12732,7 @@
                       <Pin Id="PZ5jdirOBviOFnP1HZU2TZ" Name="Palette" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="-372,1960,145,26" Id="LdnZLkUHKaIMaL1MtTRy1A">
-                      <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="PaletteCore" />
                         <Choice Kind="OperationCallFlag" Name="Split" />
@@ -12832,7 +12832,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="-890,893,60,19" Id="Vl02kZp4kANOLBEU3SuISx">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -12844,7 +12844,7 @@
               <Pin Id="BELSCmVhdoaMAM8XeypYAF" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="-735,831,76,19" Id="F97pvR1MWUGMsV77sZZR6K">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="MoveToRight" />
               </p:NodeReference>
@@ -13053,15 +13053,15 @@
               <Pin Id="CU9pI4ip9EDLoNo2OHYlX7" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="749,333,47,19" Id="DacugoD2QjVL5Sr1geAy2P">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
               <Pin Id="K4IwsSRfJiMNHSswXZooxd" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MQNk1vicw9gNYZuK48ezKr" Name="Palette" Kind="OutputPin" />
             </Node>
-            <Node Bounds="749,363,145,26" Id="AzYrFHr9NzZN4p0ox0V3dq">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+            <Node Bounds="749,363,165,26" Id="AzYrFHr9NzZN4p0ox0V3dq">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -13391,12 +13391,14 @@
                   </p:NodeReference>
                   <Pin Id="AzfT2YDwnc2OF4Xwqf7tUF" Name="Break" Kind="OutputPin" />
                   <ControlPoint Id="Hsdu5ptHmMQMxRr6h8iKym" Bounds="122,495" Alignment="Top" />
+                  <ControlPoint Id="VP4Aebc3j8GPibSTyHzIaz" Bounds="90,495" Alignment="Top" />
+                  <ControlPoint Id="LOLK6HO9UqwPfQAQ6ZPaBp" Bounds="90,569" Alignment="Bottom" />
                   <Patch Id="UXBXbvWDArzMhXniOk2bqR" ManuallySortedPins="true">
                     <Patch Id="IZyuBpQFWQdO2LFaZKDec0" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="S6lLoOX4WCEPbcLW5o5Ecz" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="Sg8JW3FpfO5MSLYCKmWj4M" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="88,530,69,19" Id="Ej1rAzmzc5pPLattUC0UPh">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="SectionItem" />
                       </p:NodeReference>
@@ -13407,8 +13409,6 @@
                       <Pin Id="EZ5BzcRV9RLQVkwq8H00e6" Name="Context" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="VP4Aebc3j8GPibSTyHzIaz" Bounds="90,495" Alignment="Top" />
-                  <ControlPoint Id="LOLK6HO9UqwPfQAQ6ZPaBp" Bounds="90,569" Alignment="Bottom" />
                 </Node>
               </Patch>
             </Node>
@@ -13452,7 +13452,7 @@
                     <Patch Id="RAPJeg8gHWRLs4P26TiDi4" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="QsR3gwqZm7GP6ob5CKmJgE" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="882,601,68,19" Id="FrhGmFPHfdpOdK6lNBZhhq">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Commands" />
                       </p:NodeReference>
@@ -13474,7 +13474,7 @@
                     <Patch Id="LZahUUecpfjL4sffuVzfqm" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="BfOPFinbBdtP4QVc4rMSnY" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="619,764,73,19" Id="Hb2MAHY6A7wQAWxZojAvZX">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Crendentials" />
                       </p:NodeReference>
@@ -13485,7 +13485,7 @@
                       <Pin Id="HnQBdpy8gk0M88PqT2iNU4" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="620,634,60,19" Id="U4iOcGzBkmiNsTxWwLhdH2">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                           <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -13497,7 +13497,7 @@
                       <Pin Id="MaNmqqx5Um2OlpiiF1VzPq" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="620,596,91,19" Id="U2DI2zrUS9GOfymUoAjobD">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="PathToPAExec" />
                       </p:NodeReference>
@@ -13507,7 +13507,7 @@
                       <Pin Id="D1PmSOTfb9jPlmwH6PGVWd" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="619,684,78,19" Id="BjSCzaNE7dhLXwJ8mYGmXc">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="PathToConfig" />
                       </p:NodeReference>
@@ -13517,7 +13517,7 @@
                       <Pin Id="MTv2vsO8C97OqlMwpOnqLN" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="619,737,60,19" Id="BtSTTD4crAZMv1yrmI508d">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                           <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -13529,7 +13529,7 @@
                       <Pin Id="CuGTHbUtZ2dNFjJBYowZmU" Name="Context" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="708,646,47,19" Id="UJXv7w6DKFbNIAJncNV7oe">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Palette" />
                       </p:NodeReference>
@@ -13537,7 +13537,7 @@
                       <Pin Id="NLhxQNLyeojLK6eIaHDTzf" Name="Palette" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="708,675,125,26" Id="U3f1rNl1gCLPtb5y9CRngI">
-                      <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="PaletteCore" />
                         <Choice Kind="OperationCallFlag" Name="Split" />
@@ -13608,7 +13608,7 @@
                     <Patch Id="RPeKz7tRcl6QUS92W9uo8S" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="UjkvAtfBKeTNgkKMTwFGC4" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="1009,602,91,19" Id="NAKywqsoUTlNMwSRFJgnpH">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="Tasks" />
                       </p:NodeReference>
@@ -13645,7 +13645,7 @@
                     <Patch Id="HlqApOg1KZ8P751WAV2fuz" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="KcmZrdMviLpPnNYxBkb8MK" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="1148,602,65,19" Id="DX2utHuQcAQO3Tu7EjdNtx">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
                         <Choice Kind="ProcessAppFlag" Name="Groups" />
@@ -13682,7 +13682,7 @@
                     <Patch Id="PEW5qksahBRM7HRWLZpGsD" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Uz6LLaC0ldzMWzXdfmWaqE" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="1271,599,65,19" Id="M1WZdXZniKVLz0pzpL50Dd">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
                         <Choice Kind="ProcessAppFlag" Name="About" />
@@ -13763,6 +13763,16 @@
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ChildWindow" />
               </p:NodeReference>
+              <Pin Id="GzIUzmnqsrTMB2TPLvzT9d" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="GaZgdBBQNq0OY4k0cflw4C" Name="Context" Kind="InputPin" />
+              <Pin Id="HLzHAuAfwLQLd9ydpEEi4J" Name="Label" Kind="InputPin" />
+              <Pin Id="JPC9maHQep0OZhvaTeuVEp" Name="Has Border" Kind="InputPin" />
+              <Pin Id="ENbKHDX49VnM8g65zuJZtQ" Name="Size" Kind="InputPin" />
+              <Pin Id="FJl406EdYgTL4MTgwwKW9w" Name="Style" Kind="InputPin" />
+              <Pin Id="CqpkzTetkLuL9GzNdmzNkU" Name="Flags" Kind="InputPin" DefaultValue="AlwaysUseWindowPadding" />
+              <Pin Id="P1ZjXAun4CLNfT5Rnh2zIO" Name="Context" Kind="OutputPin" />
+              <Pin Id="O4k18qAs3viLLTlArEN9W4" Name="Content Is Visible" Kind="OutputPin" />
+              <ControlPoint Id="UsrRxyAE4MmQIRl21B0mrQ" Bounds="504,340" Alignment="Bottom" />
               <Patch Id="DHqAyexvl7TQSNVOyyFfII" ManuallySortedPins="true">
                 <Patch Id="SpXh0A5jNZJNhgFUCW9ogE" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="RvNPdiCEw12LaPnFfenz03" Name="Update" ParticipatingElements="TLKHTDEy4cMN72rEOfGguy,SOdkMRTAesbMhYtfmIeErn" ManuallySortedPins="true" />
@@ -13819,7 +13829,7 @@
                   <Pin Id="VFEFlpqPxoJPyJmACSrPJK" Name="Bang" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="288,296,76,19" Id="QB9MC8umllGQCwGZvdSUF1">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="MoveToRight" />
                   </p:NodeReference>
@@ -13844,16 +13854,6 @@
                   </p:TypeAnnotation>
                 </Pad>
               </Patch>
-              <Pin Id="GzIUzmnqsrTMB2TPLvzT9d" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="GaZgdBBQNq0OY4k0cflw4C" Name="Context" Kind="InputPin" />
-              <Pin Id="HLzHAuAfwLQLd9ydpEEi4J" Name="Label" Kind="InputPin" />
-              <Pin Id="JPC9maHQep0OZhvaTeuVEp" Name="Has Border" Kind="InputPin" />
-              <Pin Id="ENbKHDX49VnM8g65zuJZtQ" Name="Size" Kind="InputPin" />
-              <Pin Id="FJl406EdYgTL4MTgwwKW9w" Name="Style" Kind="InputPin" />
-              <Pin Id="CqpkzTetkLuL9GzNdmzNkU" Name="Flags" Kind="InputPin" DefaultValue="AlwaysUseWindowPadding" />
-              <Pin Id="P1ZjXAun4CLNfT5Rnh2zIO" Name="Context" Kind="OutputPin" />
-              <Pin Id="O4k18qAs3viLLTlArEN9W4" Name="Content Is Visible" Kind="OutputPin" />
-              <ControlPoint Id="UsrRxyAE4MmQIRl21B0mrQ" Bounds="504,340" Alignment="Bottom" />
             </Node>
             <Node Bounds="371,149,46,19" Id="ChkvtyrogwyLTWztfvqlec">
               <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
@@ -14564,7 +14564,7 @@
               <Pin Id="MKqB1sXk0QELjmTl1H9fZU" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="521,334,105,26" Id="MZXX8IcGLhTPVAe36LAoKN">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -14621,7 +14621,7 @@
               </Patch>
             </Node>
             <Node Bounds="327,604,80,19" Id="KS1U4LxBXmONxTuKjzjaE2">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="EditCommand" />
               </p:NodeReference>
@@ -14966,7 +14966,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="626,1230,69,19" Id="QNiJCx3TkUoPXOgmsZb3Cl">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -14983,7 +14983,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="431,214,47,19" Id="MnLzxBmeaPvL70TaIYyqYr">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -14991,7 +14991,7 @@
               <Pin Id="ACUjMuXZUKkNaIc2wM0Ych" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="431,243,145,26" Id="JwOXTmzWH2cO9MWPaaQZK5">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -15077,7 +15077,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="795,858,47,19" Id="AW4UNdY7FDtNwBWn3pqCdt">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Palette" />
                   </p:NodeReference>
@@ -15085,7 +15085,7 @@
                   <Pin Id="LyrcrxndYgBNxy1JLzSCP5" Name="Palette" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="795,887,145,26" Id="KxQsS7Nk9zoLmFBvhCzcOl">
-                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="PaletteCore" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -15431,7 +15431,7 @@
               <Pin Id="JeQfqhzLkUnMxrQG2LKq8N" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="1041,190,47,19" Id="FTk7NcFDY7kOBqttvwK4sh">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -15439,7 +15439,7 @@
               <Pin Id="CBuN0AbvchdLrZOzZQ0WHO" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="1041,221,125,26" Id="Ve9ZdK3RkmbMsTqs0o4TLG">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -15578,7 +15578,7 @@
               <Pin Id="BBphUpqTtuCN3R1Ok6MLFe" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="445,234,47,19" Id="JfP8FR1fdeVNzl37jF8gN2">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -15586,7 +15586,7 @@
               <Pin Id="HcxYE9a1hrFP3NlsWKSsvu" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="444,273,125,26" Id="PLqOIcd7x15OcnjR2zDTSE">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -16165,6 +16165,8 @@
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="AQkRFujmnfjQLqBWaHBgWK" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="BMQrusbLK2tOtYJUWF3jLu" Bounds="103,810" Alignment="Top" />
+              <ControlPoint Id="Gwt1JPnks3XPhFNMNuQG2y" Bounds="103,1038" Alignment="Bottom" />
               <Patch Id="O7j8dFdwrPJOOhPfEeV3zR" ManuallySortedPins="true">
                 <Patch Id="Dmk4L7QqKEdNiaB1ss0OVk" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="T9Tw4onKOMHNRMceSTyidY" Name="Then" ManuallySortedPins="true" />
@@ -16208,7 +16210,7 @@
                   </Patch>
                 </Node>
                 <Node Bounds="101,858,63,19" Id="PmEHtaj7N2sQd9o8Z4T0FN">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="EditButton" />
                   </p:NodeReference>
@@ -16228,8 +16230,6 @@
                   <Pin Id="QKJarrLsTNrOHbdhq7M9vZ" Name="Context" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="BMQrusbLK2tOtYJUWF3jLu" Bounds="103,810" Alignment="Top" />
-              <ControlPoint Id="Gwt1JPnks3XPhFNMNuQG2y" Bounds="103,1038" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="R01s6Pcz1wGNklDqgkzH4e" Bounds="91,765" />
             <Node Bounds="622,886,124,183" Id="GMlQDUrunuGLbdHHkzos0U">
@@ -16556,7 +16556,7 @@
                   <Pin Id="CfEfyottylfPPtFLgGGQNx" Name="Value" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1324,1042,48,19" Id="VcBvv5vdyqyNwKIZ0Wstk8">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ParseIP" />
                   </p:NodeReference>
@@ -16908,7 +16908,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="1093,424,145,26" Id="FTuXGG80Q0KNfCYqYKe8O2">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -16925,7 +16925,7 @@
               <Pin Id="UWPcaj5Ly2XMYX4irEJkHf" Name="Warning" Kind="OutputPin" />
             </Node>
             <Node Bounds="1092,384,47,19" Id="EFs8O4Ax0vkOny3rnHMIWE">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -17515,7 +17515,7 @@
                   <Pin Id="TBFMnmNg9OfNHbI0ZSKUW8" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="490,1052,105,19" Id="RUnDbJUz2XXNhNtDP7W763">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                       <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -17844,21 +17844,21 @@
                 <Patch Id="T9BvgG6I6BAQbaooaq6pYe" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="NKgjJbBTyftLDvsb0sYktB" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="562,1214,75,19" Id="ChGyUkbQ88dPz1hPemMBvX">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DefaultTasks" />
                   </p:NodeReference>
                   <Pin Id="KKcdYryUPahOXqlxRJbPej" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="467,1213,91,19" Id="S1W11BffdVoLS3QsVpqQqk">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DefaultMachines" />
                   </p:NodeReference>
                   <Pin Id="BAWU1wr7OxVOtdWMd0jznv" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="532,1248,125,26" Id="GUnsaZNTgdiN2R9ren80TS">
-                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Model" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -17873,7 +17873,7 @@
                   <Pin Id="UEIRXI4sTCkNwPfNfmkUx3" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="657,1214,100,19" Id="TGHeSBjHbKTN5epaV4aU0G">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DefaultCommands" />
                   </p:NodeReference>
@@ -17993,7 +17993,7 @@
                 <Patch Id="LhfxDhGyZYdOO0AKnTrJfA" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="LwDGG06zSpPODGxTd4zP8J" Name="Update" ManuallySortedPins="true" />
                 <Node Bounds="920,1478,86,19" Id="L8ASk1bCbw4LOCSzhUYFBf">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ModelSingleton" />
                   </p:NodeReference>
@@ -18115,20 +18115,22 @@
               <Pin Id="NZKfvEe1pPPLjgdEjymgrv" Name="Input" Kind="StateInputPin" />
               <Pin Id="LwsAft3jpM8QA2OknMS4am" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="470,331,241,278" Id="Hy3VMvXV5lLNuvjkeHE9Zd">
+            <Node Bounds="470,331,307,356" Id="Hy3VMvXV5lLNuvjkeHE9Zd">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="TCcnCHV5e6UPmx2F6dGIZj" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="ILsbCpiXreIN30MKa7JUAM" Bounds="536,603" Alignment="Bottom" />
+              <ControlPoint Id="ILsbCpiXreIN30MKa7JUAM" Bounds="537,681" Alignment="Bottom" />
               <ControlPoint Id="Pt9POTkCTI1QHYYyrPDO94" Bounds="484,337" Alignment="Top" />
+              <ControlPoint Id="JpcEcCelJTWLhcUv40nDOZ" Bounds="538,337" Alignment="Top" />
+              <ControlPoint Id="M09pzA67nr8OgfpN7EkXS6" Bounds="661,681" Alignment="Bottom" />
               <Patch Id="Sw0LzFGIDKML2Ldv7tBUJM" ManuallySortedPins="true">
                 <Patch Id="Q691z8g07ygPwt6tpxtG2m" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="UivLB1PEigPObyMQe5Gx6j" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="534,563,46,26" Id="RCZbdzeqmkGQSrABjYvycL">
-                  <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="RemoterUI.vl">
+                <Node Bounds="536,641,46,26" Id="RCZbdzeqmkGQSrABjYvycL">
+                  <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Settings" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -18200,12 +18202,33 @@
                   <Pin Id="L4q4DgMWPd6N1TtBjlncv1" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EpLicusFQyaPnxWe9zlfQ8" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Node Bounds="599,585,60,19" Id="NoLFO90zoTLPlh5RlePH3x">
+                  <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="MakePath" />
+                  </p:NodeReference>
+                  <Pin Id="MaqxWfUWMrBN1bzdqWuws6" Name="Path" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="VLrpMFNpvyDNLnyAnKTikr" Name="Input" Kind="InputPin" />
+                  <Pin Id="Fs5UMnUgRXYLPc3lmG3GlW" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="D72nT3c7lOIQO6pDS9Fy9h" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="VAubC7szbIrOGsPKDmPvSG" Comment="" Bounds="656,567,90,15" ShowValueBox="true" isIOBox="true" Value="paexec_1_30.exe">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="599,612,55,19" Id="FBMCKUAaeruNtt4yQpOVXk">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="F8LJuPRg121MLd4IsWFJOx" Name="Input" Kind="InputPin" />
+                  <Pin Id="E4cVIKx4idwMUdJ2yLvkLM" Name="Result" Kind="OutputPin" />
+                </Node>
               </Patch>
-              <ControlPoint Id="JpcEcCelJTWLhcUv40nDOZ" Bounds="538,337" Alignment="Top" />
-              <ControlPoint Id="M09pzA67nr8OgfpN7EkXS6" Bounds="660,603" Alignment="Bottom" />
             </Node>
             <Node Bounds="538,824,45,26" Id="LKEraGFdSaOLsO9Ez5JYeG">
-              <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Settings" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -18215,8 +18238,8 @@
               <Pin Id="CEsWyoYGEzJMqvTEqE9rb9" Name="PathToConfig" Kind="OutputPin" />
               <Pin Id="DQKsNuaKtTuQMgceoKCPJf" Name="PathToPAExec" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="BRwBkOJlg8YOBEN5U8xxVb" Bounds="869,794" />
-            <Node Bounds="866,651,53,19" Id="KK9QsYFym1SORGxDMYnrdA">
+            <ControlPoint Id="BRwBkOJlg8YOBEN5U8xxVb" Bounds="868,943" />
+            <Node Bounds="865,800,53,19" Id="KK9QsYFym1SORGxDMYnrdA">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -18228,19 +18251,19 @@
               <Pin Id="RxHn7nZlRVgP0LGje12eil" Name="Output" Kind="OutputPin" />
               <Pin Id="VaLt3jL4hgwQMFlmkgFgLC" Name="Value" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1016,748,122,177" Id="MwEANE7CmmjLlyjqIS20Xq">
+            <Node Bounds="1015,897,122,177" Id="MwEANE7CmmjLlyjqIS20Xq">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
               </p:NodeReference>
-              <ControlPoint Id="GMI95MywlkZNj6UiOftF9Y" Bounds="1059,754" Alignment="Top" />
+              <ControlPoint Id="GMI95MywlkZNj6UiOftF9Y" Bounds="1058,903" Alignment="Top" />
               <Pin Id="LVFhXW8IqCdNv55OzNYkYD" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="JssnzU1JmL7QY7jj73Kejq" Name="At Least Run Once" Kind="InputPin" DefaultValue="False" />
               <Pin Id="KTSh70qqy3kMLP2xe7DGyK" Name="Force Push" Kind="InputPin" IsHidden="true" />
               <Patch Id="AlSpYGOP4NcLU4cm1xW5nm" ManuallySortedPins="true">
                 <Patch Id="TcpHlAZuw0XOaLCSxf5eBU" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="LgkOlTgJttdLqksJJzDi37" Name="Update" ManuallySortedPins="true" />
-                <Node Bounds="1028,886,62,19" Id="GExatUqmsSNMxT3gU4uNW6">
+                <Node Bounds="1027,1035,62,19" Id="GExatUqmsSNMxT3gU4uNW6">
                   <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="XMLWriter (XDocument)" />
@@ -18250,7 +18273,7 @@
                   <Pin Id="FO6uUcxgudALZrw1M5j0h8" Name="Data" Kind="InputPin" />
                   <Pin Id="LiMcHwJoszmNNsXKFXRK0K" Name="Write" Kind="InputPin" DefaultValue="True" />
                 </Node>
-                <Node Bounds="1057,804,60,26" Id="KEJ5Mib42VnMuleZdthl7T">
+                <Node Bounds="1056,953,60,26" Id="KEJ5Mib42VnMuleZdthl7T">
                   <p:NodeReference LastCategoryFullName="System.Serialization" LastDependency="VL.CoreLib.vl" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Serialization" NeedsToBeDirectParent="true" />
@@ -18268,7 +18291,7 @@
                   <Pin Id="TQfkIuBnMg7QLGxe3t5OqZ" Name="Include Defaults" Kind="InputPin" DefaultValue="True" />
                   <Pin Id="RPIJGXt34qIPVLYrr1APxO" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1057,844,69,19" Id="Jy7Q30jCoNgN4skA2rBHcC">
+                <Node Bounds="1056,993,69,19" Id="Jy7Q30jCoNgN4skA2rBHcC">
                   <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="XDocument (Join)" />
@@ -18281,7 +18304,7 @@
               </Patch>
             </Node>
             <ControlPoint Id="DkXVF4VY3EfN694ETXwTeI" Bounds="890,335" />
-            <Node Bounds="783,741,43,19" Id="OFvjxOMWzi0L2uKEa4KGCI">
+            <Node Bounds="782,890,43,19" Id="OFvjxOMWzi0L2uKEa4KGCI">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
@@ -18291,7 +18314,7 @@
               <Pin Id="HKdyLkRWjEkLmyi26Lx9Ff" Name="Path" Kind="InputPin" />
               <Pin Id="Q89tcV5qrzbQQr4kTN0gWy" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="RxSR2LpZvdcQTKTZvO91xs" Comment="Path" Bounds="822,700,107,15" ShowValueBox="true" isIOBox="true" Value="PathToConfig">
+            <Pad Id="RxSR2LpZvdcQTKTZvO91xs" Comment="Path" Bounds="821,849,107,15" ShowValueBox="true" isIOBox="true" Value="PathToConfig">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -18359,7 +18382,7 @@
           <Link Id="J7EYSW2lxrbNBCQnAiuimf" Ids="MGBJYGqBHT2NLpgfrGVB0O,ILsbCpiXreIN30MKa7JUAM" />
           <Link Id="NHjQNDXUBGdQII8IJ4PYWE" Ids="JFPnaLXOBbWNKM6N2CEacJ,UzZNiTp5bzVOsD3hkVexdQ" />
           <Link Id="OxJpUUaffQ8NVtt4q6sclJ" Ids="KbFRPgVe1cHMDQkvhTxR50,QSu5dRk076UOW2ufglnxba" />
-          <Link Id="DStCCxjuN1hMCw4APP96cd" Ids="IGbdFQLbS7jPrC3OiqLt74,IYqHxzgzdtoMJBd2Fs5x52" />
+          <Link Id="DStCCxjuN1hMCw4APP96cd" Ids="IGbdFQLbS7jPrC3OiqLt74,VLrpMFNpvyDNLnyAnKTikr" />
           <Link Id="VOzcnbkg7kLQVNUMUugpAK" Ids="ILsbCpiXreIN30MKa7JUAM,Amym5yuTsqdOe6AsbKgcTI" />
           <Link Id="ESRKVhqbJduNhtFk8FHjbb" Ids="CEsWyoYGEzJMqvTEqE9rb9,RcmuhZlk5EYQKhob5rHWbu" />
           <Link Id="SZxprZXwQxhNNv355lRzmH" Ids="BRwBkOJlg8YOBEN5U8xxVb,Sbkw2hSnbSyLW9hFdS6Q11" IsHidden="true" />
@@ -18389,6 +18412,9 @@
           <Link Id="VB7bM9cRd4zOroQkX7QBMS" Ids="GahFbF00uy4LB7oZFVMVod,TTt6vEoKDTqPHzWa9fg3KK" />
           <Link Id="VVz4Ilk4RdbNQQfymONCIG" Ids="FLG9hzpwpJDM9Vxf1ZDgBL,BFpRcwDgTZ6PHdDT2VAtKH" />
           <Link Id="Bv0oGyG4ctYLltOoOrWAKM" Ids="HWUHfnfprnaQPBe3TZmAzU,FLG9hzpwpJDM9Vxf1ZDgBL" IsHidden="true" />
+          <Link Id="IZPsWZ2BeAfMiEq3cTz9TG" Ids="D72nT3c7lOIQO6pDS9Fy9h,F8LJuPRg121MLd4IsWFJOx" />
+          <Link Id="DG3mz6daAgCLcjBgZfaDJJ" Ids="VAubC7szbIrOGsPKDmPvSG,Fs5UMnUgRXYLPc3lmG3GlW" />
+          <Link Id="D8Z0GKvmFuOQaPmGUUJlvz" Ids="E4cVIKx4idwMUdJ2yLvkLM,IYqHxzgzdtoMJBd2Fs5x52" />
         </Patch>
       </Node>
       <!--
@@ -18413,6 +18439,7 @@
               <ControlPoint Id="DwwySGabX7fLAVQZTUUk4b" Bounds="571,635" Alignment="Top" />
               <ControlPoint Id="EEu48LWzsVTQQW8YoT7C5S" Bounds="610,635" Alignment="Top" />
               <ControlPoint Id="Ixj8DbMqEzIPeV1xlCpm3p" Bounds="609,1434" Alignment="Bottom" />
+              <ControlPoint Id="LBvv5Wol996L7AOZ121Umw" Bounds="695,1434" Alignment="Bottom" />
               <Patch Id="OSmDojGp8AYOiSBm2Nr16B" ManuallySortedPins="true">
                 <Patch Id="Bcys94yCP4tO3gNVhfmX2n" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="QJfnZz20bTiPyzhCotLSUg" Name="Update" ManuallySortedPins="true" />
@@ -18436,6 +18463,8 @@
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   </p:NodeReference>
                   <Pin Id="M5gs3Lbf6RsQHz6GcwVTZZ" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="QZ8hV9CaAs3MKjuNQQ3yBt" Bounds="695,1414" Alignment="Bottom" />
+                  <ControlPoint Id="R067hrgI2qoLYZcofLfuxk" Bounds="695,751" Alignment="Top" />
                   <Patch Id="IzUkplEoaRpOsOiKtHsegb" ManuallySortedPins="true">
                     <Patch Id="QAoSyL0oBM7MhZs9NggKsL" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="PTAWfDRjxROK9qLgSozD7l" Name="Then" ManuallySortedPins="true" />
@@ -18478,6 +18507,8 @@
                         <Choice Kind="ApplicationStatefulRegion" Name="If" />
                       </p:NodeReference>
                       <Pin Id="FqSbsXc3VyrOaU6wfNAGqS" Name="Condition" Kind="InputPin" />
+                      <ControlPoint Id="JOhYwTP0AR5MFJxJ53PjmF" Bounds="695,1389" Alignment="Bottom" />
+                      <ControlPoint Id="HTC9ObeKElTM1oc9xlNSvH" Bounds="695,971" Alignment="Top" />
                       <Patch Id="N1TGB8DRkRxP0BetWGEiiB" ManuallySortedPins="true">
                         <Patch Id="HLRmiurLVHpOBHWHaA4IVo" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="E3GZIaz1COPPglaobgSno5" Name="Then" ManuallySortedPins="true" />
@@ -18531,7 +18562,7 @@
                           <Pin Id="OrtlVSrmh0kMI0FvjLHFva" Name="Value" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="814,1020,105,26" Id="Fxc3r8WXR8aL095trLzuOa">
-                          <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="RecordType" Name="Model" />
                             <Choice Kind="OperationCallFlag" Name="Split" />
@@ -18582,8 +18613,6 @@
                           </Patch>
                         </Node>
                       </Patch>
-                      <ControlPoint Id="JOhYwTP0AR5MFJxJ53PjmF" Bounds="695,1389" Alignment="Bottom" />
-                      <ControlPoint Id="HTC9ObeKElTM1oc9xlNSvH" Bounds="695,971" Alignment="Top" />
                     </Node>
                     <Node Bounds="679,908,81,19" Id="BojGVRTsVYvOLL06Bfo7JJ">
                       <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
@@ -18602,8 +18631,6 @@
                       <Pin Id="Rv8MFhZXp4iN7jKVJPjCrn" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="QZ8hV9CaAs3MKjuNQQ3yBt" Bounds="695,1414" Alignment="Bottom" />
-                  <ControlPoint Id="R067hrgI2qoLYZcofLfuxk" Bounds="695,751" Alignment="Top" />
                 </Node>
                 <Node Bounds="656,709,37,19" Id="DanKtAZSeOqPkLAO12ix8a">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -18614,7 +18641,6 @@
                   <Pin Id="C6ZC4gWmCMnLJY3pwNyGXm" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="LBvv5Wol996L7AOZ121Umw" Bounds="695,1434" Alignment="Bottom" />
             </Node>
             <Node Bounds="176,900,116,87" Id="REmb1sVRWYQLB0JT3FQr2o">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -18956,7 +18982,7 @@
             </Pad>
             <ControlPoint Id="RqNccIvxfFvME3luCiRj2n" Bounds="646,468" />
             <Node Bounds="683,574,45,26" Id="PBzZR3lJ0zzMYlDzR4vIEi">
-              <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Settings" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -19025,6 +19051,11 @@
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
               </p:NodeReference>
+              <Pin Id="KC3iKdqJO1ANjwML2KInb9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Tctl2wdHE4KP8QUgT1d9U3" Name="At Least Run Once" Kind="InputPin" />
+              <Pin Id="FaC0UIEV9XpLzjkmgUujn6" Name="Force Push" Kind="InputPin" IsHidden="true" />
+              <ControlPoint Id="K8yDktglOJuP82NGntinmT" Bounds="177,194" Alignment="Top" />
+              <ControlPoint Id="UdxZitpMgVlLR913pNXqbn" Bounds="188,485" Alignment="Bottom" />
               <Patch Id="FXyQJjLVsPNQFfNXPX1Lz9" ManuallySortedPins="true">
                 <Patch Id="MbeieLS5VezQZcXDX7kryF" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="LOOHdpTMGbuLOQ6EUaU0zw" Name="Update" ManuallySortedPins="true" />
@@ -19038,7 +19069,7 @@
                   <Pin Id="Hd26QhgiNBEMeWCrzt7B8u" Name="Count" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="174,227,137,26" Id="JwoXHFnZpBcMir8oAqEhNa">
-                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Model" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -19099,11 +19130,6 @@
                   </Patch>
                 </Node>
               </Patch>
-              <Pin Id="KC3iKdqJO1ANjwML2KInb9" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Tctl2wdHE4KP8QUgT1d9U3" Name="At Least Run Once" Kind="InputPin" />
-              <Pin Id="FaC0UIEV9XpLzjkmgUujn6" Name="Force Push" Kind="InputPin" IsHidden="true" />
-              <ControlPoint Id="K8yDktglOJuP82NGntinmT" Bounds="177,194" Alignment="Top" />
-              <ControlPoint Id="UdxZitpMgVlLR913pNXqbn" Bounds="188,485" Alignment="Bottom" />
             </Node>
             <Node Bounds="186,514,45,26" Id="VJ5bGcjREdNNckUkiCXFI8">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -19240,7 +19266,7 @@
         <Patch Id="SrOtuqqIzu6OZfPzVgVMHq">
           <Canvas Id="Ji8gPIZMWpNO6uf8bb1p8D" CanvasType="Group">
             <Node Bounds="308,588,85,19" Id="FtkFGd4df9MPMLD1T2nJpL">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <FullNameCategoryReference ID="Remoter" />
                 <Choice Kind="ProcessAppFlag" Name="Log" />
@@ -19251,7 +19277,7 @@
               <Pin Id="LabMEDP7fpjOYPnCOZ40Tf" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="541,435,94,19" Id="O5ERCKjxnBGOpau6S1odN7">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Settings" />
               </p:NodeReference>
@@ -19261,7 +19287,7 @@
               <Pin Id="Nq0nKEgvBFNQSDDDMCIuhg" Name="Settings" Kind="InputPin" />
             </Node>
             <Node Bounds="585,182,69,19" Id="IMFJD0iR0AnLyq6KIAtzk0">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="State" />
               </p:NodeReference>
@@ -19287,7 +19313,7 @@
             </Node>
             <Pad Id="KpZi3ydC4yNPi5qmO7OR7H" SlotId="EI9FrRB9tBJMdyQkG8dRy6" Bounds="587,270" />
             <Node Bounds="307,488,105,19" Id="CyuyBSpSyvkNuCsJ0GsTPO">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PCs" />
               </p:NodeReference>
@@ -19300,7 +19326,7 @@
               <Pin Id="SgEYP6upS5gMukbKEMGo7w" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="307,350,88,19" Id="LVeVoE9Eal3N0G60P1vYxI">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TopBar" />
               </p:NodeReference>
@@ -19359,7 +19385,7 @@
         <Patch Id="UwSa8qnMqspM1nK6zF0O66">
           <Canvas Id="U0rQFn1JB9TPVGExMj0QjX" CanvasType="Group">
             <Node Bounds="528,243,38,19" Id="R3G92Xdb7mTOfpmCyJbppA">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -19372,7 +19398,7 @@
             </Node>
             <Pad Id="EHR9Sk9rGmDML8B8KUAGou" SlotId="B3wiRMwlXFYN0tLT1Vkku0" Bounds="375,171" />
             <Node Bounds="373,128,83,19" Id="DlbCAJO3tSqMNwnVgMacFV">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ModelManager" />
               </p:NodeReference>
@@ -19382,7 +19408,7 @@
               <Pin Id="QOyZ3PRKEVEL5blNEyPJPf" Name="Settings" Kind="OutputPin" />
             </Node>
             <Node Bounds="381,228,80,19" Id="LeOz2p2Xl6cMxRzJ2ttCFy">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Runtime" />
               </p:NodeReference>
@@ -19393,7 +19419,7 @@
               <Pin Id="GWZ4KsjlFNKOEXId8d8ah9" Name="TaskRunnerCollection" Kind="OutputPin" />
             </Node>
             <Node Bounds="382,302,151,19" Id="H0ndSU6dPcRMHy3c1lYcsu">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="UI" />
               </p:NodeReference>
@@ -19767,7 +19793,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="542,562,87,19" Id="Ko3RduEIXMCMwXIpTwZ4AO">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OpenInExplorer" />
               </p:NodeReference>
@@ -20758,7 +20784,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="689,855,69,19" Id="Bb9w61u4OASLvQ1GA0m52C">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="CopyButton" />
                   </p:NodeReference>
@@ -20857,7 +20883,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="806,698,69,19" Id="VHDPKRoJGtvLyxtxpKcWk0">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
               </p:NodeReference>
@@ -20906,7 +20932,7 @@
               <Pin Id="Vu391andGyKP700hE6SSGH" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="885,359,105,26" Id="MMUNFKE24V6N14NQMyf2vN">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -20941,7 +20967,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="805,840,69,19" Id="NZeXtrMd0mHPBqBPidvfNR">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
               </p:NodeReference>
@@ -22131,7 +22157,7 @@
                           </p:TypeAnnotation>
                         </Pad>
                         <Node Bounds="611,1164,115,19" Id="DmRMuMNNdaiQNDBemlj9RL">
-                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="CommandLivePreview" />
                           </p:NodeReference>
@@ -22244,7 +22270,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="656,385,71,19" Id="Pvb5mVF1iG9Ndf9khsC9zV">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="ListboxStyle" />
                       </p:NodeReference>
@@ -22316,7 +22342,7 @@
             <ControlPoint Id="T4xO1NvQuWnP59xqH3vdf4" Bounds="1156,624" />
             <ControlPoint Id="SVjQJeHsZJjPhNRh8VKW6k" Bounds="552,118" />
             <Node Bounds="1171,720,105,26" Id="NkzPEvs2GOjMRWOir679ii">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -22445,7 +22471,7 @@
               <Pin Id="Ak2aqKu3X3rMGl4wBnGKOr" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="847,494,47,19" Id="P0g4nP2IGhvPiJLLRiESJl">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -22453,7 +22479,7 @@
               <Pin Id="Di6sWJp19xvMLJnDsGOxHw" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="847,533,165,26" Id="OTGB2L6AJ9aO0WytePRktR">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -22683,7 +22709,7 @@
               <Pin Id="Nn0qikEqOhmPNA7mTwSQE8" Name="Context" Kind="OutputPin" />
             </Node>
             <Node Bounds="847,494,47,19" Id="UoTupWbmdDgMKGmyrnG3RK">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -22691,7 +22717,7 @@
               <Pin Id="NfJ4VsmWA1APaDeIDhQYmr" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="847,533,165,26" Id="Prjv4js9msWNysvG55VevE">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -22981,7 +23007,7 @@
                         <Patch Id="KL9mqgzcP2rLpEM6L0QrzJ" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="NF5jFOUCBtxO4GamDe63s4" Name="Update" ManuallySortedPins="true" />
                         <Node Bounds="1139,992,105,19" Id="Hxhjeyy0sJwP1Cme2WLiKP">
-                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="PerformOnPC" />
                           </p:NodeReference>
@@ -23034,7 +23060,7 @@
                     <Patch Id="TF1xIqqS2t6PGhqW8u16Lw" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="IWnUfEQ2EwNMuZxEKcE7Tn" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="1361,891,105,19" Id="AWMLmEHTmibP1Sb6T9we9y">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="EditPC" />
                       </p:NodeReference>
@@ -23170,7 +23196,7 @@
               <Pin Id="VYepcVcvHxgNqyZ4p0359d" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="1452,582,47,19" Id="Tz9Es8N7FkDQNiQJwi4P8d">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Palette" />
               </p:NodeReference>
@@ -23178,7 +23204,7 @@
               <Pin Id="V7pgXToUSX0QPbxIsBvhVu" Name="Palette" Kind="OutputPin" />
             </Node>
             <Node Bounds="1452,611,145,26" Id="JWvsODk0DOVPmPMCmM7nZ6">
-              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="PaletteCore" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23237,7 +23263,7 @@
                 <Patch Id="UwQgIm93O8wMjBFPum8yKN" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="KTzscfLPmaIOuRi32WJVEE" Name="Update" ParticipatingElements="MeCcSGcZoH7MblEqnrRrmQ,Gt9uD0SI9E8LpKYeQdvl1n,ENyAdhNCTVIQIm0K8A05HQ,QuxW4fS7pZzLc0ZE1lwBnW,I87AO8UrPAlOq6hXpWbjZb,SNhMKo2ZQ1SLNdxj4rP8s5" ManuallySortedPins="true" />
                 <Node Bounds="343,1220,65,19" Id="CM26OzyVQWgLFezYz5qQsb">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Selection" />
                   </p:NodeReference>
@@ -23252,6 +23278,15 @@
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ChildWindow" />
                   </p:NodeReference>
+                  <Pin Id="EJmXcKnxC2KNMX11DPOPF1" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="LYWRlwuvRYGOcHQenNXQUn" Name="Context" Kind="InputPin" />
+                  <Pin Id="SCsyd8SUru3OdfRToVDbdq" Name="Label" Kind="InputPin" />
+                  <Pin Id="CgYUR0VOnQxLrPBYPr6ipM" Name="Has Border" Kind="InputPin" />
+                  <Pin Id="S1zg9Tsu8RKMWxgTp8oc2y" Name="Size" Kind="InputPin" />
+                  <Pin Id="Qmn2Mn4uGhGMA0rTDeRVO5" Name="Style" Kind="InputPin" />
+                  <Pin Id="Tanr2mHw8ZfM4TI7vor7EH" Name="Flags" Kind="InputPin" />
+                  <Pin Id="EhkIp3Pgfi7P9yY7dGUlDK" Name="Context" Kind="OutputPin" />
+                  <Pin Id="Oh01hTCDpJPMtrQJuaZFbO" Name="Content Is Visible" Kind="OutputPin" />
                   <Patch Id="JqxHKsKexBbPj3m4Qsy14H" ManuallySortedPins="true">
                     <Patch Id="SA3qgTCn7gXNGGBrZUtWiF" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Fj10rDbTsZQPys442rHf1z" Name="Update" ManuallySortedPins="true" />
@@ -23270,7 +23305,7 @@
                         <Patch Id="HSK99KZU6gsOorK2WsJdLt" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="JtlMNDnkNs7NglfZKuteMx" Name="Dispose" ManuallySortedPins="true" />
                         <Node Bounds="407,1020,105,19" Id="BptajcrvOjXQG6xYN5rBMV">
-                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                          <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="MachineRow" />
                           </p:NodeReference>
@@ -23284,15 +23319,6 @@
                       </Patch>
                     </Node>
                   </Patch>
-                  <Pin Id="EJmXcKnxC2KNMX11DPOPF1" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="LYWRlwuvRYGOcHQenNXQUn" Name="Context" Kind="InputPin" />
-                  <Pin Id="SCsyd8SUru3OdfRToVDbdq" Name="Label" Kind="InputPin" />
-                  <Pin Id="CgYUR0VOnQxLrPBYPr6ipM" Name="Has Border" Kind="InputPin" />
-                  <Pin Id="S1zg9Tsu8RKMWxgTp8oc2y" Name="Size" Kind="InputPin" />
-                  <Pin Id="Qmn2Mn4uGhGMA0rTDeRVO5" Name="Style" Kind="InputPin" />
-                  <Pin Id="Tanr2mHw8ZfM4TI7vor7EH" Name="Flags" Kind="InputPin" />
-                  <Pin Id="EhkIp3Pgfi7P9yY7dGUlDK" Name="Context" Kind="OutputPin" />
-                  <Pin Id="Oh01hTCDpJPMtrQJuaZFbO" Name="Content Is Visible" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="343,1179,52,19" Id="L53C3bj9rg4LMBfPAR2xjx">
                   <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
@@ -23346,7 +23372,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="531,1222,87,19" Id="OoiX138qEUUMZeCGfXmrKr">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="DeleteMachines" />
                   </p:NodeReference>
@@ -23357,7 +23383,7 @@
                   <Pin Id="KC2cyyOWTfPMT9kwMa0Cdu" Name="Context" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="416,1220,94,19" Id="Bc3XGFDjzIXPTIYnNxIC29">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="VerticalSeparator" />
                   </p:NodeReference>
@@ -23374,7 +23400,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="578,1086,47,19" Id="CO8XqnUvMuELeRkWtYdvEV">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Palette" />
                   </p:NodeReference>
@@ -23382,7 +23408,7 @@
                   <Pin Id="U7kadn8xIXCMbzDRMhg2kK" Name="Palette" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="578,1115,145,26" Id="RHaT49nsNt6MymvZnZ0lOu">
-                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="PaletteCore" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23401,7 +23427,7 @@
               </Patch>
             </Node>
             <Node Bounds="401,662,65,19" Id="EBIBsLXw33PLeCqB3Ps2P8">
-              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true">
                   <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
@@ -23512,7 +23538,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="1177,360,105,26" Id="PZ1Udyju5GtLalPXg7cVx6">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23700,7 +23726,7 @@
                 <Patch Id="KkL2ZfCsJlMPZ9NxNAvHGd" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="HZsmTSOzmHwMoYL6q4ygJ4" Name="Update" ParticipatingElements="QJJxndtG2AyLGTAj1fNEEY,KH8Hn3wjeCTOYYEAHHhG2X,KLmnmYNQDchNHq2aIcy5Kg,AEADcH3BUxSPyoLYBpgiRJ" ManuallySortedPins="true" />
                 <Node Bounds="482,625,82,19" Id="BNF2ePLRmkxNGLNXM2UN8V">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="GroupChooser" />
                   </p:NodeReference>
@@ -23717,7 +23743,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="599,626,94,19" Id="BFpIl30wyirOHovVOqUYOf">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="VerticalSeparator" />
                   </p:NodeReference>
@@ -23734,7 +23760,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="818,623,76,19" Id="J6zBLBgkkoGNNlYUxt3qS0">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="MoveToRight" />
                   </p:NodeReference>
@@ -23749,7 +23775,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="717,626,72,19" Id="AJdv2nblIrSLX27blwJJbz">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="AddMachine" />
                   </p:NodeReference>
@@ -23759,7 +23785,7 @@
                   <Pin Id="ELZ1mouu3D7MSiUPLlZkgr" Name="Context" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1121,630,82,19" Id="T4z68ANq093P3ORQOAl9Q0">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="SettingsButton" />
                   </p:NodeReference>
@@ -23769,7 +23795,7 @@
                   <Pin Id="FiQxXWW6DlxL9Fi1B0jV0S" Name="Context" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="589,556,47,19" Id="Intg1iOXa8vLn4kiEe1PqV">
-                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Palette" />
                   </p:NodeReference>
@@ -23777,7 +23803,7 @@
                   <Pin Id="T0koWotw1TGNcWZILF8hgT" Name="Palette" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="589,585,145,26" Id="CiACKBk6JJsP2b1zKFyRmO">
-                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="PaletteCore" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23800,11 +23826,13 @@
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   </p:NodeReference>
                   <Pin Id="AOgwIOSXJWvNiEpVVUpj8N" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="PpEqSiF4X2CNYDg6YRiGxa" Bounds="944,634" Alignment="Top" />
+                  <ControlPoint Id="Kw0L5zEe1oSMckdhGXdqSq" Bounds="944,686" Alignment="Bottom" />
                   <Patch Id="LrHFUxGCw9QOuIKCFvnMIw" ManuallySortedPins="true">
                     <Patch Id="U4epUGi0TTjPOmzsnMzoWS" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="AVmrsRFnbFoOg2ckeCdPHn" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="937,653,83,19" Id="JSgprwj9WaVQLvZQ6lx9hU">
-                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+                      <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="WarningButton" />
                       </p:NodeReference>
@@ -23824,8 +23852,6 @@
                       <Pin Id="Q01wjff9eo2OyddJvr7lJS" Name="Context" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="PpEqSiF4X2CNYDg6YRiGxa" Bounds="944,634" Alignment="Top" />
-                  <ControlPoint Id="Kw0L5zEe1oSMckdhGXdqSq" Bounds="944,686" Alignment="Bottom" />
                 </Node>
               </Patch>
             </Node>
@@ -23861,7 +23887,7 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="435,364,105,26" Id="QK24m9821GQPexXd1NdLt5">
-              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="RemoterUI.vl">
+              <p:NodeReference LastCategoryFullName="Remoter.Model" LastDependency="Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Model" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23914,6 +23940,8 @@
               <Pin Id="IvR7xLrYMLaP7HJ306YFIx" Name="Force" Kind="InputPin" />
               <Pin Id="UL3JRbDUzz0NLa4PhtB7ml" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="HcDOJjF4vZRNGREvrNW05F" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="EGbKhkWGs0SMAipnLTdzzT" Bounds="906,236" Alignment="Bottom" />
+              <ControlPoint Id="LXlRTcnobYfLIejPEApcHt" Bounds="906,59" Alignment="Top" />
               <Patch Id="H0P5n9wrN0wQHPhtNLh87f" ManuallySortedPins="true">
                 <Patch Id="Isiusc4SmqYQUBo84PoQgp" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="HjNv39EOTfOP6en4taX0mH" Name="Then" ManuallySortedPins="true" />
@@ -23942,7 +23970,7 @@
                   <Pin Id="Uht6iQIDDyyLXsKoYWHu6l" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="903,82,45,26" Id="RaouO60gaR9PdqZ2OF3i1Q">
-                  <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="RemoterUI.vl">
+                  <p:NodeReference LastCategoryFullName="Remoter.Settings" LastDependency="Remoter.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Settings" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -23953,8 +23981,6 @@
                   <Pin Id="SA6aDDlDxtMNOnr0aMyu7V" Name="PathToPAExec" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="EGbKhkWGs0SMAipnLTdzzT" Bounds="906,236" Alignment="Bottom" />
-              <ControlPoint Id="LXlRTcnobYfLIejPEApcHt" Bounds="906,59" Alignment="Top" />
             </Node>
             <ControlPoint Id="P0Tp3EK0qsyP5k2HBUSeHM" Bounds="865,-30" />
             <Node Bounds="863,-9,45,26" Id="SBJtpHtTtKIPlQ1WPPK5e6">
@@ -24221,7 +24247,7 @@
             <Pin Id="L0M3A3tPZL8P5sCLlv9uod" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="494,223,100,19" Id="PNKouPL6OOxN19ojncaaLn">
-            <p:NodeReference LastCategoryFullName="Remoter" LastDependency="RemoterUI.vl">
+            <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Remoter" />
             </p:NodeReference>
