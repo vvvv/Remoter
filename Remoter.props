@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <Version>2.0.1</Version>
     <VLAssetBehavior>PointToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
     <VLExportPath>$(MsBuildThisFileDirectory)Export</VLExportPath>
@@ -21,5 +22,8 @@
     </ItemGroup>
     <Copy SourceFiles="@(Assets)" DestinationFolder="$(DestinationFolder)Assets\%(RecursiveDir)" />
     <Copy SourceFiles="@(PAExec)" DestinationFolder="$(DestinationFolder)" />
+  </Target>
+  <Target Name="Installer" AfterTargets="CopyFiles">
+    <Exec Command="iscc.exe C:\Work\Anton-Work\Remoter\installer.iss /DVersion=$(Version)" />
   </Target>
 </Project>
