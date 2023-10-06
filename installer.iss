@@ -22,6 +22,7 @@ OutputBaseFilename=Remoter_{#Version}-installer
 DefaultDirName={commonpf64}\Remoter
 DefaultGroupName=Remoter
 Uninstallable=yes
+UninstallDisplayIcon={app}\Remoter.exe
 Compression=lzma2
 OutputDir=.
 ArchitecturesAllowed=x64
@@ -39,3 +40,6 @@ LaunchProgram=Start Remoter after finishing installation
 
 [Files]
 Source: {#MyExportPath}\*; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+[Icons]
+Name: "{group}\Remoter"; Filename: "{app}\Remoter.exe"
