@@ -24,6 +24,6 @@
     <Copy SourceFiles="@(PAExec)" DestinationFolder="$(DestinationFolder)" />
   </Target>
   <Target Name="Installer" AfterTargets="CopyFiles">
-    <Exec Command="iscc.exe C:\Work\Anton-Work\Remoter\installer.iss /DVersion=$(Version)" />
+    <Exec Command="iscc.exe $(MsBuildThisFileDirectory)installer.iss /DVersion=$(Version)" />
   </Target>
 </Project>
