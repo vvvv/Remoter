@@ -10,6 +10,9 @@ A fancy GUI over [PAExec](https://www.poweradmin.com/paexec/) and [robocopy](htt
 - Define what happens when a task fails (e.g. Reboot, Restart process,...)
 - Mirror files to selected PCs
 
+## Troubleshooting
+If you have troubles getting Remoter to work, see: [Troubleshooting](../../wiki/troubleshooting).
+
 ---
 
 Created with [vvvv](https://visualprogramming.net).
