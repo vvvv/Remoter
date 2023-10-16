@@ -13,7 +13,7 @@
 SignTool=mssign $f
 AppId={{5FD1B82F-5BF0-4C1B-B9D3-F6F48C50D515}
 AppVersion={#Version}
-AppName={#MyAppName} {#Version}
+AppName={#MyAppName}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
