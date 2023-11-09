@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ac1SP9vHiMCOVHT7QWvijk" LanguageVersion="2023.5.3-0196-gc212b28ddc" Version="0.128">
-  <NugetDependency Id="N275IBFODYpNhiRVgTAddf" Location="VL.CoreLib" Version="2023.5.3-0185-gbd94cf9ed7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ac1SP9vHiMCOVHT7QWvijk" LanguageVersion="2023.5.3-0253-g8ddcaf050d" Version="0.128">
+  <NugetDependency Id="N275IBFODYpNhiRVgTAddf" Location="VL.CoreLib" Version="2023.5.3-0253-g8ddcaf050d" />
   <Patch Id="TndBsOLiMoEMG2p44IeSlZ">
     <Canvas Id="BuT3l0msQX0LJuYEtIM6T3" DefaultCategory="Remoter" CanvasType="FullCategory">
       <!--
@@ -598,15 +598,6 @@
                 <Pin Id="ClooOlsTSctMwYSdl5VHGo" Name="Remove Trailing Slash" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="GTjuYaxnJCKOn0SIlGS1H2" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="780,258,62,19" Id="EKloQU3GdMtNgYKzfTBI4n">
-                <p:NodeReference LastCategoryFullName="Remoter" LastDependency="VL.Remoter.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="SetQuotes" />
-                </p:NodeReference>
-                <Pin Id="TyCIXeEVM31PtVyZvaDRMs" Name="Input" Kind="InputPin" />
-                <Pin Id="NMpny9P5H8YN8vDrmJrVYh" Name="Remove Trailing Slash" Kind="InputPin" DefaultValue="True" />
-                <Pin Id="HseHIVXMkDLLSqk23r2TC3" Name="Output" Kind="OutputPin" />
-              </Node>
               <ControlPoint Id="GS77fryS8MAMy5wVhDivc6" Bounds="590,269" />
             </Canvas>
             <ProcessDefinition Id="B9cV6AU89MILnUM5RtWcbt" HasStateOut="true">
@@ -664,8 +655,6 @@
             <Link Id="CsaXjuHoVugOGCclKCH0wd" Ids="IqoJPeAIyiJPmMFz5gzA0U,H1SuOLzIkj0MRebOK9FVm2" />
             <Link Id="QyjI9AkhrlmMwJibYFNH4I" Ids="EXvN2cEaMI6Lr3DfQmiPvz,VfAEWm8yZ9zLyZfxDujjRY" />
             <Link Id="JqvQBVYCm0HQCEvIo467XU" Ids="GTjuYaxnJCKOn0SIlGS1H2,EcmHDe218VROlO2aWEaD6g" />
-            <Link Id="DkOvY6PueMkMoMiWrznBw0" Ids="PAaP2lKMOJ8MwrD7yiWurM,TyCIXeEVM31PtVyZvaDRMs" />
-            <Link Id="BifEOxzqBAHQR7Ex4cRHAg" Ids="HseHIVXMkDLLSqk23r2TC3,LicOAl6IL7RLWf93sO9XNf" />
             <Link Id="P5nENxxcVbVPzeknAxYFTa" Ids="M0IRHZVkjzKQGp1n6wK35g,GS77fryS8MAMy5wVhDivc6" />
             <Link Id="L7bTwratpJlOME7IPfvJa7" Ids="GS77fryS8MAMy5wVhDivc6,DnxqmNwEDnQLky8OIMIIOk" IsHidden="true" />
             <Patch Id="UHZD2ZA45FRMoQqDsKfooB" Name="Create" ParticipatingElements="TEmtTsWdUX1PQ7DxdrHEXx,JJrbpDGqS8AP5sdVZJ3fvo" />
@@ -696,6 +685,7 @@
             </Patch>
             <Patch Id="CJQepl8mqvMO3OMPnWnJ1e" Name="OnLostProcess" />
             <Link Id="HN0kcls55hOQQiUgAYMMpR" Ids="H1SuOLzIkj0MRebOK9FVm2,P3gfT1GvutkPNBidheUzws" IsHidden="true" />
+            <Link Id="Hc9O5w6vtuPQK2TBLjKvkK" Ids="PAaP2lKMOJ8MwrD7yiWurM,LicOAl6IL7RLWf93sO9XNf" />
           </Patch>
         </Node>
         <!--
