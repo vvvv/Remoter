@@ -691,6 +691,15 @@
             <Link Id="QyjI9AkhrlmMwJibYFNH4I" Ids="EXvN2cEaMI6Lr3DfQmiPvz,VfAEWm8yZ9zLyZfxDujjRY" />
             <Link Id="P5nENxxcVbVPzeknAxYFTa" Ids="M0IRHZVkjzKQGp1n6wK35g,GS77fryS8MAMy5wVhDivc6" />
             <Link Id="L7bTwratpJlOME7IPfvJa7" Ids="GS77fryS8MAMy5wVhDivc6,DnxqmNwEDnQLky8OIMIIOk" IsHidden="true" />
+            <Link Id="HN0kcls55hOQQiUgAYMMpR" Ids="H1SuOLzIkj0MRebOK9FVm2,P3gfT1GvutkPNBidheUzws" IsHidden="true" />
+            <Link Id="E82Oj2jeH5lMyfwA899o6X" Ids="EXvN2cEaMI6Lr3DfQmiPvz,Escna2EhqySNASRjpzkYht" />
+            <Link Id="RNs4RGYzXrdLBbLK2jgGCC" Ids="M1bWFV5Knb6L7QurgtJsrI,BcsztRAMbKzP1HZr9F4JvU" />
+            <Link Id="SI72med4ctcPAXUDLeba7F" Ids="PAaP2lKMOJ8MwrD7yiWurM,KKHAufHZdbGOETrWJEj419" />
+            <Link Id="IVIGtNXUDDYMY1nk8GrydH" Ids="M1bWFV5Knb6L7QurgtJsrI,AhdXPNmoAz1LY9xduI0ePH" />
+            <Link Id="I31cVCoNyF5OQSrKX58Wp9" Ids="Fh2C4TaNIiNPwbAMPMZ6As,LicOAl6IL7RLWf93sO9XNf" />
+            <Link Id="UMaMos0hfEVLtkKdzuyrwb" Ids="M0IRHZVkjzKQGp1n6wK35g,QsjtZB8P4jDPOFpPvUXPFJ" />
+            <Link Id="EMh9bZXJbrpMXEo5Zk0wu2" Ids="QazdBW70fwcOAHOMcdlDQD,Enj5Jn6USddOkXprS8nDUQ" />
+            <Link Id="Bz4nkMOM69SMcKjWCZuqZi" Ids="GTjuYaxnJCKOn0SIlGS1H2,EcmHDe218VROlO2aWEaD6g" />
             <Patch Id="UHZD2ZA45FRMoQqDsKfooB" Name="Create" ParticipatingElements="TEmtTsWdUX1PQ7DxdrHEXx,JJrbpDGqS8AP5sdVZJ3fvo" />
             <Patch Id="SA3rPMolK6DMGEsL7UT2Fh" Name="Update">
               <Pin Id="UnwPORFTOF8M91lMSVuscd" Name="Name" Kind="InputPin" Bounds="517,203" DefaultValue="Run" />
@@ -715,18 +724,10 @@
             </Patch>
             <Patch Id="N6zm5C8DlUyNxDE81fcCOP" Name="Info">
               <Pin Id="OcmkKCNj6izL8bx4CxSuwq" Name="Name" Kind="OutputPin" />
+              <Pin Id="UqrQdPvwl1NNuwW5WniCHR" Name="Favourite" Kind="OutputPin" />
               <Pin Id="P3gfT1GvutkPNBidheUzws" Name="Next Task" Kind="OutputPin" />
             </Patch>
             <Patch Id="CJQepl8mqvMO3OMPnWnJ1e" Name="OnLostProcess" />
-            <Link Id="HN0kcls55hOQQiUgAYMMpR" Ids="H1SuOLzIkj0MRebOK9FVm2,P3gfT1GvutkPNBidheUzws" IsHidden="true" />
-            <Link Id="E82Oj2jeH5lMyfwA899o6X" Ids="EXvN2cEaMI6Lr3DfQmiPvz,Escna2EhqySNASRjpzkYht" />
-            <Link Id="RNs4RGYzXrdLBbLK2jgGCC" Ids="M1bWFV5Knb6L7QurgtJsrI,BcsztRAMbKzP1HZr9F4JvU" />
-            <Link Id="SI72med4ctcPAXUDLeba7F" Ids="PAaP2lKMOJ8MwrD7yiWurM,KKHAufHZdbGOETrWJEj419" />
-            <Link Id="IVIGtNXUDDYMY1nk8GrydH" Ids="M1bWFV5Knb6L7QurgtJsrI,AhdXPNmoAz1LY9xduI0ePH" />
-            <Link Id="I31cVCoNyF5OQSrKX58Wp9" Ids="Fh2C4TaNIiNPwbAMPMZ6As,LicOAl6IL7RLWf93sO9XNf" />
-            <Link Id="UMaMos0hfEVLtkKdzuyrwb" Ids="M0IRHZVkjzKQGp1n6wK35g,QsjtZB8P4jDPOFpPvUXPFJ" />
-            <Link Id="EMh9bZXJbrpMXEo5Zk0wu2" Ids="QazdBW70fwcOAHOMcdlDQD,Enj5Jn6USddOkXprS8nDUQ" />
-            <Link Id="Bz4nkMOM69SMcKjWCZuqZi" Ids="GTjuYaxnJCKOn0SIlGS1H2,EcmHDe218VROlO2aWEaD6g" />
           </Patch>
         </Node>
         <!--
@@ -745,8 +746,8 @@
           </p:Interfaces>
           <Patch Id="Ml8l3EV8oGDM2q9TxSP9tH">
             <Canvas Id="Q4WvYsEulggPIxVbKvPATf" CanvasType="Group">
-              <ControlPoint Id="LviyE5c4v0WO851w42cuLs" Bounds="469,235" />
-              <ControlPoint Id="HssEgkGX5yfLOStUMY78yi" Bounds="469,267" />
+              <ControlPoint Id="LviyE5c4v0WO851w42cuLs" Bounds="468,233" />
+              <ControlPoint Id="HssEgkGX5yfLOStUMY78yi" Bounds="468,265" />
               <ControlPoint Id="PMfUZjk0o2MOEbXRkOOcmN" Bounds="405,233" />
             </Canvas>
             <ProcessDefinition Id="IDtHlLMA1aCLuM5WKum038" IsHidden="true">
@@ -783,6 +784,7 @@
             </Patch>
             <Patch Id="L8cYeJJWQb8MNOpjZ7QVSD" Name="Info">
               <Pin Id="FyKWaboDgNVMNknw075zJy" Name="Name" Kind="OutputPin" />
+              <Pin Id="LbXa2PxD5gLQJjd89ApCCq" Name="Favourite" Kind="OutputPin" />
               <Pin Id="AdzVoKUKZTaPFxQeijcHel" Name="Next Task" Kind="OutputPin" />
             </Patch>
           </Patch>
@@ -2045,6 +2047,15 @@
             </Slot>
             <Link Id="FmyXj02UbN2MFJ0ktzXADx" Ids="EdGdZ4mLPJSM1tpUFMf7cw,StjttwpgmJsOmMXjHUBEei" IsHidden="true" />
             <Link Id="FlaH1VudYLpO2BXLXjI7DP" Ids="DQoAagreHtGODIGUX8uo29,VEyQCYqn6KTOGjD1kxdyiG" />
+            <Link Id="QBZrLyIQjTcOreyUYe1pg7" Ids="G5cPLA2FE40NXUgMEVb9dx,J9OrmLnteRONmKZltYCagC" />
+            <Link Id="Dh3jPOGo0w9NGvFKrsiPMD" Ids="JKaZgCOpVEpLw5rLHMbIgj,OX9FuOAjEdEOHYLsx80ONg" />
+            <Link Id="FlPXT1bskkTPQMbTHw9Ys0" Ids="OlVvnvbiWMBORqlrXNu6XC,EZVqN7sEsIkOiDW4hZDDwV" />
+            <Link Id="BKlJorGxO6SMkCGZf98Ayt" Ids="JNXgKU9Uu3NNzNLwc8iP31,GcT7k8YKVLYOmcppLyF6BF" />
+            <Link Id="QVjkCyrvsuBO53YEytZv2R" Ids="G5cPLA2FE40NXUgMEVb9dx,R7Igrs0rVwwNViTjkjCUGK" />
+            <Link Id="IiTYfUxgzyLM2BL8HDvE8D" Ids="Nd6ZLlMEj3mPn0oQxuujLo,Vo8dmXu4RoWMiA9wLpU2r5" />
+            <Link Id="QnxjVshHcDLO7KJTUDiBUK" Ids="AochRE0BheCMHc9DfqHGrZ,IMq6O1vMgmoNcFSOLCTtyq" />
+            <Link Id="GBoXZEvL8zmLiWd6E2cNao" Ids="G5cPLA2FE40NXUgMEVb9dx,B5bwV9x4kkJMThlXSJHXJf" />
+            <Link Id="UY1q1smc9tmLZBaHTycbeN" Ids="KKs1eH0ZZaHLqyMoT16SS7,MELnAWvI0c6MnlLxpdCHsN" />
             <Patch Id="Aj1SpjXQKqoO0zzXNL0Rli" Name="Create" ParticipatingElements="QNsIS3DkMahNh5GHXhfJLb" />
             <Patch Id="BcmmgW9HkQFPScxCT1HPBa" Name="Update">
               <Pin Id="PLXQVL1iT08NMgC2qzEPHx" Name="Name" Kind="InputPin" Bounds="517,203" />
@@ -2064,17 +2075,9 @@
             </Patch>
             <Patch Id="Un7qUozm2ivLIrG0EWmI0k" Name="Info">
               <Pin Id="NbCmhPR4KBvLdqNgr2Xut1" MergeId="19492" Name="Name" Kind="OutputPin" />
+              <Pin Id="OsVMbD9DMQkPoWP507tlJa" Name="Favourite" Kind="OutputPin" />
               <Pin Id="ITJp5WsYFRTPdt6HcU7qxO" Name="Next Task" Kind="OutputPin" />
             </Patch>
-            <Link Id="QBZrLyIQjTcOreyUYe1pg7" Ids="G5cPLA2FE40NXUgMEVb9dx,J9OrmLnteRONmKZltYCagC" />
-            <Link Id="Dh3jPOGo0w9NGvFKrsiPMD" Ids="JKaZgCOpVEpLw5rLHMbIgj,OX9FuOAjEdEOHYLsx80ONg" />
-            <Link Id="FlPXT1bskkTPQMbTHw9Ys0" Ids="OlVvnvbiWMBORqlrXNu6XC,EZVqN7sEsIkOiDW4hZDDwV" />
-            <Link Id="BKlJorGxO6SMkCGZf98Ayt" Ids="JNXgKU9Uu3NNzNLwc8iP31,GcT7k8YKVLYOmcppLyF6BF" />
-            <Link Id="QVjkCyrvsuBO53YEytZv2R" Ids="G5cPLA2FE40NXUgMEVb9dx,R7Igrs0rVwwNViTjkjCUGK" />
-            <Link Id="IiTYfUxgzyLM2BL8HDvE8D" Ids="Nd6ZLlMEj3mPn0oQxuujLo,Vo8dmXu4RoWMiA9wLpU2r5" />
-            <Link Id="QnxjVshHcDLO7KJTUDiBUK" Ids="AochRE0BheCMHc9DfqHGrZ,IMq6O1vMgmoNcFSOLCTtyq" />
-            <Link Id="GBoXZEvL8zmLiWd6E2cNao" Ids="G5cPLA2FE40NXUgMEVb9dx,B5bwV9x4kkJMThlXSJHXJf" />
-            <Link Id="UY1q1smc9tmLZBaHTycbeN" Ids="KKs1eH0ZZaHLqyMoT16SS7,MELnAWvI0c6MnlLxpdCHsN" />
           </Patch>
         </Node>
         <!--
@@ -2413,6 +2416,13 @@
             <Link Id="E6POky7isVmQZj7PqKIFGy" Ids="SvDtNDv9B9OOLvXs4FuFAt,SIABqWs1GHhPBNAHeGOVkm" IsHidden="true" />
             <Link Id="QHA8uTWow61PfgLRPK5MJE" Ids="OFxeWIFqIbkORuXW9VdcJY,Tkh11wH45YhL5owPehVOED" />
             <Link Id="IB1S3SqsS2kMeNh4gQZafM" Ids="Tkh11wH45YhL5owPehVOED,ClmyW1sASqvQX8evlg8gI5" IsHidden="true" />
+            <Link Id="TEJoJeLuqxBMysmFSF7Fc9" Ids="OxICeuOuZsOMbkTZtqsJkR,Gtr8OqwUDbZLbQX71fQxrn" />
+            <Link Id="L8rW8tYjfxeOQ8yD2GsbHC" Ids="BqdC8L688MIN2IrX1iz2NQ,K3F5WtCux3iPyAfUVwurRZ" />
+            <Link Id="RoFnBOY5VVrO4M1C3EgYnS" Ids="Nh2riY908yENvPIB5rtlGy,Aes7qGT5MzdNQEpp19A1Pk" />
+            <Link Id="Q77zGIv71zBPaG0FtnUhL6" Ids="UFBy3N8gJyvQX4Ii57ViBX,LoIGRE4DYXmMr8tUEJDkBe" />
+            <Link Id="OCIMgYo6ukjNPpjIKPggez" Ids="BqdC8L688MIN2IrX1iz2NQ,Ek3tgKLGPyqMUvjWWggUs7" />
+            <Link Id="FvZkzDjktVOMOGjgx2L8Sl" Ids="Kjq9jjar4NcLrbfYGkI5XE,LGodPsPfm5xMHoSqQtDKj9" />
+            <Link Id="VzgFDSQPUBzQBl0X7joGyU" Ids="PFCfS0qpGzFNGnf8csCZut,CfYaEa3SwD0Pm1xgT6mDk0" />
             <Patch Id="Ez19OalDQQpN7qv7J9ghV3" Name="Create" ParticipatingElements="RvcDCjCxS00MPIDDFCLuV1,UcMKWb5EL8CNOLn9Gx12VB,CjCuvJT6UUdMPzwG8Tx03Q" />
             <Patch Id="Ik9Jvd1y1lZNCo0kHEJ8UI" Name="Update">
               <Pin Id="Tn4GuxgZGz6N2GLrWSBQzv" Name="Name" Kind="InputPin" Bounds="517,203" />
@@ -2445,15 +2455,9 @@
             </Patch>
             <Patch Id="BRv06EHWiMQNWpkc47yk5d" Name="Info">
               <Pin Id="RimXa4sq5D5OB2NaAkXInH" MergeId="19492" Name="Name" Kind="OutputPin" />
+              <Pin Id="MtrmJD9jR3WLCt1jodglpT" Name="Favourite" Kind="OutputPin" />
               <Pin Id="ClmyW1sASqvQX8evlg8gI5" Name="Next Task" Kind="OutputPin" />
             </Patch>
-            <Link Id="TEJoJeLuqxBMysmFSF7Fc9" Ids="OxICeuOuZsOMbkTZtqsJkR,Gtr8OqwUDbZLbQX71fQxrn" />
-            <Link Id="L8rW8tYjfxeOQ8yD2GsbHC" Ids="BqdC8L688MIN2IrX1iz2NQ,K3F5WtCux3iPyAfUVwurRZ" />
-            <Link Id="RoFnBOY5VVrO4M1C3EgYnS" Ids="Nh2riY908yENvPIB5rtlGy,Aes7qGT5MzdNQEpp19A1Pk" />
-            <Link Id="Q77zGIv71zBPaG0FtnUhL6" Ids="UFBy3N8gJyvQX4Ii57ViBX,LoIGRE4DYXmMr8tUEJDkBe" />
-            <Link Id="OCIMgYo6ukjNPpjIKPggez" Ids="BqdC8L688MIN2IrX1iz2NQ,Ek3tgKLGPyqMUvjWWggUs7" />
-            <Link Id="FvZkzDjktVOMOGjgx2L8Sl" Ids="Kjq9jjar4NcLrbfYGkI5XE,LGodPsPfm5xMHoSqQtDKj9" />
-            <Link Id="VzgFDSQPUBzQBl0X7joGyU" Ids="PFCfS0qpGzFNGnf8csCZut,CfYaEa3SwD0Pm1xgT6mDk0" />
           </Patch>
         </Node>
         <!--
@@ -2619,6 +2623,7 @@
             </Patch>
             <Patch Id="CaHOcCJ9fFuQBQIRhiTtXr" Name="Info">
               <Pin Id="ElU1a92UjfdMIks3oBDa7M" MergeId="19492" Name="Name" Kind="OutputPin" />
+              <Pin Id="OAXObgajr7CMgPPWgswoLe" Name="Favourite" Kind="OutputPin" />
               <Pin Id="AO0gWgIj2SxLqUlQkarmVh" Name="Next Task" Kind="OutputPin" />
             </Patch>
           </Patch>
@@ -2781,6 +2786,7 @@
             </Patch>
             <Patch Id="GkAtsfqZtVKLZ0x5ZM6SA8" Name="Info">
               <Pin Id="AgXrEYLoIVmK9hMuz5siRt" MergeId="19492" Name="Name" Kind="OutputPin" />
+              <Pin Id="R7ivZ4qF56iPEvz0k6aZJn" Name="Favourite" Kind="OutputPin" />
               <Pin Id="B12ikw4wjgBNVKYZ3YBM25" Name="Next Task" Kind="OutputPin" />
             </Patch>
           </Patch>
@@ -3093,6 +3099,7 @@
             </Patch>
             <Patch Id="UUnTR7DOdTUMfHovvUASHk" Name="Info">
               <Pin Id="Jmb3KMtkAdLL552nkg9xN3" MergeId="19492" Name="Name" Kind="OutputPin" />
+              <Pin Id="JIU7SoP8QpCPgfjJ7v1wlj" Name="Favourite" Kind="OutputPin" />
               <Pin Id="O1LZZbHB7jeOBUT7wtTFiO" Name="Next Task" Kind="OutputPin" />
             </Patch>
           </Patch>
@@ -3280,36 +3287,6 @@
           </Slot>
           <Link Id="BYQrX5z57oeNjtYCFa5in0" Ids="QhrDIwxl4pYNvzrHpnyWtw,R8Panz66orTLHw4Ftdg0BQ" IsHidden="true" />
           <Link Id="OoqVDCt8jHTOOEQ2WEaXbD" Ids="PQg9MmMMZ0wM5uq4sZNcEH,ChLKFCcqR8TP855ivlNDF0" IsHidden="true" />
-          <Patch Id="HI5fHpMNtpxMlKqC3cpNmc" Name="Create" />
-          <Patch Id="Q8KvUAa81l5MoOVDMYFO7c" Name="Split">
-            <Pin Id="ICzpgfULGCmMi3jSVb5qcw" MergeId="2921" Name="IP" Kind="OutputPin" />
-            <Pin Id="IF0C9jhNcaGPdE9KX51Ias" MergeId="2948" Name="Credentials" Kind="OutputPin" />
-            <Pin Id="ChLKFCcqR8TP855ivlNDF0" Name="Alias" Kind="OutputPin" />
-            <Pin Id="FCOXEq5kvLqPepcp3TaLTK" Name="Hostname" Kind="OutputPin" />
-            <Pin Id="AURTJPnOqkCPeaggEyI1DB" Name="Mac" Kind="OutputPin" />
-            <Pin Id="P4gb22yozBWMEGixKQHi1R" Name="DefaultPath" Kind="OutputPin" />
-            <Pin Id="QO9gxhCo7eWLZF1FCAK0cJ" Name="Vars" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="KjaW85wWFpcPtCz0AGTtFk" Name="SetMAC">
-            <Pin Id="VAvXiTOE41vNAgCdMKuRDS" Name="Mac" Kind="InputPin" />
-          </Patch>
-          <Patch Id="TiKiJsGxxDyP168lNCr4vu" Name="SetHostname">
-            <Pin Id="SmHDS83pSR7OgpOOO3Y3zr" MergeId="3038" Name="Hostname" Kind="InputPin" />
-          </Patch>
-          <Patch Id="MXr6ShkSRo8PwXIPCPEkJu" Name="Update">
-            <Pin Id="OH9hTAGO36oMTlomAa6bWC" Name="IP" Kind="InputPin" />
-            <Pin Id="LQ67WIyZbKYMpde6ACgKag" Name="Credentials" Kind="InputPin" />
-            <Pin Id="QhrDIwxl4pYNvzrHpnyWtw" Name="Alias" Kind="InputPin" />
-            <Pin Id="RMiri2pbgkQLrNGFNsJvsV" Name="Hostname" Kind="InputPin" />
-            <Pin Id="Pac5wGDj638Ol12wwQETfR" Name="Mac" Kind="InputPin" />
-            <Pin Id="F5ekHU5JCsPMd0TkZZ7fFt" Name="DefaultPath" Kind="InputPin" />
-            <Pin Id="P3kfXWHAZ1iO8H8I5yPUzy" Name="Vars" Kind="InputPin" />
-          </Patch>
-          <Patch Id="MXRWyMJgO31OYu9Ee6xcEN" Name="Info">
-            <Pin Id="DAi3utuxxofPOkTQJff394" Name="Name" Kind="OutputPin" />
-            <Pin Id="DVVQUrLNCBgMN07QTqx8LL" Name="Next Task" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="GdMeU06JK2wLENczbEQnjk" Name="Name" />
           <Slot Id="UjjICprm57yMZXx5ch7yDS" Name="DefaultPath">
             <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="String" />
@@ -3338,6 +3315,37 @@
           <Link Id="JKUM5uwquihLBVTUlTklrS" Ids="G4JcDEx63DtPeq9xFFMq7B,MIQvQHejqqNOGJqlCzrPqd" />
           <Link Id="PfFvJ5IcFQOQDpKeyslwLV" Ids="L63LyLrocLlP2TX3ZEc6dB,G4JcDEx63DtPeq9xFFMq7B" />
           <Link Id="AnWN2k2iWdhN0xiaJUah3d" Ids="CO0Jhgh5JhYOqpZMI8VSLF,L63LyLrocLlP2TX3ZEc6dB" IsHidden="true" />
+          <Patch Id="HI5fHpMNtpxMlKqC3cpNmc" Name="Create" />
+          <Patch Id="Q8KvUAa81l5MoOVDMYFO7c" Name="Split">
+            <Pin Id="ICzpgfULGCmMi3jSVb5qcw" MergeId="2921" Name="IP" Kind="OutputPin" />
+            <Pin Id="IF0C9jhNcaGPdE9KX51Ias" MergeId="2948" Name="Credentials" Kind="OutputPin" />
+            <Pin Id="ChLKFCcqR8TP855ivlNDF0" Name="Alias" Kind="OutputPin" />
+            <Pin Id="FCOXEq5kvLqPepcp3TaLTK" Name="Hostname" Kind="OutputPin" />
+            <Pin Id="AURTJPnOqkCPeaggEyI1DB" Name="Mac" Kind="OutputPin" />
+            <Pin Id="P4gb22yozBWMEGixKQHi1R" Name="DefaultPath" Kind="OutputPin" />
+            <Pin Id="QO9gxhCo7eWLZF1FCAK0cJ" Name="Vars" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="KjaW85wWFpcPtCz0AGTtFk" Name="SetMAC">
+            <Pin Id="VAvXiTOE41vNAgCdMKuRDS" Name="Mac" Kind="InputPin" />
+          </Patch>
+          <Patch Id="TiKiJsGxxDyP168lNCr4vu" Name="SetHostname">
+            <Pin Id="SmHDS83pSR7OgpOOO3Y3zr" MergeId="3038" Name="Hostname" Kind="InputPin" />
+          </Patch>
+          <Patch Id="MXr6ShkSRo8PwXIPCPEkJu" Name="Update">
+            <Pin Id="OH9hTAGO36oMTlomAa6bWC" Name="IP" Kind="InputPin" />
+            <Pin Id="LQ67WIyZbKYMpde6ACgKag" Name="Credentials" Kind="InputPin" />
+            <Pin Id="QhrDIwxl4pYNvzrHpnyWtw" Name="Alias" Kind="InputPin" />
+            <Pin Id="RMiri2pbgkQLrNGFNsJvsV" Name="Hostname" Kind="InputPin" />
+            <Pin Id="Pac5wGDj638Ol12wwQETfR" Name="Mac" Kind="InputPin" />
+            <Pin Id="F5ekHU5JCsPMd0TkZZ7fFt" Name="DefaultPath" Kind="InputPin" />
+            <Pin Id="P3kfXWHAZ1iO8H8I5yPUzy" Name="Vars" Kind="InputPin" />
+          </Patch>
+          <Patch Id="MXRWyMJgO31OYu9Ee6xcEN" Name="Info">
+            <Pin Id="DAi3utuxxofPOkTQJff394" Name="Name" Kind="OutputPin" />
+            <Pin Id="McQU99P7fEWNAdTSmM3vRO" Name="Favourite" Kind="OutputPin" />
+            <Pin Id="DVVQUrLNCBgMN07QTqx8LL" Name="Next Task" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="GdMeU06JK2wLENczbEQnjk" Name="Name" />
           <Patch Id="OlSOz0J5RYkLhb1ZAbjbhU" Name="SetVars">
             <Pin Id="CO0Jhgh5JhYOqpZMI8VSLF" Name="Vars" Kind="InputPin" />
           </Patch>
@@ -4746,6 +4754,7 @@
                   <Pin Id="IVPuTisUT3DOnZXiLfPZ8P" Name="Input" Kind="StateInputPin" />
                   <Pin Id="LmXCaOpsaxOPU8tJiQoOJp" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Mjom7FF4rDzPQlEeylwbg5" Name="Name" Kind="OutputPin" />
+                  <Pin Id="LVui6i6jOFZQOVUu93DWoH" Name="Favourite" Kind="OutputPin" />
                   <Pin Id="LSXkWDuIgIaMbGBJxcLtLr" Name="Next Task" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="590,836,25,19" Id="J67lebvrwqcOSiywFKJt58">
@@ -5036,17 +5045,24 @@
         <Patch Id="JNK0mpVuToEPI1hkX5wmMy">
           <Canvas Id="BFdwBRzOFy4QGE5HEYDb05" CanvasType="Group">
             <ControlPoint Id="N5qEuUxGDmqOwwG30ODsiG" Bounds="413,278" />
-            <ControlPoint Id="CKuMqxNKjcSLWtgR8mFsk7" Bounds="492,279" />
+            <ControlPoint Id="CKuMqxNKjcSLWtgR8mFsk7" Bounds="554,278" />
+            <ControlPoint Id="QTrXC934UQMNlwhwSxaXQk" Bounds="478,278" />
           </Canvas>
           <ProcessDefinition Id="QE25ePX6O7DQMNyDYKpxi1" IsHidden="true">
             <Fragment Id="TAjLfTIuWhJNOyEWM8EAf8" Patch="QwwliezHUDKNfI0nCE8q15" />
           </ProcessDefinition>
           <Link Id="NK8SvOattzGPHzA3LRHVU4" Ids="N5qEuUxGDmqOwwG30ODsiG,KNnUnHnYe61OkTJX2Ydb9L" IsHidden="true" />
           <Link Id="FFvLUslunkMQNjT3keoHMO" Ids="CKuMqxNKjcSLWtgR8mFsk7,HLJUB3hJuJ2MWqQzwSpdwu" IsHidden="true" />
+          <Link Id="OQEboYfRQVLLOogsDJSjRI" Ids="QTrXC934UQMNlwhwSxaXQk,Q0DxkvqfenSPdyYfrGPKAj" IsHidden="true" />
           <Patch Id="QwwliezHUDKNfI0nCE8q15" Name="Info">
             <Pin Id="KNnUnHnYe61OkTJX2Ydb9L" Name="Name" Kind="OutputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Q0DxkvqfenSPdyYfrGPKAj" Name="Favourite" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="HLJUB3hJuJ2MWqQzwSpdwu" Name="Next Task" Kind="OutputPin">
@@ -5419,6 +5435,7 @@
                       <Pin Id="TfB7wZda2hMLYClNHIUpe6" Name="Input" Kind="StateInputPin" />
                       <Pin Id="CBHVu7Ye5dxOJ65CWvBQrV" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="RZNqeX8cst5OzZWejvzW8b" Name="Name" Kind="OutputPin" />
+                      <Pin Id="FV1kiFz5y2kPZb5GnIYwg7" Name="Favourite" Kind="OutputPin" />
                       <Pin Id="Bz4NpQTkv0jPKRo4ARoKRE" Name="Next Task" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="712,424,48,19" Id="FVnBJdTTQaLNtqIEUpGFE1">
