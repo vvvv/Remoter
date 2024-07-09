@@ -6214,7 +6214,7 @@
                 <Pin Id="E2PllpTdz8FNTp9QNwQ349" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="UAG8Iizus16LtQqLYNwhs8" Bounds="1394,378" />
-              <Pad Id="JSaBjhEnfflMNWlTe41RrP" Comment="" Bounds="1433,233,176,15" ShowValueBox="true" isIOBox="true" Value="Exclude Files">
+              <Pad Id="JSaBjhEnfflMNWlTe41RrP" Comment="" Bounds="1433,233,77,15" ShowValueBox="true" isIOBox="true" Value="Exclude Files">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -6400,7 +6400,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="1956,469,85,19" Id="JBE4Ebd3dZVP39NdQvXlBa">
+              <Node Bounds="2072,470,85,19" Id="JBE4Ebd3dZVP39NdQvXlBa">
                 <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Widgets" NeedsToBeDirectParent="true" />
@@ -6414,12 +6414,12 @@
                 <Pin Id="OWc2R8LpuFsNljSVeWlBf1" Name="Context" Kind="OutputPin" />
                 <Pin Id="KFuHXw9e6JXP9HShUqv5Pg" Name="Bang" Kind="OutputPin" />
               </Node>
-              <Pad Id="EefdyaEybByPl7oOYlIw6E" Comment="Label" Bounds="1998,444,145,15" ShowValueBox="true" isIOBox="true" Value="Documentation">
+              <Pad Id="EefdyaEybByPl7oOYlIw6E" Comment="Label" Bounds="2114,445,145,15" ShowValueBox="true" isIOBox="true" Value="Documentation">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="1975,536,69,19" Id="AD9EFVlRLwTPrJu1G6pvFu">
+              <Node Bounds="2091,537,69,19" Id="AD9EFVlRLwTPrJu1G6pvFu">
                 <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LinkOpener" />
@@ -6428,7 +6428,7 @@
                 <Pin Id="DfJv74AmBVZMal0nYFS6CM" Name="Link" Kind="InputPin" />
                 <Pin Id="EeX4zvV16UANHog4yJXcaP" Name="Open" Kind="InputPin" />
               </Node>
-              <Pad Id="BZANuKN8dZUQVgh3uZlywW" Comment="Link" Bounds="1977,514,133,17" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy">
+              <Pad Id="BZANuKN8dZUQVgh3uZlywW" Comment="Link" Bounds="2093,515,133,17" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -6573,7 +6573,7 @@
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="1821,465,65,19" Id="L976gbj2KQbM6RDjpeH22Z">
+              <Node Bounds="1937,466,65,19" Id="L976gbj2KQbM6RDjpeH22Z">
                 <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Widgets" NeedsToBeDirectParent="true" />
@@ -6585,12 +6585,12 @@
                 <Pin Id="MvJF2GjDhahQOynsTAQ9xr" Name="Style" Kind="InputPin" />
                 <Pin Id="JxRKBXNxXmSNPYAEy8jwJ5" Name="Context" Kind="OutputPin" />
               </Node>
-              <Pad Id="QsrS0CjW9dOLthFc0z5NXs" Comment="Text" Bounds="1842,398,212,15" ShowValueBox="true" isIOBox="true" Value="Executes the Windows 'robocopy' command">
+              <Pad Id="QsrS0CjW9dOLthFc0z5NXs" Comment="Text" Bounds="1958,399,212,15" ShowValueBox="true" isIOBox="true" Value="Executes the Windows 'robocopy' command">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="2130,471,60,19" Id="BEQNRR3XniROv8gq0ROS5D">
+              <Node Bounds="2246,472,60,19" Id="BEQNRR3XniROv8gq0ROS5D">
                 <p:NodeReference LastCategoryFullName="Remoter" LastDependency="Remoter.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Remoter" NeedsToBeDirectParent="true" />
@@ -6638,6 +6638,36 @@
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
+              <Node Bounds="1841,295,43,19" Id="MbginoeyzOGLuUNhi9aCPD">
+                <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="Channel" />
+                  <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
+                </p:NodeReference>
+                <Pin Id="O2MFkEdlCS9PnWxv8Qtvyf" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="Nd0ngENYOpLO8CshFQkkF3" Name="Input" Kind="InputPin" />
+                <Pin Id="SQNUHaWc8WJM2UGS2UZ6dV" Name="Path" Kind="InputPin" DefaultValue="Number" />
+                <Pin Id="AyzkX7QKufFMtNnRjjmVTk" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Pad Id="K8fwGW9LsioPjz9CeJDmJa" Bounds="1843,384" />
+              <Pad Id="BKtbLjgI94nNBJU75fazUD" Comment="Path" Bounds="1913,227,45,15" ShowValueBox="true" isIOBox="true" Value="Filewatcher">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="1820,465,65,19" Id="RGehpKVgZtyPHcRJynsjbj">
+                <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessNode" Name="Checkbox" />
+                </p:NodeReference>
+                <Pin Id="NrmJB6ao4fKOCxAyk83N88" Name="Context" Kind="InputPin" />
+                <Pin Id="N5MfdfV029aPxEjGWRA1a0" Name="Channel" Kind="InputPin" />
+                <Pin Id="SilmAf76aDkPR9ZHMYy0jJ" Name="Label" Kind="InputPin" />
+                <Pin Id="JWEtGp41x01N8PK4pjCu5K" Name="Style" Kind="InputPin" />
+                <Pin Id="J1hQZUfR66vPbuRkz35VKa" Name="Context" Kind="OutputPin" />
+                <Pin Id="QMUc9M9hxQVQCatGOTOve6" Name="Bang" Kind="OutputPin" />
+                <Pin Id="F9TM4VKr64oP7tLjAwQWNr" Name="Value" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <ProcessDefinition Id="NvN89nnweB7QH2OoyJoirO" IsHidden="true">
               <Fragment Id="I3IRj8Ed5JZNOclqrK4aEN" Patch="JvkMoVGkAr4MR4AD36MjCH" Enabled="true" />
@@ -6703,7 +6733,6 @@
             <Link Id="HtCRyOzjV8bNrFBzDsBNVT" Ids="EefdyaEybByPl7oOYlIw6E,DaPtKrlJayiMfPpvSSeFLK" />
             <Link Id="PImKpsftLPuNe16IiGp3tV" Ids="KFuHXw9e6JXP9HShUqv5Pg,EeX4zvV16UANHog4yJXcaP" />
             <Link Id="UOqjhx84IvqPnPQdONS1rF" Ids="BZANuKN8dZUQVgh3uZlywW,DfJv74AmBVZMal0nYFS6CM" />
-            <Link Id="KP7yLH3thYKNFYT7PQTE8H" Ids="Uh5KkGjkLTwQbhTEshk54L,A872RxTqFNJMqVNohSdaXb" />
             <Link Id="F5ruQMUDYiALgs15hVHlBg" Ids="SNnIjLcVlmKNjUJCPxGuld,QNtxydQsf9ELyeJace66E8" />
             <Link Id="ULlpsH5YiqkN1OboFpnGHm" Ids="L6Bps3CDrMGLrXwyBeJTnr,FpMeNRcfSIlLL6CLXsgBhc" />
             <Link Id="TDBHwllXkRmMkUCSMEHKre" Ids="JyWozEjHeXEQVxSuHeyckz,Ux9KLmls1W1McmDzRxwwdY" />
@@ -6738,6 +6767,13 @@
             <Link Id="K6HP02AZmTjMEYArBwy6jq" Ids="T0KHYYufbixNwJ6ain8VDs,Rqz6WP63rlWPuxGrwMyu1V" />
             <Link Id="FQZtbFGynA5On5Imm1gTkv" Ids="T0KHYYufbixNwJ6ain8VDs,ErNNbVeS3OeMjFVEYE1p1M" />
             <Link Id="CpAPlbv0GWuQWsV10qMKes" Ids="T0KHYYufbixNwJ6ain8VDs,QqkmV1eGyuNMBnCZEyq2pD" />
+            <Link Id="CP0PL1itwJEQXC4rA0jhSA" Ids="AyzkX7QKufFMtNnRjjmVTk,K8fwGW9LsioPjz9CeJDmJa" />
+            <Link Id="OM3TZYNohrPLpRCjmXEGJx" Ids="BKtbLjgI94nNBJU75fazUD,SQNUHaWc8WJM2UGS2UZ6dV" />
+            <Link Id="RSzNJlfhLlaMOfhSGCM5hS" Ids="E7mQj6Eu9taMSRoqDW2FJB,Nd0ngENYOpLO8CshFQkkF3" />
+            <Link Id="NGIR0lTPTqyPkVnGT3gX1x" Ids="Uh5KkGjkLTwQbhTEshk54L,NrmJB6ao4fKOCxAyk83N88" />
+            <Link Id="CBjRvj6dmAYObSPrhlGSD4" Ids="J1hQZUfR66vPbuRkz35VKa,A872RxTqFNJMqVNohSdaXb" />
+            <Link Id="VO1eUCHF5NwO5J3GH9ZmKp" Ids="BKtbLjgI94nNBJU75fazUD,SilmAf76aDkPR9ZHMYy0jJ" />
+            <Link Id="Tv0EFSMdyK0Pqh2xJKdCPK" Ids="K8fwGW9LsioPjz9CeJDmJa,N5MfdfV029aPxEjGWRA1a0" />
           </Patch>
         </Node>
         <!--
