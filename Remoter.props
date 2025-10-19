@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Version>2.0.10</Version>
+    <Version>2.0.11</Version>
     <VLAssetBehavior>RelativeToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
     <VLExportPath>$(MsBuildThisFileDirectory)Export</VLExportPath>
@@ -22,9 +22,11 @@
     <ItemGroup>
       <Assets Include="$(MsBuildThisFileDirectory)Assets\**\*.*" />
       <PAExec Include="$(MsBuildThisFileDirectory)PAexec\paexec.exe" />
+	  <GetActiveConsoleSessionID Include="$(MsBuildThisFileDirectory)GetActiveConsoleSessionID.exe" />
     </ItemGroup>
     <Copy SourceFiles="@(Assets)" DestinationFolder="$(DestinationFolder)Assets\%(RecursiveDir)" />
     <Copy SourceFiles="@(PAExec)" DestinationFolder="$(DestinationFolder)" />
+	<Copy SourceFiles="@(GetActiveConsoleSessionID)" DestinationFolder="$(DestinationFolder)" />
   </Target>
   <Target Name="Installer" AfterTargets="CopyFiles">
     <Exec Command="iscc.exe $(MsBuildThisFileDirectory)installer.iss /DVersion=$(Version)" />
