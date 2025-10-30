@@ -24624,7 +24624,7 @@
             <Pad Id="BtvEG6BP7viMWa0p53IAjQ" Bounds="668,237" />
             <ControlPoint Id="JuHT9ChTpGyLp1EyWmo4R9" Bounds="669,359" />
             <Pad Id="I2HNItNY4zeMFcozncMmgv" SlotId="JbmptgJLMIsLYYsGEnEunn" Bounds="311,172" />
-            <Node Bounds="448,50,102,19" Id="JOD8FefWq1QL48espt4xDE">
+            <Node Bounds="309,10,102,19" Id="JOD8FefWq1QL48espt4xDE">
               <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ApplicationVersion" />
@@ -24632,13 +24632,13 @@
               <Pin Id="VvXFxI18XoQNLt8YYWNStb" Name="Output" Kind="OutputPin" />
               <Pin Id="VIOZUja6rTOOlsAcGxy5wP" Name="Node Context" Kind="InputPin" IsHidden="true" />
             </Node>
-            <Pad Id="Mb5W3olILiJPGpcy9D4kIe" Comment="AppVersion" Bounds="311,60,49,15" ShowValueBox="true" isIOBox="true" Value="2.0.13">
+            <Pad Id="Mb5W3olILiJPGpcy9D4kIe" Comment="AppVersion" Bounds="311,60,49,15" ShowValueBox="true" isIOBox="true">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
           </Canvas>
-          <Patch Id="Fbfi2VyOkRPNhxPS7WKCYH" Name="Create" ParticipatingElements="SlnlGYWk7x4Nxptoz9rLBT" />
+          <Patch Id="Fbfi2VyOkRPNhxPS7WKCYH" Name="Create" ParticipatingElements="SlnlGYWk7x4Nxptoz9rLBT,FHUBLSa0SAGMiaLmIek87E" />
           <Patch Id="I3qUFVbIifmL0FBPIu5xKO" Name="Update">
             <Pin Id="CByZznAnFQsMns1pnJQ7XU" Name="Output" Kind="OutputPin" Bounds="383,364" />
             <Pin Id="TfbHeej54kFORMQs4A0F9B" Name="Background" Kind="OutputPin" Bounds="561,373" />
@@ -24672,6 +24672,7 @@
           <Link Id="OygBvsYlK14LSD92fnFtvR" Ids="I2HNItNY4zeMFcozncMmgv,OrGX6j54TrgOJPWtoyrJM9" />
           <Link Id="TwwRY4mCxf5NAXONMWGtaN" Ids="Mb5W3olILiJPGpcy9D4kIe,OAB3fDwH2DMLgJtw0GTj8z" />
           <Link Id="B5vTJV071kyQSApAPNxOHC" Ids="Mb5W3olILiJPGpcy9D4kIe,JzlbJsSn1mYPKKEGFQqs0F" />
+          <Link Id="FHUBLSa0SAGMiaLmIek87E" Ids="VvXFxI18XoQNLt8YYWNStb,Mb5W3olILiJPGpcy9D4kIe" />
         </Patch>
       </Node>
       <!--
