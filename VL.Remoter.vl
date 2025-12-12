@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ac1SP9vHiMCOVHT7QWvijk" LanguageVersion="2025.7.1-0041-g6fddefa1a2" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ac1SP9vHiMCOVHT7QWvijk" LanguageVersion="2025.7.1-0164-gde04b3615b" Version="0.128">
   <NugetDependency Id="N275IBFODYpNhiRVgTAddf" Location="VL.CoreLib" Version="2025.7.1-0041-g6fddefa1a2" />
   <Patch Id="TndBsOLiMoEMG2p44IeSlZ">
     <Canvas Id="BuT3l0msQX0LJuYEtIM6T3" DefaultCategory="Remoter" CanvasType="FullCategory">
@@ -622,6 +622,7 @@
                 <Pin Id="OfrrjXEBtQWM3inXlDjGp6" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="RqFzrQrH2bqL9nt402R3uW" Name="Mac" Kind="OutputPin" />
                 <Pin Id="A0b4kmfznIcMFwu1av63HJ" Name="DefaultPath" Kind="OutputPin" />
+                <Pin Id="MOoGMdV8nozNQVDOQMRiX2" Name="Execute" Kind="OutputPin" />
                 <Pin Id="M1bWFV5Knb6L7QurgtJsrI" Name="Vars" Kind="OutputPin" />
               </Node>
               <Node Bounds="481,500,71,19" Id="JJoK75vG02JOzTR1U6HQmy">
@@ -934,6 +935,7 @@
                 <Pin Id="Fzwxa8sOwsWNEnqB7jO3ia" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="PrHreoRbWTXOMmMhj4QRAm" Name="Mac" Kind="OutputPin" />
                 <Pin Id="HaS46YuqyOKPXAVpikYDb8" Name="DefaultPath" Kind="OutputPin" />
+                <Pin Id="PoDhO3XwzaeL8nqrMJQ7Pw" Name="Execute" Kind="OutputPin" />
                 <Pin Id="SZf7Bw3RQFvOnKTR6z9nrM" Name="Vars" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="B2H9TZlrTktNpV8vA5KgCH" Bounds="683,911" />
@@ -2584,6 +2586,7 @@
                 <Pin Id="JP42D2i6tFULgArHWya1nr" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="LCEhHKl64QBPI1KRF3IAJ9" Name="Mac" Kind="OutputPin" />
                 <Pin Id="KNCWbiv7UipPEAOPZ7jcjL" Name="DefaultPath" Kind="OutputPin" />
+                <Pin Id="VsejLvMGZcuNFkNK77whbY" Name="Execute" Kind="OutputPin" />
                 <Pin Id="G5cPLA2FE40NXUgMEVb9dx" Name="Vars" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="OOOpwZPRRdxNM8PlMzqxIT" Bounds="399,687" />
@@ -2991,6 +2994,7 @@
                 <Pin Id="CeklX5M66FSMyEn0kbyz4R" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="GQasdRzHAhuOqhoxRCCxn1" Name="Mac" Kind="OutputPin" />
                 <Pin Id="NP6BdiSXnHSNaTyHxfuRHD" Name="DefaultPath" Kind="OutputPin" />
+                <Pin Id="UEoA9J4oGstMNWbOVtFQwr" Name="Execute" Kind="OutputPin" />
                 <Pin Id="BqdC8L688MIN2IrX1iz2NQ" Name="Vars" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="KtALrYeJZc8QEXRyrVoEPR" Bounds="695,890" />
@@ -3577,6 +3581,7 @@
                 <Pin Id="S8EYVNnfrWoQPKvF5iIIin" Name="Hostname" Kind="OutputPin" />
                 <Pin Id="PiUSypSH0qJLl4VObBHyGW" Name="Mac" Kind="OutputPin" />
                 <Pin Id="RIrlhgAMJHMLeRnnPGVKKQ" Name="DefaultPath" Kind="OutputPin" />
+                <Pin Id="LUxBITCTQFoMFXsgDYh8jT" Name="Execute" Kind="OutputPin" />
                 <Pin Id="SS0wGv70tYYLSHYVtdu2nd" Name="Vars" Kind="OutputPin" />
               </Node>
               <Node Bounds="406,531,81,19" Id="SVQnbo4ax0CMUbS06YNYF7">
@@ -3927,10 +3932,13 @@
             <Pad Id="LW5FXQGS6eGPeDRqEikyCg" SlotId="UjjICprm57yMZXx5ch7yDS" Bounds="860,350" />
             <ControlPoint Id="QG3wpi9sdSAObokunfcucK" Bounds="860,316" />
             <ControlPoint Id="UoWbc6G0BqeMPjEYNXHKcU" Bounds="860,376" />
-            <Pad Id="G4JcDEx63DtPeq9xFFMq7B" SlotId="EosqBYG6fMUMnvTc5jXxXR" Bounds="959,347" />
-            <ControlPoint Id="GfFNDWNTklCNAgarclv27y" Bounds="959,317" />
-            <ControlPoint Id="MIQvQHejqqNOGJqlCzrPqd" Bounds="959,377" />
-            <ControlPoint Id="L63LyLrocLlP2TX3ZEc6dB" Bounds="1026,295" />
+            <Pad Id="G4JcDEx63DtPeq9xFFMq7B" SlotId="EosqBYG6fMUMnvTc5jXxXR" Bounds="1127,341" />
+            <ControlPoint Id="GfFNDWNTklCNAgarclv27y" Bounds="1127,311" />
+            <ControlPoint Id="MIQvQHejqqNOGJqlCzrPqd" Bounds="1127,371" />
+            <ControlPoint Id="L63LyLrocLlP2TX3ZEc6dB" Bounds="1194,289" />
+            <Pad Id="KYplefjP7jKOLoIbbFG4pj" SlotId="VnaEgSOE7DfL73QhAVEakw" Bounds="989,345" />
+            <ControlPoint Id="JyGVrzePOoQO2dT0shRqbM" Bounds="989,311" />
+            <ControlPoint Id="P2AP7MYW7LbOSTozZp18Rf" Bounds="989,371" />
           </Canvas>
           <Slot Id="PdL8DZNqqKQL3vsmKW8ShA" Name="IP">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -4029,6 +4037,7 @@
             <Pin Id="FCOXEq5kvLqPepcp3TaLTK" Name="Hostname" Kind="OutputPin" />
             <Pin Id="AURTJPnOqkCPeaggEyI1DB" Name="Mac" Kind="OutputPin" />
             <Pin Id="P4gb22yozBWMEGixKQHi1R" Name="DefaultPath" Kind="OutputPin" />
+            <Pin Id="SJcecfyEijoPUUWYrE169M" Name="Execute" Kind="OutputPin" />
             <Pin Id="QO9gxhCo7eWLZF1FCAK0cJ" Name="Vars" Kind="OutputPin" />
           </Patch>
           <Patch Id="KjaW85wWFpcPtCz0AGTtFk" Name="SetMAC">
@@ -4044,6 +4053,7 @@
             <Pin Id="RMiri2pbgkQLrNGFNsJvsV" Name="Hostname" Kind="InputPin" />
             <Pin Id="Pac5wGDj638Ol12wwQETfR" Name="Mac" Kind="InputPin" />
             <Pin Id="F5ekHU5JCsPMd0TkZZ7fFt" Name="DefaultPath" Kind="InputPin" />
+            <Pin Id="PhLWbwfGWSYLxMswQGjmSw" Name="Execute" Kind="InputPin" />
             <Pin Id="P3kfXWHAZ1iO8H8I5yPUzy" Name="Vars" Kind="InputPin" />
           </Patch>
           <Patch Id="MXRWyMJgO31OYu9Ee6xcEN" Name="Info">
@@ -4055,6 +4065,15 @@
           <Patch Id="OlSOz0J5RYkLhb1ZAbjbhU" Name="SetVars">
             <Pin Id="CO0Jhgh5JhYOqpZMI8VSLF" Name="Vars" Kind="InputPin" />
           </Patch>
+          <Link Id="N0lLCv73Nc4LYkKjc8nH26" Ids="JyGVrzePOoQO2dT0shRqbM,KYplefjP7jKOLoIbbFG4pj" />
+          <Link Id="PXDPut7U1EEPyqSObjrXeW" Ids="KYplefjP7jKOLoIbbFG4pj,P2AP7MYW7LbOSTozZp18Rf" />
+          <Slot Id="VnaEgSOE7DfL73QhAVEakw" Name="Execute">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="Qgv8gg4eLOvOXAN9au2e33" Ids="P2AP7MYW7LbOSTozZp18Rf,SJcecfyEijoPUUWYrE169M" IsHidden="true" />
+          <Link Id="JZnHH10rEXXNQ69JJJzMV4" Ids="PhLWbwfGWSYLxMswQGjmSw,JyGVrzePOoQO2dT0shRqbM" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -4299,6 +4318,7 @@
                   <Pin Id="EaodvL4j8dDLClKOzKuZfI" Name="Hostname" Kind="OutputPin" />
                   <Pin Id="SU3uVN4AhXPLy82BiumuIB" Name="Mac" Kind="OutputPin" />
                   <Pin Id="QspdR59lenPNUkyAlMh7JB" Name="DefaultPath" Kind="OutputPin" />
+                  <Pin Id="JVj7HOiBRagMO5wVT7RoNp" Name="Execute" Kind="OutputPin" />
                   <Pin Id="F0IybODG1F6OJNvhGIBff5" Name="Vars" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="509,156,45,26" Id="I6GorQtSmf1PZeYS5zkb07">
@@ -4514,6 +4534,7 @@
                   <Pin Id="PnAN2RFTHTBQGpyO3uFa0s" Name="Hostname" Kind="OutputPin" />
                   <Pin Id="U561uE33XHIPNyClB3yNRL" Name="Mac" Kind="OutputPin" />
                   <Pin Id="Gd6nnfmmETLLFMMdbZMi08" Name="DefaultPath" Kind="OutputPin" />
+                  <Pin Id="IRCj98DCAH0PXiXmkoB0u5" Name="Execute" Kind="OutputPin" />
                   <Pin Id="FkjRTTAR9QhNz5NJZjbMzl" Name="Vars" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="948,815,55,26" Id="My1pzjXsfw2NldneHAezoL">
@@ -5032,6 +5053,7 @@
               <Pin Id="JYUCPGNLI4jL5RykdXPQ66" Name="Hostname" Kind="OutputPin" />
               <Pin Id="QzXhCsTidE9Po5s5pYpBov" Name="Mac" Kind="OutputPin" />
               <Pin Id="NF2fmmK8zvVOxfwChEDYx9" Name="DefaultPath" Kind="OutputPin" />
+              <Pin Id="Q7SjrtDshmfO1K5z8033QQ" Name="Execute" Kind="OutputPin" />
               <Pin Id="REKl8GbM9ygNXoT7bgmoLt" Name="Vars" Kind="OutputPin" />
             </Node>
             <Node Bounds="472,232,45,19" Id="FlECVnMT5YOQQ3GU4kKvzF">
@@ -5403,7 +5425,7 @@
               <Pin Id="FEyloDKi4sUPLnDGfcBB8H" Name="Status" Kind="OutputPin" />
               <Pin Id="QB8Lfpkk6VMPHDJCKsAdwp" Name="Roundtrip Time" Kind="OutputPin" />
             </Node>
-            <Node Bounds="146,348,145,26" Id="FyLvHi7P6E1Lvmaf4AeuxG">
+            <Node Bounds="146,348,165,26" Id="FyLvHi7P6E1Lvmaf4AeuxG">
               <p:NodeReference LastCategoryFullName="Remoter.Machine" LastDependency="VL.Remoter.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Machine" />
@@ -5417,6 +5439,7 @@
               <Pin Id="VpLROpNxtzQLHVNY1GimSE" Name="Hostname" Kind="OutputPin" />
               <Pin Id="DMLqsHITLIpLBQAqPVpMcD" Name="Mac" Kind="OutputPin" />
               <Pin Id="Dy9WH0ZI6PsNqD2BwiyypR" Name="DefaultPath" Kind="OutputPin" />
+              <Pin Id="VF5w0IPuHbdMygruYVKFkV" Name="Execute" Kind="OutputPin" />
               <Pin Id="BhS8tRFvIZeP2pGuYckn8H" Name="Vars" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="LCwVzrP7ynOPsw8fJcHzkV" Bounds="60,531" />
@@ -7039,7 +7062,6 @@
                 <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
               </p:NodeReference>
               <Pin Id="GK5qzCOKsOnLLczMzRgDQV" Name="Output" Kind="OutputPin" />
-              <Pin Id="F1CpRehlV16LJuznv6WI1O" Name="Node Context" Kind="InputPin" IsHidden="true" />
             </Node>
             <Node Bounds="296,-200,25,19" Id="UxeQx2V0MDyOTUShngI1gI">
               <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
