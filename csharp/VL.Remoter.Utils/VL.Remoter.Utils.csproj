@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>C:\Work\vvvv-private\VL.StandardLibs\..\bin\packages\</RestoreAdditionalProjectSources>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2024.6.7" />
+    <PackageReference Include="VL.Core" Version="2025.7.0" />
   </ItemGroup>
-
 </Project>
