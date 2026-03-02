@@ -2974,7 +2974,7 @@
                                 <Patch Id="DDJlWVV9vTuQAd4WtQObsG" Name="Dispose" />
                               </Patch>
                             </Node>
-                            <Pad Id="A323xpBl4kqQHlwYg6Q8al" Comment="Size" Bounds="860,1420,35,28" ShowValueBox="true" isIOBox="true" Value="0, -0.85">
+                            <Pad Id="A323xpBl4kqQHlwYg6Q8al" Comment="Size" Bounds="860,1420,35,28" ShowValueBox="true" isIOBox="true" Value="0, -1.37">
                               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                                 <Choice Kind="TypeFlag" Name="Vector2" />
                               </p:TypeAnnotation>
@@ -30741,7 +30741,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
               <Pin Id="Hc5fu6ZXSvJMGTUih1mKku" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="EAadXYQZOv9MxkYIHZK1Nb" Name="Bounds" Kind="InputPin" DefaultValue="1051, 73, 876, 654" />
+              <Pin Id="EAadXYQZOv9MxkYIHZK1Nb" Name="Bounds" Kind="InputPin" DefaultValue="-32000, -32000, 160, 28" />
               <Pin Id="Hiw05YeCBVlP6yz7Bw8FCP" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="KVhU1S9667aPBljIrUc6RE" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="HrgYOz9VpSCOszoNYuorMq" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -33212,25 +33212,63 @@
         </p:NodeReference>
         <Patch Id="EjJTW0lKiucMh3c1kaR0ez">
           <Canvas Id="UP89BhNlcjSMJycLI4qufa" CanvasType="Group">
-            <Node Bounds="554,423,65,19" Id="CKRrmJ0Et4GLfhzhGV00rw">
+            <Node Bounds="553,540,65,19" Id="CKRrmJ0Et4GLfhzhGV00rw">
               <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Widgets" NeedsToBeDirectParent="true" />
-                <Choice Kind="ProcessAppFlag" Name="Text" />
+                <Choice Kind="ProcessNode" Name="Text (Wrapped)" />
               </p:NodeReference>
               <Pin Id="L2T8oWeDaDiLR8gNc3dDGW" Name="Context" Kind="InputPin" />
               <Pin Id="N1Zy9u5XD1SMp13RrNNO8K" Name="Text" Kind="InputPin" />
-              <Pin Id="BXDT95Ml76VPo5YBDBuxXl" Name="Disabled" Kind="InputPin" DefaultValue="True" />
               <Pin Id="U129snDwp7JPDk0yeCP48y" Name="Style" Kind="InputPin" />
               <Pin Id="GwkiiJJbS5XLvszgU56Iwy" Name="Context" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="PyddtlG2TZlMRZuR47k1vJ" Bounds="471,371" />
-            <ControlPoint Id="EH4V1BjnKCIOOqP9EgHCjb" Bounds="482,494" />
-            <Pad Id="Bh4dV7hXlMTL6jM86MeZvW" Comment="Text" Bounds="575,341,378,15" ShowValueBox="true" isIOBox="true" Value="Using &lt;Alias&gt; in a field will replace this variable with the defined alias per PC.">
+            <ControlPoint Id="EH4V1BjnKCIOOqP9EgHCjb" Bounds="481,611" />
+            <Pad Id="Bh4dV7hXlMTL6jM86MeZvW" Comment="Text" Bounds="585,281,297,101" ShowValueBox="true" isIOBox="true" Value="Using &lt;Alias&gt; in a field will replace this variable with the defined alias per PC.&#xD;&#xA;In the &quot;Arguments&quot; field, variables that have been defined in the setting's &quot;Global&quot; section can be used. A variable named &quot;foo&quot; can be used by specifying &quot;$foo&quot; in an arguments field.">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="705,390,50,19" Id="DPcZKx56y5NMx6AQ55Ff74">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Receive (Local)" />
+              </p:NodeReference>
+              <Pin Id="HwAQQz588Y3MH7GFpBvH8A" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="NwmbCWAAE9qLY0b9DCj5UQ" Name="Name" Kind="InputPin" />
+              <Pin Id="BQmOGicgbs3PHP8oN51DJr" Name="Output" Kind="OutputPin" />
+              <Pin Id="Q8ThmAncPznQVmAOBoBKqW" Name="Warn" Kind="InputPin" IsHidden="true" />
+            </Node>
+            <Node Bounds="705,470,85,19" Id="GA1MdiGPVpZMv0FzTSD2bk">
+              <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessNode" Name="SetTextStyle" />
+              </p:NodeReference>
+              <Pin Id="FvLwWhFozxqLA4FgYcbeMp" Name="Input" Kind="InputPin" />
+              <Pin Id="AJmDTAh0Ji6PiKy3ODEEUu" Name="Color" Kind="InputPin" />
+              <Pin Id="FOSrAJcOMq6NZKqtxkNd4l" Name="Disabled Color" Kind="InputPin" />
+              <Pin Id="ML8j8yBd71lMwc2nEbaj01" Name="Selected Text Background" Kind="InputPin" />
+              <Pin Id="KmubUfWfbDUNmBtVAa4aLZ" Name="Font Name" Kind="InputPin" />
+              <Pin Id="JQ0CqW707CNMImcLrIhnvE" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="705,420,205,26" Id="MdWmN9o4drJMy2LuP7AUNj">
+              <p:NodeReference LastCategoryFullName="Remoter.PaletteCore" LastDependency="Remoter.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="PaletteCore" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+              </p:NodeReference>
+              <Pin Id="TeN6H7oGt5SNcCWgZZsorv" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qla7azn20hhNzHHLnWWuC0" Name="Output" Kind="OutputPin" />
+              <Pin Id="V3t0z3dIDYCLE1I05jCyDu" Name="Background" Kind="OutputPin" />
+              <Pin Id="VaRqlgrjGBhP6r6LF6Upoj" Name="Background2" Kind="OutputPin" />
+              <Pin Id="GumFv2cmHhlPU7KPBqya4n" Name="Node" Kind="OutputPin" />
+              <Pin Id="MUEKZaPVDQZNJr8L9xk2RA" Name="Node Selected" Kind="OutputPin" />
+              <Pin Id="O5dO6LguiMvNPgDWwNaT8m" Name="Font" Kind="OutputPin" />
+              <Pin Id="ETM8fa77kieLfEMTcaVvt5" Name="Font Complement" Kind="OutputPin" />
+              <Pin Id="EI91fsNOf0RLQd4wJhtSA6" Name="Tooltip Level2 Font" Kind="OutputPin" />
+              <Pin Id="DhtYFy03Jr5OTAvmo9OQdi" Name="Warning" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="D27IxTDRGsDNOkpPjgLD2e" Name="Create" />
           <Patch Id="NbdPYPvQxvNMFYKCMbmmnj" Name="Update">
@@ -33246,6 +33284,9 @@
           <Link Id="F2ZJxTDfNKKNpeBqMqwWyv" Ids="EH4V1BjnKCIOOqP9EgHCjb,OB35R2tg5fKPdyCSo63iSy" IsHidden="true" />
           <Link Id="MIGiBeNumHjNSfZelLkS1F" Ids="Bh4dV7hXlMTL6jM86MeZvW,N1Zy9u5XD1SMp13RrNNO8K" />
           <Link Id="NSOqO3MKxOQPfosmF2pEHK" Ids="PyddtlG2TZlMRZuR47k1vJ,L2T8oWeDaDiLR8gNc3dDGW" />
+          <Link Id="HFTbQXIWgqtOqX7jFmqunb" Ids="BQmOGicgbs3PHP8oN51DJr,TeN6H7oGt5SNcCWgZZsorv" />
+          <Link Id="D9gmCzSyu5ROQvd5fB8Tpg" Ids="JQ0CqW707CNMImcLrIhnvE,U129snDwp7JPDk0yeCP48y" />
+          <Link Id="AijN0ewLyRBLfl2RjHp8m5" Ids="EI91fsNOf0RLQd4wJhtSA6,AJmDTAh0Ji6PiKy3ODEEUu" />
         </Patch>
       </Node>
       <!--
@@ -34527,7 +34568,7 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="GySqwWzYhpeMHX9lcMbdhP" Bounds="386,215" />
-            <Pad Id="KV2BUdN9wkMPlTH82mY5AA" Comment="Text" Bounds="508,390,145,65" ShowValueBox="true" isIOBox="true" Value="Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum">
+            <Pad Id="KV2BUdN9wkMPlTH82mY5AA" Comment="Text" Bounds="508,390,145,65" ShowValueBox="true" isIOBox="true" Value="Variables that can be used in task arguments. Variables defined here can be overwritten individually in the per-PC configuration.">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -36545,9 +36586,9 @@
           <Link Id="PUL0Bf23tbINJIVVuHtQEF" Ids="UVyx0qanFGVONtUgIhQrqI,JSMpsL9Ii6JMHY4Q4AVg1p" />
           <Link Id="DuUaxYoQOgSL1vfifBHu5c" Ids="M65Ut2BJx6vPfhxKWRxjCV,I3fdoHG6C1yPWxXm2UTpW6" IsHidden="true" />
           <Link Id="FlVOOK4GcBKPsWMBW6n3bu" Ids="I3fdoHG6C1yPWxXm2UTpW6,USqAWSbpHjMLDGsdRGPBG5" />
-          <Link Id="A81nZbOHawzMZmmsT3WUdV" Ids="VqSky8gzZrPLDkvzzPcpHN,ITI1XJQPzT9P75KwkaEFxr,Cy4zXg2C0s9LWgjZ9uZhk3,Qt1mfLdihGzMwO2v6q9PF1" />
+          <Link Id="A81nZbOHawzMZmmsT3WUdV" Ids="VqSky8gzZrPLDkvzzPcpHN,DERIFlvsVLeQJgVlntbpBe,OO8cLTRVftiQVA0IN51kf9,Qt1mfLdihGzMwO2v6q9PF1" />
           <Link Id="FqWl4HSZXYpOWS6lxtMgzM" Ids="OqIieE8verYL8k6ne3o6eo,BHMtROO427BMweSkVK32w3" />
-          <Link Id="A2Xq0eVEVWtP3mORkXHbyM" Ids="MpzRYxtJWhPOFZZFoR23Bm,NCFO4R4DKP5LqqErLbxrWj,HigbwXQhh2UNqWL2oH01rM,LRkkMXfPSm4LwTkYoR0xlP" />
+          <Link Id="A2Xq0eVEVWtP3mORkXHbyM" Ids="MpzRYxtJWhPOFZZFoR23Bm,IUP8HhjvDP9QUm7hmEOv9b,IcXmCEH7Jz5Pfbk1Re9o4i,LRkkMXfPSm4LwTkYoR0xlP" />
           <Link Id="JbSHYjPBoruNpZkB4JD1B3" Ids="UeEZrjMK5tpNu2iXE6CDZm,TZoczUXrQfpN01Ucca2UHq" />
           <Link Id="RdnLqNvHXHdQEy3oESQeHy" Ids="AlMeSMot7VvN9ZTd5ORnlH,GdVkH69qLRCOj1abXCupNv" />
           <Link Id="Fi1DbMV1cJ8QUqYWLCltlw" Ids="Bz9Rh0CtEFFMyJ1jwkhJ5R,CTqdXn9p8vQNzxz7NU0kTL" IsHidden="true" />
