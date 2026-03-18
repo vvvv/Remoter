@@ -5753,6 +5753,9 @@
               <Pin Id="SuHON0PPhW6LfGkr7JiegR" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="EwprT8aBk7POMeKbTadFSL" Name="Vars" Kind="OutputPin" />
             </Node>
+            <Pad Id="SUuYmaHjZRmLJCjKLEqWc2" SlotId="HRMTBkKEHq6Lef3kjK3cNm" Bounds="1272,250" />
+            <ControlPoint Id="MKoYoPtOZFnLjD7gMLMSps" Bounds="1272,190" />
+            <ControlPoint Id="DnBGq3Hs3kIMvJTSXoeMHV" Bounds="1272,300" />
           </Canvas>
           <Link Id="MDysFbv1aXsNB1u48QPyNA" Ids="JHnIMNECQ3pP6fLPl8ecJC,SAamQ457ESlOWO1qtwLoiq" IsHidden="true" />
           <Link Id="QqRPAgVp7UBNXzXzDjhBLY" Ids="SAamQ457ESlOWO1qtwLoiq,Lhq6ZR2a58lL44U2rsaRa1" />
@@ -5838,6 +5841,8 @@
             <Fragment Id="MoU6Odc9vgQO95IlUNlyYI" Patch="L6TBSLTCMzAMmOptPqSg45" />
             <Fragment Id="QrQiHBRtDIKLVxkvDEHKue" Patch="CfQSZ8bUGeXLCczvqm9yLl" Enabled="true" />
             <Fragment Id="SNmc6m6S38ZL0xgQoA0jv3" Patch="IDfC73vuXKfP4ZtYKZiM93" />
+            <Fragment Id="K3HFOiPG15sOrLZiGIlcta" Patch="Vs4NitoZmGkPxReFh9kOzA" />
+            <Fragment Id="NRr2WS5YCuTNyuSpFb27n0" Patch="AQjDPYbAAN2MuizDIqZ3JZ" />
           </ProcessDefinition>
           <Slot Id="CnHlNJJiH13OUVWj8976YR" Name="Timestamp" />
           <Link Id="M8O21nSXUVVLWqo0OUaHP1" Ids="Dtv11mp7JBzQHdNm2jfTXi,PiH5lMPZFHdMNvRCy6wkvt" />
@@ -5875,6 +5880,21 @@
           <Link Id="M9IcaKfd1lxQaktaS8LfIT" Ids="U2MzLRIAp99OcmpxjPLtQ2,BNrnJfFUBwUMmkf9oUW3sw" />
           <Link Id="Jo6bggyDP8ALe1AO2JZHgo" Ids="EwprT8aBk7POMeKbTadFSL,BCHLV4ynjlaLYp9wCqmz5R" />
           <Link Id="EFMeRQWyJAVLIDtfUK27Oe" Ids="U2MzLRIAp99OcmpxjPLtQ2,H0lGG8VtLNOP1CT9UxPlU2" />
+          <Slot Id="HRMTBkKEHq6Lef3kjK3cNm" Name="IsKilled">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="UxBD3Ru9bTwQWvsXqbM5q1" Ids="MKoYoPtOZFnLjD7gMLMSps,SUuYmaHjZRmLJCjKLEqWc2" />
+          <Link Id="Me52KQ77ILeManvw3vHAOo" Ids="KZvcVaTyUaQPRxbAfobdpB,MKoYoPtOZFnLjD7gMLMSps" IsHidden="true" />
+          <Patch Id="Vs4NitoZmGkPxReFh9kOzA" Name="SetIsKilled">
+            <Pin Id="KZvcVaTyUaQPRxbAfobdpB" Name="IsKilled" Kind="InputPin" />
+          </Patch>
+          <Link Id="L2pt88kh0ypOYtYbBvrAvM" Ids="SUuYmaHjZRmLJCjKLEqWc2,DnBGq3Hs3kIMvJTSXoeMHV" />
+          <Link Id="NVtqDzjBdVvQSCxy26ILug" Ids="DnBGq3Hs3kIMvJTSXoeMHV,G96pJ7BaV7LLFVy4dv7LH9" IsHidden="true" />
+          <Patch Id="AQjDPYbAAN2MuizDIqZ3JZ" Name="IsKilled">
+            <Pin Id="G96pJ7BaV7LLFVy4dv7LH9" Name="IsKilled" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <!--
